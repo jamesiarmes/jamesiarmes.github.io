@@ -1,0 +1,32 @@
+.image-left {
+  float: left;
+}
+
+.image-right {
+  float: right;
+}
+
+.image-center {
+  display: block;
+  margin: 0 auto;
+}
+
+.post-image {
+  margin: 0 10px 10px 0;
+}
+
+.image-caption {
+  font-weight: bold;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.workxpress-table {
+  border: 1px solid black;
+  border-collapse: collapse;
+
+  td, th {
+    border: 1px solid black;
+    padding: 0 4px;
+  }
+}

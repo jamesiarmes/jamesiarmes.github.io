@@ -1,38 +1,49 @@
 ---
 layout: post
 title: Debugging With Xdebug
+category: blog
 created: 1208933667
 ---
-&nbsp;&nbsp;&nbsp;&nbsp;Xdebug is an amazing extension for PHP.  It makes debugging your websites and web applications much easier.  Let's take a look some debug before install Xdebug.
+Xdebug is an amazing extension for PHP. It makes debugging your websites and web
+applications much easier. Let's take a look some debug before install Xdebug.
 
-First, let's use var_dump() on a variable that happens to be an array:
+First, let's use `var_dump()` on a variable that happens to be an array:
 
-<code language="php">var_dump($response);</code>
+{% highlight php startinline %}
+var_dump($response);
+{% endhighlight %}
 
 This produces the following output:
-<code>
+
+{% highlight php startinline %}
 array(1) { ["Response"]=>  array(4) { ["TransactionReference"]=>  array(1) { ["XpciVersion"]=>  string(6) "1.0001" } ["ResponseStatusCode"]=>  string(1) "0" ["ResponseStatusDescription"]=>  string(7) "Failure" ["Error"]=>  array(4) { ["ErrorSeverity"]=>  string(4) "Hard" ["ErrorCode"]=>  string(5) "10002" ["ErrorDescription"]=>  string(61) "The XML document is well formed but the document is not valid" ["ErrorLocation"]=>  array(1) { ["ErrorLocationElementName"]=>  string(37) "TimeInTransitRequest/InvoiceLineTotal" } } } }
-</code>
+{% endhighlight %}
+
 Now, let's cause a PHP Error (Notice the missing semicolon).
 
-<pre class="brush: php; toolbar: false;">
+{% highlight php startinline %}
 var_dump($response)
-</pre>
+{% endhighlight %}
 
 This produces the following output:
-<pre class="brush: php; toolbar: false;">
-Parse error: syntax error, unexpected '}' in /usr/dev/workspace/ups_api/tests/time_in_transit_test.php on line 57
-</pre>
 
-As you can see, the output of the previous examples can make debugging difficult.  In the first example, the output is very difficult to read.  If the array contained more elements, this could be nearly impossible to find the data that you require.
+{% highlight php startinline %}
+Parse error: syntax error, unexpected '}' in /usr/dev/workspace/ups_api/tests/time_in_transit_test.php on line 57
+{% endhighlight %}
+
+As you can see, the output of the previous examples can make debugging
+difficult. In the first example, the output is very difficult to read. If the
+array contained more elements, this could be nearly impossible to find the data
+that you require.
 
 Now, let's look at these examples with xdebug installed.
 
-<pre class="brush: php; toolbar: false;">
+{% highlight php startinline %}
 var_dump($response);
-</pre>
+{% endhighlight %}
 
 Will now reproduce the following output:
+
 <pre dir="ltr">
 <b>array</b>
   'Response' <font color="#888a85">=&gt;</font> 
@@ -54,34 +65,45 @@ Will now reproduce the following output:
 
 Now, let's cause a PHP Error again.
 
-<pre class="brush: php; toolbar: false;">
+{% highlight php startinline %}
 var_dump($response)
-</pre>
+{% endhighlight %}
 
 This now produces the following output:
-<table dir="ltr" border="1" cellspacing="0" cellpadding="1"><tbody>
-<tr>
-    <th style="background: #f57900; text-align: left;"' colspan="5">
-        <span style="background-color: #cc0000; color: #fce94f; font-size: x-large;">( ! )</span> Parse error: syntax error, unexpected '}' in /usr/dev/workspace/ups_api/tests/time_in_transit_test.php on line <i>57</i>
-    </th>
-</tr>
-</tbody></table>
 
-<strong>Installing Xdebug On Kubuntu 7.10:</strong>
-These instructions are specifically written for Kubuntu 7.10 Gutsy Gibbon. However, they should work for any Linux distrobution as long as the php-pear package is installed.
+<table dir="ltr" border="1" cellspacing="0" cellpadding="1" style="margin-bottom: 20px;">
+  <tbody>
+    <tr>
+      <th style="background: #f57900; text-align: left;" colspan="5">
+        <span style="background-color: #cc0000; color: #fce94f; font-size: x-large;">( ! )</span> Parse error: syntax error, unexpected '}' in /usr/dev/workspace/ups_api/tests/time_in_transit_test.php on line <i>57</i>
+      </th>
+    </tr>
+  </tbody>
+</table>
+
+### Installing Xdebug On Kubuntu 7.10:
+These instructions are specifically written for Kubuntu 7.10 Gutsy Gibbon.
+However, they should work for any Linux distrobution as long as the php-pear
+package is installed.
 
 First, let's install the php-pear package, if it is not already.
-<pre class="brush: bash; toolbar: false;">
+
+{% highlight console %}
 $ sudo apt-get install php-pear
-</pre>
+{% endhighlight %}
 
 Now it's time to install xdebug.
-<pre class="brush: bash; toolbar: false;">
-$ sudo pecl install xdebug-beta
-</pre>
 
-Now we need to add the extension and some settings in the PHP configuration files.  Open php.ini in your favorite text editor as root.  I prefer vim, but any editor will do.  Just add the lines below, you may have to modify the path to your xdebug extension.
-<pre class="brush: bash; toolbar: false;">
+{% highlight php console %}
+$ sudo pecl install xdebug-beta
+{% endhighlight %}
+
+Now we need to add the extension and some settings in the PHP configuration
+files. Open php.ini in your favorite text editor as root. I prefer vim, but any
+editor will do. Just add the lines below, you may have to modify the path to
+your xdebug extension.
+
+{% highlight php console %}
 $ sudo vim /etc/php5/apache2/php.ini
 
 ; Add the following lines to configure xdebug
@@ -91,6 +113,8 @@ zend_extension=/usr/lib/php5/20060613/xdebug.so
 xdebug.var_display_max_children = 128
 xdebug.var_display_max_data = 1024
 xdebug.var_display_max_depth = 16
-</pre>
+{% endhighlight %}
 
-&nbsp;&nbsp;&nbsp;&nbsp;It really that simple.  Now you can easily debug your web sites and web applications.  For more configuration options, view the xdebug documentation at <a href="http://xdebug.org/docs/">http://xdebug.org/docs/</a>.
+It really that simple. Now you can easily debug your web sites and web
+applications. For more configuration options, view the xdebug documentation at
+<http://xdebug.org/docs/>.

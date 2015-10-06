@@ -1,41 +1,62 @@
 ---
 layout: post
 title: Accessing HarrisData (IBM iSeries) In PHP
+category: blog
 created: 1226281673
 ---
-<a href="http://www.harrisdata.com"><img  alt="HarrisData Logo" src="/sites/default/files/blog/harrisdata_logo.png" style="float: right;" /></a>&nbsp;&nbsp;&nbsp; I have recently been working on a project to integrate with a HarrisData ERP Application.&nbsp; The Application runs on an IBM iSeries (AS/400).&nbsp; I used PHP's built in PDO object with the ODBC extension.&nbsp; Using PDO, I was able to execute SQL Queries on the server.&nbsp; IBM systems use IBM's DB2 syntax.&nbsp; This entry will outline some of the basic steps, in PHP, to communicate with the system.
-<br /><br />
-&nbsp;&nbsp;&nbsp; I will be assuming that you already have the ODBC driver installed and setup.&nbsp; I will also be assuming that your ODBC connection is called "AS400".
-<br /><br />
-&nbsp;&nbsp;&nbsp; I created a class called HarrisData.&nbsp; The constructor creates a PDO Object and assigns it to a class property called $database.
-<pre class="brush: php; toolbar: false;">
+![HarrisData](/assets/images/2008/11/harrisdata_logo.png){: .post-image .image-right }
+I have recently been working on a project to integrate with a
+[HarrisData](http://www.harrisdata.com) ERP Application. The Application runs on
+an IBM iSeries (AS/400). I used PHP's built in PDO object with the ODBC
+extension. Using PDO, I was able to execute SQL Queries on the server. IBM
+systems use IBM's DB2 syntax. This entry will outline some of the basic steps,
+in PHP, to communicate with the system
+
+I will be assuming that you already have the ODBC driver installed and setup. I
+will also be assuming that your ODBC connection is called "AS400".
+
+I created a class called HarrisData. The constructor creates a PDO Object and
+assigns it to a class property called $database.
+
+{% highlight php startinline %}
 $this->database = new PDO('odbc:AS400', 'USERNAME', 'password');
-</pre>
-&nbsp;&nbsp;&nbsp; Method in the class can use this object to run queries on the database.&nbsp; For example, let's say we want the first 10 rows of a table called "HDCUST".
-<pre class="brush: php; toolbar: false;">
+{% endhighlight %}
+
+Method in the class can use this object to run queries on the database. For
+example, let's say we want the first 10 rows of a table called "HDCUST".
+
+{% highlight php startinline %}
 $query = 'SELECT * FROM DBNAME.HDCUST FETCH FIRST 10 ROWS ONLY';
 $results = $this->database->query($query);
 
-// check to make sure the query did not fail
+// Check to make sure the query did not fail.
 if (!$results) {
     return false;
 }
 
 while ($row = $results->fetch()) {
-    // do stuff..
+    // Do stuff...
 }
-</pre>
-&nbsp;&nbsp;&nbsp; I have had to modify the columns being pulled several times.&nbsp; To make this easier and make the code cleaner and easier to maintain, I created an array of columns to be selected before each select statement.&nbsp; Note that I have placed the column names in the array in my example, but I used constants for the actual code.
-<pre class="brush: php; toolbar: false;">
-$select_array = array(
-    'CMBLTO',
-    'CMUDF3',
-    'CMCMLU',
-    'CMCUST',
-    'CMSLTO',
-); // end $select_array
+{% endhighlight %}
 
-$query = 'SELECT '.implode(',', $select_array).' FROM DBNAME.HDCUST FETCH FIRST 10 ROWS ONLY';
+I had to modify the columns being pulled several times. To make this easier and
+make the code cleaner and easier to maintain, I created an array of columns to
+be selected before each select statement. Note that I have placed the column
+names in the array in my example, but I used constants for the actual code.
+
+{% highlight php startinline %}
+$select_array = array(
+  'CMBLTO',
+  'CMUDF3',
+  'CMCMLU',
+  'CMCUST',
+  'CMSLTO',
+);
+
+$query = 'SELECT ' . implode(',', $select_array) . ' FROM DBNAME.HDCUST FETCH FIRST 10 ROWS ONLY';
 $results = $this->database->query($query);
-</pre>
-&nbsp;&nbsp;&nbsp; That's all there is to it.&nbsp; I have not had a need to write to the database at this time.&nbsp; If the need should arise, I will be sure to write a new entry about some of the techniques I used.
+{% endhighlight %}
+
+That's all there is to it. I have not had a need to write to the database at
+this time. If the need should arise, I will be sure to write a new entry about
+some of the techniques I used.

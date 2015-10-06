@@ -1,8 +1,28 @@
 ---
 layout: post
 title: All Good Things...
+category: blog
 created: 1410209928
 ---
-<p>&nbsp;<img alt="" class="blog-image-left" src="/sites/default/files/blog/2014/09/all-good-things/large_FutureRoadSign.jpg" style="width: 180px; height: 180px;"> &nbsp; After three years, I have decided to leave <a href="https://www.allplayers.com">AllPlayers.com</a>. Over these last three years, I have had the opportunity to work with many talented people and seen my career grow in ways that I never expected. This has not been an easy decision but I feel that the time has come for me to move on. I want to make it clear that this is not a refelection of the current state of the company. AllPlayers.com is continuing to do great things and I have the utmost confidence that they will continue to succeed.</p>
-<p>&nbsp; &nbsp; Starting September 15, 2014, I will begin my new position as Cloud Software Engineer for <a href="http://www.acquia.com/">Acquia</a>. I look forward to all of the challenges that await me and all of the wonderful things that I will be able to contribute to. Althought I will not be working directly witih Drupal, I look forward to being able to support Drupal in other ways by working for the largest provider of Drupal hosting and services. <span style="line-height: 1.538em;">I will be continuing to work remotely from my home office in Millersburg, PA while traveling ocassionaly yo Acquia's home office in Burlington, MA.</span></p>
-<p>&nbsp; &nbsp; To all my friends at AllPlayers.com, it has truely been a pleasure to work with each and everyone of one. Keep up the good work, like I know you will. I will miss all of you deeply.</p>
+![](/assets/images/2014/09/future-road-sign.jpg){: .image-left .post-image}
+After three years, I have decided to leave
+[AllPlayers.com](https://www.allplayers.com). Over these last three years, I
+have had the opportunity to work with many talented people and seen my career
+grow in ways that I never expected. This has not been an easy decision but I
+feel that the time has come for me to move on. I want to make it clear that this
+is not a reflection of the current state of the company. AllPlayers.com is
+continuing to do great things and I have the utmost confidence that they will
+continue to succeed.
+
+Starting September 15, 2014, I will begin my new position as Cloud Software
+Engineer for [Acquia](http://www.acquia.com/). I look forward to all of the
+challenges that await me and all of the wonderful things that I will be able to
+contribute to. Although I will not be working directly with Drupal, I look
+forward to being able to support Drupal in other ways by working for the largest
+provider of Drupal hosting and services. I will be continuing to work remotely
+from my home office in Millersburg, PA while traveling occasionally to Acquia's
+home office in Burlington, MA.
+
+To all my friends at AllPlayers.com, it has truly been a pleasure to work with
+each and everyone of one. Keep up the good work, like I know you will. I will
+miss all of you deeply.

@@ -1,15 +1,32 @@
 ---
 layout: post
 title: Sending Mail In PHP Through SMTP
+category: blog
 created: 1226791387
 ---
-&nbsp;&nbsp;&nbsp; Sending mail is a common task for many applications today.&nbsp; Whether sending mail through a webform or as an automated tasks, sending mail can be simple using PHP and PEAR.&nbsp; Using the sendMail() function below, you can send HTML formatted mail through any smtp server.
+Sending mail is a common task for many applications today. Whether sending mail
+through a webform or as an automated tasks, sending mail can be simple using PHP
+and PEAR. Using the sendMail() function below, you can send HTML formatted mail
+through any smtp server.
 
-&nbsp;&nbsp;&nbsp; <i><strong>Update March 11, 2009:</strong> Removed the demo since GoDaddy does not support external SMTP servers.</i>
-&nbsp;&nbsp;&nbsp; <i><strong>Update July 06, 2009:</strong> Updated variables for the usage example to be less confusing.&nbsp; Thanks to <a href="#comment-5">David</a> for pointing this out.</i>
+_**Update March 11, 2009:** Removed the demo since GoDaddy does not support
+external SMTP servers._
+_**Update July 06, 2009:** Updated variables for the usage example to be less
+confusing. Thanks to David for pointing this out._
 
-&nbsp;&nbsp;&nbsp; This function requires the following <a href="http://pear.php.net">PEAR</a> classes: <a href="http://pear.php.net/package/Mail">Mail</a>, <a href="http://pear.php.net/package/Mail_Mime">Mail_Mime</a>, <a href="http://pear.php.net/package/Net_SMTP/">Net_SMTP</a> and any of their dependencies.&nbsp; This function assumes that you have your pear include path set correctly.&nbsp; You can download the function <a href="/sites/default/files/blog/sendmail.php" type="text/plain">here</a> (right click -> Save Link As) or copy the code from below.&nbsp; Scroll down for some examples/documentation.
-<pre class="brush: php; toolbar: false;">
+This function requires the following [PEAR](http://pear.php.net) classes along
+any of their dependencies.
+
+* [Mail](http://pear.php.net/package/Mail)
+* [Mail_Mime](http://pear.php.net/package/Mail_Mime)
+* [Net_SMTP](http://pear.php.net/package/Net_SMTP)
+
+This function assumes that you have your pear include path set correctly. You
+can download the function [here](/sites/default/files/blog/sendmail.php) (right
+click -> Save Link As) or copy the code from below. Scroll down for some
+examples/documentation.
+
+{% highlight php startinline %}
 /**
  * Sends mail by connecting to an smtp server
  * 
@@ -71,23 +88,25 @@ function sendMail($subject, $smtp_server, $smtp_username, $smtp_password,
     } // end if there was an error
     
     return true;
-} // end function sendMail()
-</pre>
-&nbsp;&nbsp;&nbsp; Using this function is simple.&nbsp; Simply pass in the parameters as described below:
-<ul>
-    <li>$subject <strong>(required)</strong>: Subject for the email message.</li>
-    <li>$smtp_server <strong>(required)</strong>: SMTP Server host (ie. smtp.hostname.com).</li>
-    <li>$smtp_username <strong>(required)</strong>: SMTP username.</li>
-    <li>$smtp_password <strong>(required)</strong>: SMTP password.</li>
-    <li>$html <strong>(required)</strong>: HTML version of the message body.</li>
-    <li>$text <strong>(required)</strong>: Text version of the message body.</li>
-    <li>$to <strong>(required)</strong>: String or array of email address to send the message to (string may be comma separated list).</li>
-    <li>$from <strong>(required)</strong>: Email address that the email is being sent from.</li>
-    <li>$cc <strong>(optional)</strong>: Array of Cc email addresses.</li>
-    <li>$bcc <strong>(optional)</strong>: Array of Bcc email addresses.</li>
-</ul>
+}
+{% endhighlight %}
+
+Using this function is simple. Simply pass in the parameters as described below:
+
+* $subject (required): Subject for the email message.
+* $smtp_server (required): SMTP Server host (ie. smtp.hostname.com).
+* $smtp_username (required): SMTP username.
+* $smtp_password (required): SMTP password.
+* $html (required): HTML version of the message body.
+* $text (required): Text version of the message body.
+* $to (required): String or array of email address to send the message to
+(string may be comma separated list).
+* $from (required): Email address that the email is being sent from.
+* $cc (optional): Array of Cc email addresses.
+* $bcc (optional): Array of Bcc email addresses.
+
 For example:
-<pre class="brush: php; toolbar: false;">
+{% highlight php startinline %}
 // set all of the parameters
 $subject = 'This is an HTML email.';
 $smtp_server = 'smtp.hostname.com';
@@ -109,4 +128,4 @@ if ($result !== true) {
 else {
     echo 'Message sent successfully.';
 } // end else the message was sent properly
-</pre>
+{% endhighlight %}

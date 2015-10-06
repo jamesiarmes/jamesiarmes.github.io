@@ -1,206 +1,175 @@
 ---
 layout: post
 title: 'Using the WorkXpress API: ExecuteAction'
+category: blog
 created: 1256602701
 ---
-<p><a href="http://www.workxpress.com"><img alt="WorkXpress Logo" src="/sites/default/files/blog/workxpress-logo.png" style="float: right;"></a>&nbsp;&nbsp;&nbsp;&nbsp;Earlier I introduced you to the <a href="/blog/2009/08/introducing-workxpress-api">WorkXpress API</a>. If you have not read it already you should do so before reading this post. Once you have a basic understanding of what it is and how it works, it's time to start diving into the API.</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;This post will cover how to run specfic Actions on specific Items. You can find the id of an Action at the end of its description in the Event Manager (see below). Like the other functions, you can make many ExecuteAction requests in one call using data sets.</p>
-<p>&nbsp;</p>
-<div style="text-align: center;"><a href="/sites/default/files/blog/wxapi/workxpress_action_id.png" rel="lightbox" title="WorkXpress Event Manager"><img alt="WorkXpress Event Manager" src="/sites/default/files/blog/wxapi/workxpress_action_id.png" title="WorkXpress Event Manager"></a> <strong>WorkXpress Event Manager</strong></div>
-<h3>Request XML</h3>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;First, let's get an understanding of how the request XML should be formed.</p>
-<table colpadding="0" colspan="0" style="border: 2px solid black; border-collapse: collapse;">
+[![WorkXpress](/assets/images/workxpress-logo.png){: .post-image .image-right }](http://www.workxpress.com)
+Earlier I introduced you to the
+[WorkXpress API]({% post_url 2009-07-16-introducing-the-workxpress-api %}). If
+you have not read it already you should do so before reading this post. Once you
+have a basic understanding of what it is and how it works, it's time to start
+diving into the API.
+
+This post will cover how to run specfic Actions on specific Items. You can find
+the id of an Action at the end of its description in the Event Manager (see
+below). Like the other functions, you can make many ExecuteAction requests in
+one call using data sets.
+
+{% include image-caption.html url="/assets/images/2009/10/workxpress_action_id.png" description="WorkXpress Event Manager" %}
+
+### Request XML
+First, let's get an understanding of how the request XML should be formed.
+
+<table class="workxpress-table">
 	<thead>
 		<tr>
-			<th style="font-weight: bold; border: 2px solid black; width: 100px;">Element</th>
-			<th style="font-weight: bold; border: 2px solid black;">Description</th>
+			<th>Element</th>
+			<th>Description</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
-			<td style="font-weight: bold; border: 2px solid black;">/wxRequest</td>
-			<td style="font-weight: bold; border: 2px solid black;">The root node for all request documents.</td>
+			<td>/wxRequest</td>
+			<td>The root node for all request documents.</td>
 		</tr>
 		<tr>
-			<td style="font-weight: bold; border: 2px solid black;">/wxRequest/dataSet</td>
-			<td style="font-weight: bold; border: 2px solid black;">Contains a single ExecuteAction request. You may have as many data sets as you would like.<br>
-				<em>Attributes:</em>
-				<table colpadding="0" colspan="0" style="border: none;">
-					<thead>
-						<tr>
-							<th style="font-weight: bold; font-style: italic;">Name</th>
-							<th style="font-weight: bold; font-style: italic;">Type</th>
-							<th style="font-weight: bold; font-style: italic;">Description</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>reference</td>
-							<td>string</td>
-							<td>An identifier that will be returned in the reponse document to distinguish between different data sets. If this attribute is left blank, a random string will be generated.</td>
-						</tr>
-					</tbody>
-				</table>
+			<td>/wxRequest/dataSet</td>
+			<td>
+			  Contains a single ExecuteAction request. You may have as many data sets
+			  as you would like.
+			  <br /><br />
+			  <em>Attributes:</em>
+			  <ul>
+			    <li>
+			      reference (string): An identifier that will be returned in the
+			      response document to distinguish between different data sets. If
+			      this attribute is left blank, a random string will be generated.
+			    </li>
+			  </ul>
 			</td>
 		</tr>
 		<tr>
-			<td style="font-weight: bold; border: 2px solid black;">/wxRequest/dataSet/<br>
-				items</td>
-			<td style="font-weight: bold; border: 2px solid black;">Root node for the items that the Action(s) should be run on.</td>
+			<td>/wxRequest/dataSet/items</td>
+			<td>Root node for the items that the Action(s) should be run on.</td>
 		</tr>
 		<tr>
-			<td style="font-weight: bold; border: 2px solid black;">/wxRequest/dataSet/<br>
-				items/item</td>
-			<td style="font-weight: bold; border: 2px solid black;">A single item to execute the action on. There is no limit to the number of item nodes allowed in a data set.<br>
+			<td>/wxRequest/dataSet/items/item</td>
+			<td>
+			  A single item to execute the action on. There is no limit to the numbe
+			  of item nodes allowed in a data set.
+			  <br /><br />
 				<em>Attributes:</em>
-				<table colpadding="0" colspan="0" style="border: none;">
-					<thead>
-						<tr>
-							<th style="font-weight: bold; font-style: italic;">Name</th>
-							<th style="font-weight: bold; font-style: italic;">Type</th>
-							<th style="font-weight: bold; font-style: italic;">Description</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>itemId</td>
-							<td>string</td>
-							<td>The item id of the item to execute the action on. Should be in the format u# (ie. u123).</td>
-						</tr>
-					</tbody>
-				</table>
+				<ul>
+				  <li>
+				    itemId (string): The item id of the item to execute the action on.
+				    Should be in the format u# (ie. u123).
+				  </li>
+				</ul>
 			</td>
 		</tr>
 		<tr>
-			<td style="font-weight: bold; border: 2px solid black;">/wxRequest/dataSet/<br>
-				items/map</td>
-			<td style="font-weight: bold; border: 2px solid black;">The root node for a map definition.</td>
+			<td>/wxRequest/dataSet/items/map</td>
+			<td>The root node for a map definition.</td>
 		</tr>
 		<tr>
-			<td style="font-weight: bold; border: 2px solid black;">/wxRequest/dataSet/<br>
-				items/map/definition</td>
-			<td style="font-weight: bold; border: 2px solid black;">The actual definition for a map. The map XML must have its HTML entities encoded.</td>
+			<td>/wxRequest/dataSet/items/map/definition</td>
+			<td>
+			  The actual definition for a map. The map XML must have its HTML entities
+			  encoded.
+      </td>
 		</tr>
 		<tr>
-			<td style="font-weight: bold; border: 2px solid black;">/wxRequest/dataSet/<br>
-				actions</td>
-			<td style="font-weight: bold; border: 2px solid black;">Root node for the Actions to be executed.</td>
+			<td>/wxRequest/dataSet/actions</td>
+			<td>Root node for the Actions to be executed.</td>
 		</tr>
 		<tr>
-			<td style="font-weight: bold; border: 2px solid black;">/wxRequest/dataSet/<br>
-				actions/action</td>
-			<td style="font-weight: bold; border: 2px solid black;">A single Action to be executed on the Items defined above. There is no limit to the number of action nodes allowed in a data set.<br>
+			<td>/wxRequest/dataSet/actions/action</td>
+			<td>
+			  A single Action to be executed on the Items defined above. There is no
+			  limit to the number of action nodes allowed in a data set.
+			  <br /><br />
 				<em>Attributes:</em>
-				<table colpadding="0" colspan="0" style="border: none;">
-					<thead>
-						<tr>
-							<th style="font-weight: bold; font-style: italic;">Name</th>
-							<th style="font-weight: bold; font-style: italic;">Type</th>
-							<th style="font-weight: bold; font-style: italic;">Description</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>actionId</td>
-							<td>string</td>
-							<td>Id of a single Action to run. Should be in the format a# (ie. a123).</td>
-						</tr>
-					</tbody>
-				</table>
+				<ul>
+				  <li>
+				    actionId (string): Id of a single Action to run. Should be in the
+				    format a# (ie. a123).
+				  </li>
+				</ul>
 			</td>
 		</tr>
 	</tbody>
 </table>
-<h3>Response XML</h3>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;Now let's get an understanding of how the response XML will be formed.</p>
-<table colpadding="0" colspan="0" style="border: 2px solid black; border-collapse: collapse;">
+
+### Response XML
+Now let's get an understanding of how the response XML will be formed.
+
+<table class="workxpress-table">
 	<thead>
 		<tr>
-			<th style="font-weight: bold; border: 2px solid black; width: 100px;">Element</th>
-			<th style="font-weight: bold; border: 2px solid black;">Description</th>
+			<th>Element</th>
+			<th>Description</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
-			<td style="font-weight: bold; border: 2px solid black;">/wxResponse</td>
-			<td style="font-weight: bold; border: 2px solid black;">The root node for all response documents.</td>
+			<td>/wxResponse</td>
+			<td>The root node for all response documents.</td>
 		</tr>
 		<tr>
-			<td style="font-weight: bold; border: 2px solid black;">/wxRequest/callStatus</td>
-			<td style="font-weight: bold; border: 2px solid black;">The status of the SOAP call as it was processed by WorkXpress.<br>
+			<td>/wxRequest/callStatus</td>
+			<td>
+			  The status of the SOAP call as it was processed by WorkXpress.
+			  <br /><br />
 				<em>Attributes:</em>
-				<table colpadding="0" colspan="0" style="border: none;">
-					<thead>
-						<tr>
-							<th style="font-weight: bold; font-style: italic;">Name</th>
-							<th style="font-weight: bold; font-style: italic;">Type</th>
-							<th style="font-weight: bold; font-style: italic;">Description</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>status</td>
-							<td>string</td>
-							<td>The call's status. Values include success and failure.</td>
-						</tr>
-					</tbody>
-				</table>
+				<ul>
+				  <li>
+				    status (string): The call's status. Values include success and
+				    failure.
+				  </li>
+				</ul>
 			</td>
 		</tr>
 		<tr>
-			<td style="font-weight: bold; border: 2px solid black;">/wxResponse/compatibilityLevel</td>
-			<td style="font-weight: bold; border: 2px solid black;">The version of the API that was used to process the request.</td>
+			<td>/wxResponse/compatibilityLevel</td>
+			<td>The version of the API that was used to process the request.</td>
 		</tr>
 		<tr>
-			<td style="font-weight: bold; border: 2px solid black;">/wxRequest/dataSet</td>
-			<td style="font-weight: bold; border: 2px solid black;">One data set is returned for each data set in the request document.<br>
+			<td>/wxRequest/dataSet</td>
+			<td>
+			  One data set is returned for each data set in the request document.
+			  <br /><br />
 				<em>Attributes:</em>
-				<table colpadding="0" colspan="0" style="border: none;">
-					<thead>
-						<tr>
-							<th style="font-weight: bold; font-style: italic;">Name</th>
-							<th style="font-weight: bold; font-style: italic;">Type</th>
-							<th style="font-weight: bold; font-style: italic;">Description</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>reference</td>
-							<td>string</td>
-							<td>The identifier that was assigned to the data set in the request.</td>
-						</tr>
-					</tbody>
-				</table>
+				<ul>
+				  <li>
+				    reference (string): The identifier that was assigned to the data set
+				    in the request.
+				  </li>
+				</ul>
 			</td>
 		</tr>
 		<tr>
-			<td style="font-weight: bold; border: 2px solid black;">/wxRequest/dataSet/<br>
-				item</td>
-			<td style="font-weight: bold; border: 2px solid black;">Defines an item that the Action(s) was executed on. One item node is returned for each item that an Action was run on.<br>
+			<td>/wxRequest/dataSet/item</td>
+			<td>
+			  Defines an item that the Action(s) was executed on. One item node is
+			  returned for each item that an Action was run on.
+			  <br /><br />
 				<em>Attributes:</em>
-				<table colpadding="0" colspan="0" style="border: none;">
-					<thead>
-						<tr>
-							<th style="font-weight: bold; font-style: italic;">Name</th>
-							<th style="font-weight: bold; font-style: italic;">Type</th>
-							<th style="font-weight: bold; font-style: italic;">Description</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>itemId</td>
-							<td>string</td>
-							<td>Id of the item, in the format u# (ie. u123).</td>
-						</tr>
-					</tbody>
-				</table>
+				<ul>
+				  <li>
+				    itemId (string): Id of the item, in the format u# (ie. u123).
+				  </li>
+				</ul>
 			</td>
 		</tr>
 	</tbody>
 </table>
-<h3>Examples</h3>
-<p>Below is an example of a basic ExecuteAction request document:</p>
-<pre class="brush: xml; toolbar: false;"><wxrequest>
+
+### Examples
+Below is an example of a basic ExecuteAction request document:
+
+{% highlight xml %}
+<wxrequest>
   <dataset reference="accounts">
     <items>
       <item itemid="u3541"></item>
@@ -211,10 +180,12 @@ created: 1256602701
     </actions>
   </dataset>
 </wxrequest>
-</pre>
-<p>Below is the corresponding response document for the above example:</p>
-<p>&nbsp;</p>
-<pre class="brush: xml; toolbar: false;"><wxresponse>
+{% endhighlight %}
+
+Below is the corresponding response document for the above example:
+
+{% highlight xml %}
+<wxresponse>
   <callstatus status="success"></callstatus>
   <compatibilitylevel>1</compatibilitylevel>
   <dataset reference="accounts">
@@ -222,5 +193,8 @@ created: 1256602701
     <item itemid="u511"></item>
   </dataset>
 </wxresponse>
-</pre>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;If you have any questions or would like assistance making some ExecuteAction requests of your own, please feel free to comment below. My next post will be on some more advanced concepts such as display formats and stored values.</p>
+{% endhighlight %}
+
+If you have any questions or would like assistance making some ExecuteAction
+requests of your own, please feel free to comment below. My next post will be on
+some more advanced concepts such as display formats and stored values.
