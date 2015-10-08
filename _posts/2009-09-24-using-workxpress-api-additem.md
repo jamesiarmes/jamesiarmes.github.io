@@ -6,7 +6,7 @@ created: 1253837524
 ---
 [![WorkXpress](/assets/images/workxpress-logo.png){: .post-image .image-right }](http://www.workxpress.com)
 Earlier I introduced you to the
-[WorkXpress API]({% post_url 2009-07-16-introducing-the-workxpress-api %}). If
+[WorkXpress API]({% post_url 2009-07-16-introducing-workxpress-api %}). If
 you have not read it already you should do so before reading this post. Once you
 have a basic understanding of what it is and how it works, it's time to start
 diving into the API.

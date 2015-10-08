@@ -2,6 +2,8 @@
 layout: post
 title: Introducing the WorkXpress API
 category: blog
+redirect_from:
+  - /blog/2009/08/introducing-workxpress-api/
 created: 1247735339
 ---
 [![WorkXpress](/assets/images/workxpress-logo.png){: .post-image .image-right }](http://www.workxpress.com)

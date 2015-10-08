@@ -2,8 +2,6 @@
 layout: post
 title: php-ews 0.1 Released
 category: blog
-redirect_from:
-  - /blog/2014/12/php-ews-01-released
 created: 1418956966
 ---
 ![](/assets/images/2014/12/exchange-logo.png){: .image-left .post-image } The
