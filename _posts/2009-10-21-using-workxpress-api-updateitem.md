@@ -11,6 +11,8 @@ you have not read it already you should do so before reading this post. Once you
 have a basic understanding of what it is and how it works, it's time to start
 diving into the API.
 
+<!--more-->
+
 This post will cover how to update existing Items in a WorkXpress application
 using the UpdateItem API function. UpdateItem allows you to set Fields, create
 Relationships and recycle and delete Items &amp; Relationships. Like the other

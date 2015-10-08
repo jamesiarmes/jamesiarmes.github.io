@@ -10,6 +10,8 @@ external links. I also use the
 [GeSHi Filter](http://drupal.org/project/geshifilter) module for syntax
 highlighting. These two modules together were causing some undesirable effects.
 
+<!--more-->
+
 The GeSHi Filter module adds links to the [PHP manual](http://php.net) entry for
 functions. Because this is an external link, it receives the image from above.
 This doesn't look quite right:

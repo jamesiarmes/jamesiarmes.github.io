@@ -9,6 +9,8 @@ allow you to check the amount of time it would take to ship a package using
 different UPS Services. From the
 [UPS OnlineTools Website](http://www.ups.com/onlinetools):
 
+<!--more-->
+
 > **With UPS Time in Transit, You Can:**
 >
 > * Improve customer service by providing consistent, up-to-date shipping information based on the origin and destination addresses and the date the shipment is needed.</li>

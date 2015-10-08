@@ -8,6 +8,8 @@ Today I released my first plugin for [jQuery](http://jquery.com/),
 [hasEvent](http://plugins.jquery.com/project/hasevent). This plugin takes a
 selector and returns true if the element contains an action on that event.
 
+<!--more-->
+
 Usage:
 {% highlight javascript %}
 $('#element_id').hasEvent('click');

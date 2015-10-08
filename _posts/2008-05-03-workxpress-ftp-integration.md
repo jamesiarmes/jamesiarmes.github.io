@@ -8,6 +8,8 @@ After some configuration issues, I completed the server setup for the WorkXpress
 FTP Integration this week. Most of the issues were with the FTP Server. There
 was also a minor vhost issue with Apache.
 
+<!--more-->
+
 ### What is the WorkXpress FTP Integration?
 The WorkXpress FTP Integrations allows users of
 [WorkXpress](http://www.workxpress.com) to add and modify users of an FTP

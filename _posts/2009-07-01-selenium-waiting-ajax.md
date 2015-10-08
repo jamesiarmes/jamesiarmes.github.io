@@ -12,6 +12,8 @@ to give me some performance benchmarks. My test added a new item that had a list
 layout of related items on it. I wanted to be able to follow a link to add items
 to that list.&nbsp; Seems easy enough right?
 
+<!--more-->
+
 The difficult part came when I needed to wait for the layout to be reloaded
 after adding the Items to it.&nbsp; I knew that when the layout reloaded there
 was going to be a specific element on the page that was not there before. I

@@ -13,6 +13,8 @@ bitmap and continue using GD for other image types. The next step of course is
 to do some research and testing to see if we should switch over to Image Magick
 completely, leaving GD behind.
 
+<!--more-->
+
 After doing some research, I found plenty of claims that GD is faster than Image
 Magick. But how much faster?  I was on a quest to find out. I took a rather
 large jpeg image (3504 x 2336 pixels) and converted it to three other popular

@@ -9,6 +9,8 @@ You have learned about all of the functions. You understand the data formats.
 What could possibly be left before mastering the
 [WorkXpress](http://www.workxpress.com) API? Display formats is the answer.
 
+<!--more-->
+
 Display formats allow you to pull out data in different formats. For example,
 instead of pulling a file field as XML (stored value) or just the filename (text
 value), you could get the download URL. When using display formats, the format

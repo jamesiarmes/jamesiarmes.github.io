@@ -14,6 +14,8 @@ can be downloaded at
 For PHP, there is a PEAR package that makes working with the API easier. Look
 for that in a later post.
 
+<!--more-->
+
 ### Available Functions
 The WorkXpress API provides four different SOAP calls that allow access to four
 of the five building blocks (there is no way to interact with Layouts through

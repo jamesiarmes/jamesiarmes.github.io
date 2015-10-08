@@ -11,6 +11,8 @@ Field values are stored within WorkXpress. These values can be useful for
 finding out more information about certain values, and will need to be used when
 storing data into certain Field Types.
 
+<!--more-->
+
 The WorkXpress Engine tries hard to store data in simple, easy, logical formats.
 Below is a description of some of the less straightforward Field Types, and what
 format their data is expected in.

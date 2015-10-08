@@ -12,6 +12,8 @@ extension. Using PDO, I was able to execute SQL Queries on the server. IBM
 systems use IBM's DB2 syntax. This entry will outline some of the basic steps,
 in PHP, to communicate with the system
 
+<!--more-->
+
 I will be assuming that you already have the ODBC driver installed and setup. I
 will also be assuming that your ODBC connection is called "AS400".
 

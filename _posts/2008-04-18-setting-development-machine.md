@@ -8,6 +8,8 @@ So I just finished setting up my PC to be a development machine. I need some
 more RAM for it to be truly what I need, but it will have to do for now. I
 thought I would post a quick tutorial to how I set up my machine.
 
+<!--more-->
+
 First, I should list my specifications.
 
 * **CPU:** AMD 64 3400+

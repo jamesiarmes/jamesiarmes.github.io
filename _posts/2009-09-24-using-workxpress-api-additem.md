@@ -11,6 +11,8 @@ you have not read it already you should do so before reading this post. Once you
 have a basic understanding of what it is and how it works, it's time to start
 diving into the API.
 
+<!--more-->
+
 This post will cover how to add Items to a WorkXpress application using the
 AddItem API function. AddItem allows you to set Fields and create Relationships
 while adding the new Item. Like the LookupData function, you can make many

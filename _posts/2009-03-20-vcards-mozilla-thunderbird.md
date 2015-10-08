@@ -11,6 +11,8 @@ time was its lack of support for HTML signatures. As of the KDE 4 release of
 Kontact, support has been added for HTML signatures. I decided to make the
 switch back to Kontact earlier this week.
 
+<!--more-->
+
 One of the many things I have liked about Kontact over
 [Mozilla Thunderbird](http://en-us.www.mozillamessaging.com/en-US/) is its
 support for vcards. A vcard is essentially a digital business card that can be

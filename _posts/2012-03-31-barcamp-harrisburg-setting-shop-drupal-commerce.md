@@ -14,6 +14,8 @@ created: 1333236198
 	</div>
 </div>
 
+<!--more-->
+
 Above is the presentation I gave at this year's
 [BarCamp Harrisburg](http://www.barcamphbg.org/). Below you can find links that
 were included in the presentation as well as some additional resources. Also,

@@ -11,6 +11,8 @@ you have not read it already you should do so before reading this post. Once you
 have a basic understanding of what it is and how it works, it's time to start
 diving into the API.
 
+<!--more-->
+
 This post will cover how to read data from a WorkXpress Application using the
 LookupData function. LookupData allows you to retrieve values from items and
 relationships. If you know the item or relation id, you can retrieve the data

@@ -11,6 +11,8 @@ strict and was developed to ensure that our application conforms to E_STRICT
 standards. However, we all know that some things are inevitably going to fall
 through the cracks.
 
+<!--more-->
+
 The results of my research uncovered a few missed `is_a()`s and `=&`s, but
 for the most part our code was clean. I was pointed to a large amount of code
 that failed E_STRICT, [PEAR](http://pear.php.net). Because PEAR and many of its packages are written in PHP 4, it is missing many things that would make it E_STRICT compliant. Some, but not all, of these are listed below:

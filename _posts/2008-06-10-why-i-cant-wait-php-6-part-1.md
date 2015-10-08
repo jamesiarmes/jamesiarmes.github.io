@@ -9,6 +9,8 @@ and Update tools. Easier said than done. I have had my share of Unicode issues
 with PHP, as I am sure everyone has. This is the first one that I have not been
 able to conquer.
 
+<!--more-->
+
 Our tools use an uploaded CSV file to both import new and update existing items
 in the WorkXpress application. The file can be in either a comma or tab
 delimited list formats. The Unicode problem arises when the uploaded file

@@ -9,6 +9,8 @@ through a webform or as an automated tasks, sending mail can be simple using PHP
 and PEAR. Using the sendMail() function below, you can send HTML formatted mail
 through any smtp server.
 
+<!--more-->
+
 _**Update March 11, 2009:** Removed the demo since GoDaddy does not support
 external SMTP servers._
 _**Update July 06, 2009:** Updated variables for the usage example to be less

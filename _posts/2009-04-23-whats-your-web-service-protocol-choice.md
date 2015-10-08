@@ -10,6 +10,8 @@ I have been doing a lot of web service development at work lately. I completed a
 integration with [Drupal](http://drupal.org). Each of these integrations have
 involved using both SOAP servers and clients (the client being WorkXpress).
 
+<!--more-->
+
 This has led me on a quest to learn more about web services. While I'm
 experienced with SOAP and WSDL, I really don't know much about the underlying
 architecture. I also know very little about other web service protocols (such as

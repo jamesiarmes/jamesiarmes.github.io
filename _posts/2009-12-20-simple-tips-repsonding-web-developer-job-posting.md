@@ -13,6 +13,8 @@ poor quality responses I received. The original post can be found at
 details in my post, but that still doesn't excuse the poor quality of some of
 these emails.
 
+<!--more-->
+
 I have taken examples from many of the emails that I have received for us to
 analyze. Names and URLs have been changed to protect the identities of the
 individuals. So, without further ado, I present you with some simple tips when

@@ -7,6 +7,8 @@ created: 1208933667
 Xdebug is an amazing extension for PHP. It makes debugging your websites and web
 applications much easier. Let's take a look some debug before install Xdebug.
 
+<!--more-->
+
 First, let's use `var_dump()` on a variable that happens to be an array:
 
 {% highlight php startinline %}

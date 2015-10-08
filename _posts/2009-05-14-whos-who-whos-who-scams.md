@@ -14,6 +14,8 @@ free. In order to complete my listing, It stated I could fill out a form online
 or send in an application that was provided with the letter. Needless to say, I
 was very skeptical from the start.
 
+<!--more-->
+
 <table cellspacing="0" cellpadding="0" align="center">
     <tbody>
         <tr>

@@ -14,6 +14,8 @@ is not a reflection of the current state of the company. AllPlayers.com is
 continuing to do great things and I have the utmost confidence that they will
 continue to succeed.
 
+<!--more-->
+
 Starting September 15, 2014, I will begin my new position as Cloud Software
 Engineer for [Acquia](http://www.acquia.com/). I look forward to all of the
 challenges that await me and all of the wonderful things that I will be able to

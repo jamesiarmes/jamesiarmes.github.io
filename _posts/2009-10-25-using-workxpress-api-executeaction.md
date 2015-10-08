@@ -11,6 +11,8 @@ you have not read it already you should do so before reading this post. Once you
 have a basic understanding of what it is and how it works, it's time to start
 diving into the API.
 
+<!--more-->
+
 This post will cover how to run specfic Actions on specific Items. You can find
 the id of an Action at the end of its description in the Event Manager (see
 below). Like the other functions, you can make many ExecuteAction requests in

@@ -12,6 +12,8 @@ load times of this site. In doing so, I discovered that I never configured any
 of the performance settings provided by Drupal. I also discovered that GoDaddy
 does not use mod_gzip or mod_deflate to compress the documents being requested.
 
+<!--more-->
+
 ## Drupal's Performance Settings
 Drupal comes prepackaged with performance tuning options. These options include
 caching and CSS/JavaScript optimization. By enabling these features, I saw a

@@ -6,6 +6,8 @@ created: 1347131519
 ---
 <iframe src="http://player.vimeo.com/video/47263145" width="500" height="313" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 
+<!--more-->
+
 Above is the presentation I gave for the August 8, 2012 AllPlayers.com Eat N'
 Geek on regular expressions. The presentation gives a general introduction to
 regular expressions and syntax before covering some more advanced concepts such

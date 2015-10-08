@@ -11,6 +11,8 @@ but that doesn't give you as much control as you may desire. You could use
 [Embedded Media Field (emfield)](http://drupal.org/project/emfield) module, but
 that doesn't support Viddler. Or does it?
 
+<!--more-->
+
 For [WorkXpress.com](http://www.workxpress.com) we needed a service that we
 could use to host our videos. We originally used
 [Google Video](http://video.google.com), but Google reduced the quality of the
