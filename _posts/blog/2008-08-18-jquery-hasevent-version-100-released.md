@@ -3,6 +3,10 @@ layout: post
 title: JQuery hasEvent Version 1.0.0 Released
 category: blog
 created: 1219104326
+tags:
+ - Events
+ - jQuery
+ - Plugin
 ---
 Today I released my first plugin for [jQuery](http://jquery.com/),
 [hasEvent](http://plugins.jquery.com/project/hasevent). This plugin takes a

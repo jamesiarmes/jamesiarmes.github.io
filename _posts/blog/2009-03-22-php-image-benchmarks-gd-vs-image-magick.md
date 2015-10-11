@@ -3,6 +3,10 @@ layout: post
 title: PHP Image Benchmarks, GD Vs. Image Magick
 category: blog
 created: 1237776265
+tags:
+  - Benchmark
+  - Images
+  - PHP
 ---
 Earlier this week I ran into an issue resizing bitmap images inside of
 WorkXpress. We currently use [GD](http://us3.php.net/manual/en/book.image.php)

@@ -3,6 +3,12 @@ layout: post
 title: 'Using the WorkXpress API: Display Formats'
 category: blog
 created: 1260678243
+tags:
+  - API
+  - PHP
+  - SOAP
+  - Web Services
+  - WorkXpress
 ---
 [![WorkXpress](/assets/images/workxpress-logo.png){: .post-image .image-right }](http://www.workxpress.com)
 You have learned about all of the functions. You understand the data formats.

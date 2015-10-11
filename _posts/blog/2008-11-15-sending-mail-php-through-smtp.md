@@ -3,6 +3,11 @@ layout: post
 title: Sending Mail In PHP Through SMTP
 category: blog
 created: 1226791387
+tags:
+  - Mail
+  - PEAR
+  - PHP
+  - SMTP
 ---
 Sending mail is a common task for many applications today. Whether sending mail
 through a webform or as an automated tasks, sending mail can be simple using PHP

@@ -3,6 +3,12 @@ layout: post
 title: 'Selenium: Waiting For AJAX'
 category: blog
 created: 1246491064
+tags:
+  - AJAX
+  - PHP
+  - Selenium
+  - Testing
+  - WorkXpress
 ---
 ![Selenium RC](/assets/images/2009/07/selenium-rc-logo.png){: .post-image .image-right }
 I was playing around with [Selenium RC](http://seleniumhq.org/) a little while

@@ -3,6 +3,9 @@ layout: post
 title: Simple Tips For Repsonding To A Web Developer Job Posting
 category: blog
 created: 1261363432
+tags:
+  - Drupal
+  - Freelance
 ---
 ![Outlook](/assets/images/2009/12/outlook.jpg)
 

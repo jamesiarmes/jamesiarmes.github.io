@@ -3,6 +3,10 @@ layout: post
 title: What's Your Web Service Protocol Of Choice?
 category: blog
 created: 1240538172
+tags:
+  - PHP
+  - SOAP
+  - Web Services
 ---
 I have been doing a lot of web service development at work lately. I completed a
 [FedEx](http://www.fedex.com) integration for

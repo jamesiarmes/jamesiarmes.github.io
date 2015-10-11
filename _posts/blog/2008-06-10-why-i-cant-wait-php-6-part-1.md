@@ -3,6 +3,10 @@ layout: post
 title: 'Why I Can''t Wait For PHP 6: Part 1'
 category: blog
 created: 1213125511
+tags:
+  - charset
+  - PHP
+  - UTF-8
 ---
 Today I decided to take the initiative to add UTF-8 support to our Item Import
 and Update tools. Easier said than done. I have had my share of Unicode issues

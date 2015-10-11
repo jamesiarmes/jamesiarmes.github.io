@@ -3,6 +3,12 @@ layout: post
 title: 'Using the WorkXpress API: LookupData'
 category: blog
 created: 1251938664
+tags:
+  - API
+  - PHP
+  - SOAP
+  - Web Services
+  - WorkXpress
 ---
 [![WorkXpress](/assets/images/workxpress-logo.png){: .post-image .image-right }](http://www.workxpress.com)
 Last week I introduced you to the

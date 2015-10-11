@@ -5,6 +5,13 @@ category: blog
 redirect_from:
   - /blog/2009/08/introducing-workxpress-api/
 created: 1247735339
+tags:
+  - API
+  - PHP
+  - Java
+  - SOAP
+  - Web Services
+  - WorkXpress
 ---
 [![WorkXpress](/assets/images/workxpress-logo.png){: .post-image .image-right }](http://www.workxpress.com)
 I recently finished documenting the [WorkXpress](http://www.workxpress.com) API

@@ -3,6 +3,12 @@ layout: post
 title: 'Using the WorkXpress API: AddItem'
 category: blog
 created: 1253837524
+tags:
+  - API
+  - PHP
+  - SOAP
+  - Web Services
+  - WorkXpress
 ---
 [![WorkXpress](/assets/images/workxpress-logo.png){: .post-image .image-right }](http://www.workxpress.com)
 Earlier I introduced you to the

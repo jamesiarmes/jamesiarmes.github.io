@@ -3,6 +3,10 @@ layout: post
 title: 'Barcamp Harrisburg: Setting up shop with Drupal Commerce'
 category: blog
 created: 1333236198
+tags:
+  - Drupal
+  - Presentation
+  - Commerce
 ---
 <div class="prezi-player">
 	<style media="screen" type="text/css">

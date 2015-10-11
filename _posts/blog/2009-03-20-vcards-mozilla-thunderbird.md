@@ -3,6 +3,11 @@ layout: post
 title: vcards In Mozilla Thunderbird
 category: blog
 created: 1237599771
+tags:
+  - Kontact
+  - Mail
+  - Thunderbird
+  - vcard
 ---
 Lately, I have been constantly switching between both operating systems and mail
 clients. I became quite fond of [Kontact](http://kontact.kde.org/), KDE's PIM

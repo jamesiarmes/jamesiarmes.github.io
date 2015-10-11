@@ -3,6 +3,11 @@ layout: post
 title: Setting Up A Development Machine
 category: blog
 created: 1208563339
+tags:
+  - Apache
+  - Linux
+  - MySQL
+  - PHP
 ---
 So I just finished setting up my PC to be a development machine. I need some
 more RAM for it to be truly what I need, but it will have to do for now. I

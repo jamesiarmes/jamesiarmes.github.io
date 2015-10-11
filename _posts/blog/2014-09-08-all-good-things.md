@@ -3,6 +3,11 @@ layout: post
 title: All Good Things...
 category: blog
 created: 1410209928
+tags:
+    - Drupal
+    - AllPlayers
+    - Acquia
+    - Career
 ---
 ![](/assets/images/2014/09/future-road-sign.jpg){: .image-left .post-image}
 After three years, I have decided to leave

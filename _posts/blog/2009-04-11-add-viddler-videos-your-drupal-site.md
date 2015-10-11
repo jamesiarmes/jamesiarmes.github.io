@@ -3,6 +3,10 @@ layout: post
 title: Add Viddler Videos To Your Drupal Site
 category: blog
 created: 1239502202
+tags:
+  - Drupal
+  - Viddler
+  - Videos
 ---
 Have a [Viddler](http://www.viddler.com) account and looking to embed videos on
 your website?  You could embed the videos directly into the body of your nodes,

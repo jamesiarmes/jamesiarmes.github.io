@@ -3,6 +3,10 @@ layout: post
 title: UPS Time In Transit
 category: blog
 created: 1209088279
+tags:
+  - API
+  - PHP
+  - UPS
 ---
 Time In Transit has been committed to the UPS API repository. Time in transit
 allow you to check the amount of time it would take to ship a package using

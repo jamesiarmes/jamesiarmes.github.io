@@ -3,6 +3,8 @@ layout: post
 title: The New Jimmy's Sandbox
 category: blog
 created: 1270599372
+tags:
+  - Jimmy's Sandbox
 ---
 As you can see, Jimmy's Sandbox has seen a bit of a face lift. This represents
 several weeks of planning and implementation. Now that the new design is in

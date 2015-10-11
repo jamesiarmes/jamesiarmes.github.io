@@ -3,6 +3,9 @@ layout: post
 title: What Does The Future Hold For PEAR?
 category: blog
 created: 1239755683
+tags:
+  - PEAR
+  - PHP
 ---
 ![PEAR](/assets/images/2009/04/pearlogo.png){: .post-image .image-right } With
 PHP 5.3 just over the horizon, I decided to see how well prepared

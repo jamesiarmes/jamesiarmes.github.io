@@ -3,6 +3,10 @@ layout: post
 title: php-ews 0.1 Released
 category: blog
 created: 1418956966
+tags:
+    - PHP
+    - php-ews
+    - Microsoft Exchange
 ---
 ![](/assets/images/2014/12/exchange-logo.png){: .image-left .post-image } The
 first official

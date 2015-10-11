@@ -3,6 +3,11 @@ layout: post
 title: The Browser Is Mightier Than The Rich Text Area
 category: blog
 created: 1211465495
+tags:
+  - Browsers
+  - Firefox
+  - Rich-Text
+  - TinyMCE
 ---
 Since Firefox 3 Beta 5 was released, there has been some problems with our Rich
 Text Areas in WorkXpress. The control renders but remains gray; there is no way

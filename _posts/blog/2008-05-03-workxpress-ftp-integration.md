@@ -3,6 +3,10 @@ layout: post
 title: WorkXpress FTP Integration
 category: blog
 created: 1209832441
+tags:
+  - FTP
+  - Linux
+  - WorkXpress
 ---
 After some configuration issues, I completed the server setup for the WorkXpress
 FTP Integration this week. Most of the issues were with the FTP Server. There

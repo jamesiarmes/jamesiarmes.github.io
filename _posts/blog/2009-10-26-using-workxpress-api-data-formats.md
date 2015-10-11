@@ -3,6 +3,12 @@ layout: post
 title: 'Using the WorkXpress API: Data Formats'
 category: blog
 created: 1256606610
+tags:
+  - API
+  - PHP
+  - SOAP
+  - Web Services
+  - WorkXpress
 ---
 [![WorkXpress](/assets/images/workxpress-logo.png){: .post-image .image-right }](http://www.workxpress.com)
 Now that you know how to use the [WorkXpress](http://www.workxpress.com) API,

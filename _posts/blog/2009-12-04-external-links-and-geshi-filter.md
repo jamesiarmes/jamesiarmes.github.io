@@ -3,6 +3,9 @@ layout: post
 title: External Links and GeSHi Filter
 category: blog
 created: 1259980929
+tags:
+  - CSS
+  - Drupal
 ---
 On my site I use the [External links](http://drupal.org/project/extlink) to add
 the ![external link icon](/assets/images/2009/12/extlink.png) image next to any

@@ -3,6 +3,10 @@ layout: post
 title: Drupal 6 Performance on GoDaddy
 category: blog
 created: 1262820205
+tags:
+  - Drupal
+  - GoDaddy
+  - Performance
 ---
 ![Going down](/assets/images/2010/01/goingdown.jpg){: .post-image }
 

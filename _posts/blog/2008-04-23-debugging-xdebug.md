@@ -3,6 +3,10 @@ layout: post
 title: Debugging With Xdebug
 category: blog
 created: 1208933667
+tags:
+  - Debug
+  - Linux
+  - PHP
 ---
 Xdebug is an amazing extension for PHP. It makes debugging your websites and web
 applications much easier. Let's take a look some debug before install Xdebug.

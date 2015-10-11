@@ -3,6 +3,8 @@ layout: post
 title: Who's Who Of Who's Who Scams
 category: blog
 created: 1242352331
+tags:
+  - Scams
 ---
 I received a letter in the mail today from
 [Cambridge Who's Who](http://www.cambridgewhoswho.com).

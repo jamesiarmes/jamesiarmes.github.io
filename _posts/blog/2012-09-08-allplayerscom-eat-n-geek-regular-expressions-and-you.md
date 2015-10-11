@@ -3,6 +3,9 @@ layout: post
 title: 'AllPlayers.com Eat N'' Geek: Regular Expressions and You'
 category: blog
 created: 1347131519
+tags:
+    - Presentation
+    - Regular Expressions
 ---
 <iframe src="http://player.vimeo.com/video/47263145" width="500" height="313" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 

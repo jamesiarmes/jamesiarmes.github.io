@@ -3,6 +3,13 @@ layout: post
 title: Accessing HarrisData (IBM iSeries) In PHP
 category: blog
 created: 1226281673
+tags:
+  - AS/400
+  - HarrisData
+  - iSeries
+  - ODBC
+  - PDO
+  - PHP
 ---
 ![HarrisData](/assets/images/2008/11/harrisdata_logo.png){: .post-image .image-right }
 I have recently been working on a project to integrate with a
