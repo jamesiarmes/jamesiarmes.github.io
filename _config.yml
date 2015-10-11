@@ -1,20 +1,50 @@
-# Site settings
-title: James Armes
-email: jamesiarmes@gmail.com
+baseurl: "" # The subpath of your site. Use "" if you're hosting a blog at the root level.
+url: "http://jamesarmes.com" # the base hostname & protocol for your site.
+title: "James Armes"
 description: > # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://jamesarmes.com" # the base hostname & protocol for your site
-twitter_username: jamesiarmes
-github_username:  jamesiarmes
 
-# Build settings
-markdown: kramdown
-paginate: 10
+
+paginate: 10 #articles per page
+paginate_path: /blog/page:num #makes pagination working
+
+
+#contacts
+git: "https://github.com/jamesiarmes"  #Add your github url here.
+#stackoverflow: "http://stackoverflow.com/users/1231365/railsr" #Add your stackoverflow url here.
+twitter: "https://twitter.com/jamesiarmes"  #Add your twitter url here.
+
+#disqus comment
+disqus:
+    shortname: "jamesarmes"
+
+#google analytics
+google:
+    tracking-id: "" #paste your tracking id here
+gems:
+  - jekyll-sitemap
+  - jekyll-redirect-from
+
+exclude:
+  - "README.md"
+  - "CHANGELOG.md"
+  - "Gemfile"
+  - "Gemfile.lock"
 permalink: /:categories/:year/:month/:title
 excerpt_separator: <!--more-->
 
-gems:
-  - jekyll-redirect-from
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
