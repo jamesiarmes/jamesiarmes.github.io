@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 'Entry Five'
 created: 1430595900
 date: 1430595900

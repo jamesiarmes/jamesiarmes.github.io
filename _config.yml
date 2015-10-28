@@ -38,7 +38,7 @@ excerpt_separator: <!--more-->
 collections:
   neurion_arkanith:
     output: true
-    permalink: /nerurion-arkanith/:title.html
+    permalink: /neurion-arkanith/:title.html
 
 defaults:
   -
@@ -57,4 +57,4 @@ defaults:
       path: ""
       type: "neurion_arkanith"
     values:
-      layout: "default"
+      layout: "neurion-arkanith"
