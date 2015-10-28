@@ -22,7 +22,7 @@ disqus:
 
 #google analytics
 google:
-    tracking-id: "" #paste your tracking id here
+    tracking-id: "UA-3412924-2" #paste your tracking id here
 gems:
   - jekyll-sitemap
   - jekyll-redirect-from
