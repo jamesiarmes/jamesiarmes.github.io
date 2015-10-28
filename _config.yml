@@ -35,6 +35,11 @@ exclude:
 permalink: /:categories/:year/:month/:title
 excerpt_separator: <!--more-->
 
+collections:
+  neurion_arkanith:
+    output: true
+    permalink: /nerurion-arkanith/:title.html
+
 defaults:
   -
     scope:
@@ -48,3 +53,8 @@ defaults:
       type: "posts"
     values:
       layout: "post"
+  - scope:
+      path: ""
+      type: "neurion_arkanith"
+    values:
+      layout: "default"

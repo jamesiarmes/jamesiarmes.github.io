@@ -1,9 +1,8 @@
 ---
 layout: post
-title: 'The Records of Neurion Arkanith: Entry One'
-category: neurion-arkanith
-permalink: /:categories/:title
-created: 1260678243
+title: 'Entry One'
+created: 1425785460
+date: 1425785460
 ---
 It has been some time since I last recorded my journeys, but at the prodding of
 Sovellis and Charin I have decided to begin anew. As I completed my previous
