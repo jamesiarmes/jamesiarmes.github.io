@@ -24,8 +24,9 @@ disqus:
 google:
     tracking-id: "UA-3412924-2" #paste your tracking id here
 gems:
-  - jekyll-sitemap
+  - jekyll-minifier
   - jekyll-redirect-from
+  - jekyll-sitemap
 
 exclude:
   - "README.md"
