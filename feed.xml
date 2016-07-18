@@ -1,1 +1,683 @@
-<?xml version="1.0" encoding="UTF-8"?> <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"> <channel> <title>James Armes</title> <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description. </description> <link>http://jamesarmes.com/</link> <atom:link href="http://jamesarmes.com/feed.xml" rel="self" type="application/rss+xml"/> <pubDate>Sun, 17 Jul 2016 23:00:03 -0400</pubDate> <lastBuildDate>Sun, 17 Jul 2016 23:00:03 -0400</lastBuildDate> <generator>Jekyll v3.1.6</generator> <item> <title>CPLUG Talk: Introduction to Amazon Web Services</title> <description>&lt;p&gt;&lt;img src=&quot;/assets/images/2016/cplug-logo.png&quot; alt=&quot;&quot; class=&quot;image-left post-image&quot; /&gt; This past Tuesday, I gave an introductory presentation on &lt;a href=&quot;http://aws.amazon.com&quot;&gt;Amazon Web Services&lt;/a&gt; at the monthly meetup for the &lt;a href=&quot;http://www.cplug.net&quot;&gt;Central Pennsylvania Linux User Group&lt;/a&gt;. The talk covered some of the services offered by AWS that would be of interest for those launching application in the cloud, as well as a brief discussion on security. A demo was given along with the presentation, but I was unable to record. The slides have been uploaded to SlideShare and included below.&lt;/p&gt; &lt;!--more--&gt; &lt;iframe src=&quot;//www.slideshare.net/slideshow/embed_code/key/Ixla9bRc0u1q9M&quot; width=&quot;595&quot; height=&quot;485&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; scrolling=&quot;no&quot; style=&quot;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&quot; allowfullscreen=&quot;&quot;&gt; &lt;/iframe&gt; &lt;div style=&quot;margin-bottom:5px&quot;&gt; &lt;strong&gt; &lt;a href=&quot;//www.slideshare.net/jamesiarmes/introduction-to-amazon-web-services-63968583&quot; title=&quot;Introduction to Amazon Web Services&quot; target=&quot;_blank&quot;&gt;Introduction to Amazon Web Services&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a href=&quot;//www.slideshare.net/jamesiarmes&quot; target=&quot;_blank&quot;&gt;James Armes&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt; &lt;p&gt;Next month I will be giving a more advanced talk where I will highlight one of the use cases we have for AWS at &lt;a href=&quot;http://www.acquia.com&quot;&gt;Acquia&lt;/a&gt;, and how we utilize CloudFormation for deploy it.&lt;/p&gt; </description> <pubDate>Sun, 17 Jul 2016 00:00:00 -0400</pubDate> <link>http://jamesarmes.com/blog/2016/07/cplug-talk-introduction-to-amazon-web-services</link> <guid isPermaLink="true">http://jamesarmes.com/blog/2016/07/cplug-talk-introduction-to-amazon-web-services</guid> <category>Linux</category> <category>AWS</category> <category>Presentation</category> <category>CPLUG</category> <category>blog</category> </item> <item> <title>php-ews 0.1 Released</title> <description>&lt;p&gt;&lt;img src=&quot;/assets/images/2014/12/exchange-logo.png&quot; alt=&quot;&quot; class=&quot;image-left post-image&quot; /&gt; The first official &lt;a href=&quot;https://github.com/jamesiarmes/php-ews/releases/tag/v0.1&quot;&gt;release&lt;/a&gt; of &lt;a href=&quot;https://github.com/jamesiarmes/php-ews&quot;&gt;php-ews&lt;/a&gt; has been created. This release includes support for Microsoft Exchange Server versions 2007 through 2010 SP3. Support for 2013 will be included in a future release. This release will not be continually supported, as resources will be devoted towards moving the library in a direction that makes it easier to use and implements standards such as &lt;a href=&quot;http://www.php-fig.org/psr/psr-4/&quot;&gt;PSR-4&lt;/a&gt; and features such as composer support.&lt;/p&gt; </description> <pubDate>Thu, 18 Dec 2014 00:00:00 -0500</pubDate> <link>http://jamesarmes.com/blog/2014/12/php-ews-01-released</link> <guid isPermaLink="true">http://jamesarmes.com/blog/2014/12/php-ews-01-released</guid> <category>PHP</category> <category>php-ews</category> <category>Microsoft Exchange</category> <category>blog</category> </item> <item> <title>All Good Things...</title> <description>&lt;p&gt;&lt;img src=&quot;/assets/images/2014/09/future-road-sign.jpg&quot; alt=&quot;&quot; class=&quot;image-left post-image&quot; /&gt; After three years, I have decided to leave &lt;a href=&quot;https://www.allplayers.com&quot;&gt;AllPlayers.com&lt;/a&gt;. Over these last three years, I have had the opportunity to work with many talented people and seen my career grow in ways that I never expected. This has not been an easy decision but I feel that the time has come for me to move on. I want to make it clear that this is not a reflection of the current state of the company. AllPlayers.com is continuing to do great things and I have the utmost confidence that they will continue to succeed.&lt;/p&gt; &lt;!--more--&gt; &lt;p&gt;Starting September 15, 2014, I will begin my new position as Cloud Software Engineer for &lt;a href=&quot;http://www.acquia.com/&quot;&gt;Acquia&lt;/a&gt;. I look forward to all of the challenges that await me and all of the wonderful things that I will be able to contribute to. Although I will not be working directly with Drupal, I look forward to being able to support Drupal in other ways by working for the largest provider of Drupal hosting and services. I will be continuing to work remotely from my home office in Millersburg, PA while traveling occasionally to Acquia’s home office in Burlington, MA.&lt;/p&gt; &lt;p&gt;To all my friends at AllPlayers.com, it has truly been a pleasure to work with each and everyone of one. Keep up the good work, like I know you will. I will miss all of you deeply.&lt;/p&gt; </description> <pubDate>Mon, 08 Sep 2014 00:00:00 -0400</pubDate> <link>http://jamesarmes.com/blog/2014/09/all-good-things</link> <guid isPermaLink="true">http://jamesarmes.com/blog/2014/09/all-good-things</guid> <category>Drupal</category> <category>AllPlayers</category> <category>Acquia</category> <category>Career</category> <category>blog</category> </item> <item> <title>AllPlayers.com Eat N&#39; Geek: Regular Expressions and You</title> <description>&lt;iframe src=&quot;http://player.vimeo.com/video/47263145&quot; width=&quot;500&quot; height=&quot;313&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt; &lt;!--more--&gt; &lt;p&gt;Above is the presentation I gave for the August 8, 2012 AllPlayers.com Eat N’ Geek on regular expressions. The presentation gives a general introduction to regular expressions and syntax before covering some more advanced concepts such as lookarounds and conditions. A full write up by &lt;a href=&quot;https://twitter.com/general_redneck&quot;&gt;Allan Chappell&lt;/a&gt; can be found on the &lt;a href=&quot;http://allplayers.github.com/blog/2012/08/13/regular-expressions-and-you/&quot;&gt;AllPlayers Dev Blog&lt;/a&gt;.&lt;/p&gt; </description> <pubDate>Sat, 08 Sep 2012 00:00:00 -0400</pubDate> <link>http://jamesarmes.com/blog/2012/09/allplayerscom-eat-n-geek-regular-expressions-and-you</link> <guid isPermaLink="true">http://jamesarmes.com/blog/2012/09/allplayerscom-eat-n-geek-regular-expressions-and-you</guid> <category>Presentation</category> <category>Regular Expressions</category> <category>blog</category> </item> <item> <title>Barcamp Harrisburg: Setting up shop with Drupal Commerce</title> <description>&lt;div class=&quot;prezi-player&quot;&gt; &lt;style media=&quot;screen&quot; type=&quot;text/css&quot;&gt; .prezi-player { width: 550px; } .prezi-player-links { text-align: center; } &lt;/style&gt; &lt;object classid=&quot;clsid:D27CDB6E-AE6D-11cf-96B8-444553540000&quot; height=&quot;400&quot; id=&quot;prezi_b0fostu_mlbe&quot; name=&quot;prezi_b0fostu_mlbe&quot; width=&quot;550&quot;&gt;&lt;param name=&quot;movie&quot; value=&quot;http://prezi.com/bin/preziloader.swf&quot; /&gt;&lt;param name=&quot;allowfullscreen&quot; value=&quot;true&quot; /&gt;&lt;param name=&quot;allowscriptaccess&quot; value=&quot;always&quot; /&gt;&lt;param name=&quot;bgcolor&quot; value=&quot;#ffffff&quot; /&gt;&lt;param name=&quot;flashvars&quot; value=&quot;prezi_id=b0fostu_mlbe&amp;amp;lock_to_path=1&amp;amp;color=ffffff&amp;amp;autoplay=no&amp;amp;autohide_ctrls=0&quot; /&gt;&lt;embed allowfullscreen=&quot;true&quot; allowscriptaccess=&quot;always&quot; bgcolor=&quot;#ffffff&quot; flashvars=&quot;prezi_id=b0fostu_mlbe&amp;amp;lock_to_path=1&amp;amp;color=ffffff&amp;amp;autoplay=no&amp;amp;autohide_ctrls=0&quot; height=&quot;400&quot; id=&quot;preziEmbed_b0fostu_mlbe&quot; name=&quot;preziEmbed_b0fostu_mlbe&quot; src=&quot;http://prezi.com/bin/preziloader.swf&quot; type=&quot;application/x-shockwave-flash&quot; width=&quot;550&quot; /&gt;&lt;/object&gt; &lt;div class=&quot;prezi-player-links&quot;&gt; &lt;p&gt;&lt;a href=&quot;http://prezi.com/b0fostu_mlbe/setting-up-shop-with-drupal-commerce/&quot; title=&quot;Setting up shop with Drupal Commerce&quot;&gt;Setting up shop with Drupal Commerce&lt;/a&gt; on &lt;a href=&quot;http://prezi.com&quot;&gt;Prezi&lt;/a&gt;&lt;/p&gt; &lt;p&gt;&lt;!--break--&gt;&lt;/p&gt; &lt;/div&gt; &lt;/div&gt; &lt;!--more--&gt; &lt;p&gt;Above is the presentation I gave at this year’s &lt;a href=&quot;http://www.barcamphbg.org/&quot;&gt;BarCamp Harrisburg&lt;/a&gt;. Below you can find links that were included in the presentation as well as some additional resources. Also, don’t forget to vote for AllPlayers.com in the &lt;a href=&quot;http://bluedropawards.org/best-social-website-built-with-drupal-nominees/allplayerscom&quot;&gt;Blue Drop Awards&lt;/a&gt;.&lt;/p&gt; &lt;h4 id=&quot;resources&quot;&gt;Resources&lt;/h4&gt; &lt;ul&gt; &lt;li&gt;Drupal: &lt;a href=&quot;http://drupal.org/&quot;&gt;http://drupal.org/&lt;/a&gt;&lt;/li&gt; &lt;li&gt;Drupal Commerce module: &lt;a href=&quot;http://drupal.org/project/commerce&quot;&gt;http://drupal.org/project/commerce&lt;/a&gt;&lt;/li&gt; &lt;li&gt;Commerce Kickstart distribution: &amp;lt;(http://drupal.org/project/commerce_kickstart&amp;gt;&lt;/li&gt; &lt;li&gt;Drupal Commerce website: &lt;a href=&quot;http://www.drupalcommerce.org/&quot;&gt;http://www.drupalcommerce.org/&lt;/a&gt;&lt;/li&gt; &lt;li&gt;Commerce Guys: &lt;a href=&quot;http://www.commerceguys.com/&quot;&gt;http://www.commerceguys.com/&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;h4 id=&quot;additional-modules-used-in-demonstration&quot;&gt;Additional modules used in demonstration&lt;/h4&gt; &lt;ul&gt; &lt;li&gt;Commerce Bulk Product Creation: &lt;a href=&quot;http://drupal.org/project/commerce_bpc&quot;&gt;http://drupal.org/project/commerce_bpc&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;h4 id=&quot;other&quot;&gt;Other&lt;/h4&gt; &lt;ul&gt; &lt;li&gt;AllPlayers.com: &lt;a href=&quot;https://www.allplayers.com/&quot;&gt;https://www.allplayers.com/&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; </description> <pubDate>Sat, 31 Mar 2012 00:00:00 -0400</pubDate> <link>http://jamesarmes.com/blog/2012/03/barcamp-harrisburg-setting-shop-drupal-commerce</link> <guid isPermaLink="true">http://jamesarmes.com/blog/2012/03/barcamp-harrisburg-setting-shop-drupal-commerce</guid> <category>Drupal</category> <category>Presentation</category> <category>Commerce</category> <category>blog</category> </item> <item> <title>The New Jimmy&#39;s Sandbox</title> <description>&lt;p&gt;As you can see, Jimmy’s Sandbox has seen a bit of a face lift. This represents several weeks of planning and implementation. Now that the new design is in place, you should start seeing more frequent post regarding Drupal, PHP, Web Services and many other topics related to web development.&lt;/p&gt; &lt;!--more--&gt; &lt;h3 id=&quot;your-thoughts&quot;&gt;Your Thoughts&lt;/h3&gt; &lt;p&gt;Do you have any thoughts on the new design? Good or bad I want to hear it. How about something you would like to see a new post about? Whatever it is, leave your thoughts in the comment section below.&lt;/p&gt; </description> <pubDate>Tue, 06 Apr 2010 00:00:00 -0400</pubDate> <link>http://jamesarmes.com/blog/2010/04/new-jimmys-sandbox</link> <guid isPermaLink="true">http://jamesarmes.com/blog/2010/04/new-jimmys-sandbox</guid> <category>Jimmy&#39;s Sandbox</category> <category>blog</category> </item> <item> <title>Jimmy&#39;s Fridge</title> <description>&lt;p&gt;&lt;img src=&quot;/assets/images/2010/02/fridge.jpg&quot; alt=&quot;Jimmy&#39;s Fridge&quot; /&gt;&lt;/p&gt; &lt;!--more--&gt; &lt;p&gt;This is in response to &lt;a href=&quot;http://buytaert.net/my-fridge&quot;&gt;My Fridge&lt;/a&gt; by &lt;a href=&quot;http://buytaert.net&quot;&gt;Dries Buytaert&lt;/a&gt;.&lt;/p&gt; </description> <pubDate>Thu, 25 Feb 2010 00:00:00 -0500</pubDate> <link>http://jamesarmes.com/blog/2010/02/jimmys-fridge</link> <guid isPermaLink="true">http://jamesarmes.com/blog/2010/02/jimmys-fridge</guid> <category>blog</category> </item> <item> <title>Drupal 6 Performance on GoDaddy</title> <description>&lt;p&gt;&lt;img src=&quot;/assets/images/2010/01/goingdown.jpg&quot; alt=&quot;Going down&quot; class=&quot;post-image&quot; /&gt;&lt;/p&gt; &lt;p&gt;I have been using Google’s &lt;a href=&quot;http://code.google.com/speed/page-speed/&quot;&gt;Page Speed&lt;/a&gt; tool to help improve the load times of this site. In doing so, I discovered that I never configured any of the performance settings provided by Drupal. I also discovered that GoDaddy does not use mod_gzip or mod_deflate to compress the documents being requested.&lt;/p&gt; &lt;!--more--&gt; &lt;h2 id=&quot;drupals-performance-settings&quot;&gt;Drupal’s Performance Settings&lt;/h2&gt; &lt;p&gt;Drupal comes prepackaged with performance tuning options. These options include caching and CSS/JavaScript optimization. By enabling these features, I saw a dramatic decrease in load times for Jimmy’s Sandbox. You can view the performance settings for your site at /admin/settings/performance.&lt;/p&gt; &lt;h3 id=&quot;caches&quot;&gt;Caches&lt;/h3&gt; &lt;p&gt;Drupal provides both a page cache and a block cache. The page cache only affects anonymous users. While enabled, it will cache pages so that it does not need to re-render them for each request. When a page is updated, the cache is cleared. There are three levels of page caching:&lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;strong&gt;Disabled:&lt;/strong&gt; No caching will occur and each request will have to wait for the page to be rendered.&lt;/li&gt; &lt;li&gt;&lt;strong&gt;Normal:&lt;/strong&gt; Recommended for most sites and does not cause any side effects.&lt;/li&gt; &lt;li&gt;&lt;strong&gt;Aggressive:&lt;/strong&gt; Skips the loading and unloading of all modules when serving a cached page. This can cause side effects with modules that rely on this behavior (ie. Statistics). If you visit the performance settings of your site, you will be notified of any modules that are incompatible with aggressive caching (see below).&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;&lt;img src=&quot;/assets/images/2010/01/aggressive-cache-incompat.png&quot; alt=&quot;Aggressive Cache Incompatibilities&amp;quot;&quot; class=&quot;image-center&quot; /&gt;&lt;/p&gt; &lt;p&gt;Drupal also allows you to provide a minimum cache lifetime. This will prevent the cache for both pages and blocks from being cleared before that time. The available options range from one minute to one day.&lt;/p&gt; &lt;p&gt;The page compression option will allow Drupal to compress cached pages as they are sent to the browser. This saves on bandwidth and can provide quite a performance boost for larger pages. Since HTML is text, it compresses quite well. Enabling this option helps to mitigate the fact that GoDaddy does not have any compression of their own.&lt;/p&gt; &lt;p&gt;Unlike the page cache, the block cache can provide a performance boost to all users. The block cache is similar to the page cache in that it prevents individual blocks from having to be rendered on each page load. If you have any modules that define content access restrictions, such as Node Privacy By Role, this setting cannot be enabled. I have several blocks on that provide dynamic content and have not run into any issues by enabling the block cache.&lt;/p&gt; &lt;h3 id=&quot;cssjavascript-optimizations&quot;&gt;CSS/JavaScript Optimizations&lt;/h3&gt; &lt;p&gt;Drupal’s CSS and JavaScript optimizations are really quite simple. When enabled, they combine all JavaScript into a single file and all CSS into a single file. Both files are then cached and the CSS file is compressed. If you have not created your files directory, or have configured your files to be private, these options cannot be enabled.&lt;/p&gt; &lt;h2 id=&quot;google-analytics-optimizations&quot;&gt;Google Analytics Optimizations&lt;/h2&gt; &lt;p&gt;If you are using the &lt;a href=&quot;http://drupal.org/project/google_analytics&quot;&gt;Google Analytics&lt;/a&gt; module by budda, you can cache the JavaScript file that is normally stored on Google’s servers. This prevents the browser from having to perform an additional DNS lookup. The cache is updated once a day and can be enabled from the “Advanced settings” field group at /admin/settings/googleanalytics. It is important that you wait until Google has validated your site before enabling this option.&lt;/p&gt; &lt;h2 id=&quot;javascript-compression&quot;&gt;JavaScript Compression&lt;/h2&gt; &lt;p&gt;Unlike the CSS cache, cached JavaScript is not compressed. To get around this, I use the &lt;a href=&quot;http://drupal.org/project/smartcache&quot;&gt;SmartCache&lt;/a&gt; module. The module requires your Apache server to have mod_rewrite enabled to redirect requests for all JavaScript and CSS files to a script provided by the module. When a file is requested, the script creates a compressed version of the file and serves that up instead of the plain text version. The compressed file is then cached&lt;/p&gt; &lt;p&gt;This requires some manual setup to get working. There is no .info file so Drupal will not recognize it as an actual module, but that’s okay since the module doesn’t actually interact with Drupal. There are some configuration options in the load.php file that need setup and a line will need to be added to you .htaccess file. To clear the cache before the next scheduled cache clear, just clear the files out of the cache directory. Basically just read the README.txt file that comes packaged with the module and you will be fine.&lt;/p&gt; &lt;h2 id=&quot;what-performance-tips-do-you-have&quot;&gt;What Performance Tips Do You Have?&lt;/h2&gt; &lt;p&gt;That’s just a quick run through of the performance improvements I have used here on Jimmy’s Sandbox. The are certainly other options out there, such as minifying JavaScript. So what do you use to improve performance on your site? Let us know by leaving a comment below. While you’re at it, while not subscribe to the Jimmy’s Sandbox &lt;a href=&quot;/blog/feed&quot;&gt;feed&lt;/a&gt; and be notified of new posts that may include other performance improvements.&lt;/p&gt; </description> <pubDate>Wed, 06 Jan 2010 00:00:00 -0500</pubDate> <link>http://jamesarmes.com/blog/2010/01/drupal-6-performance-godaddy</link> <guid isPermaLink="true">http://jamesarmes.com/blog/2010/01/drupal-6-performance-godaddy</guid> <category>Drupal</category> <category>GoDaddy</category> <category>Performance</category> <category>blog</category> </item> <item> <title>Simple Tips For Repsonding To A Web Developer Job Posting</title> <description>&lt;p&gt;&lt;img src=&quot;/assets/images/2009/12/outlook.jpg&quot; alt=&quot;Outlook&quot; /&gt;&lt;/p&gt; &lt;p&gt;I was recently tasked with hiring a web developer for a redesign of &lt;a href=&quot;workxpress.com&quot;&gt;http://www.workxpress.com&lt;/a&gt;. I was surprised at the number of poor quality responses I received. The original post can be found at &lt;a href=&quot;http://drupal.org/node/602292&quot;&gt;http://drupal.org/node/602292&lt;/a&gt;. Looking back, I should have included more details in my post, but that still doesn’t excuse the poor quality of some of these emails.&lt;/p&gt; &lt;!--more--&gt; &lt;p&gt;I have taken examples from many of the emails that I have received for us to analyze. Names and URLs have been changed to protect the identities of the individuals. So, without further ado, I present you with some simple tips when responding to a web developer job post.&lt;/p&gt; &lt;h2 id=&quot;use-a-professional-email-address&quot;&gt;1. Use a professional email address&lt;/h2&gt; &lt;p&gt;I don’t think a lot of people realize how important their email address can be. I’m not going to spend a lot of time on this, but suffice it to say that you will not get taken seriously replying to a job post using an email like awesomejedi@yahoo.com. Check out the Men With Pens post &lt;a href=&quot;http://menwithpens.ca/email-address-losing-clients&quot;&gt;Is Your Email Address Losing You Clients?&lt;/a&gt; for more on this subject.&lt;/p&gt; &lt;h2 id=&quot;use-a-professional-yet-personal-greeting&quot;&gt;2. Use a professional yet personal greeting&lt;/h2&gt; &lt;p&gt;The greeting is the first thing in your email to be read. I think everybody knows this, but not everybody seems to think about their greeting. So what makes a greeting professional yet personal? Professional is easy, avoid using words you wouldn’t use when meeting an interviewer for the first time (such as “Hey”). Personal is easy as well, just use the persons name. For example, a greeting like “James” or “Dear James” would suffice. The worst offender I received had to be “hi and thanks-“.&lt;/p&gt; &lt;h2 id=&quot;use-proper-capitalization&quot;&gt;3. Use proper capitalization&lt;/h2&gt; &lt;p&gt;We all know not to type in all caps, but all lowercase doesn’t send the right message either. Make sure you capitalize the first letter in names and the first word of each sentence. See below for some examples of poor capitalization. I find the second example to be curious, as he capitalized the supported browsers, but nothing else.&lt;/p&gt; &lt;h3 id=&quot;example-1&quot;&gt;Example 1:&lt;/h3&gt; &lt;blockquote&gt; &lt;p&gt;saw your post-&lt;br /&gt; perhaps i can provide the service you need&lt;/p&gt; &lt;p&gt;i am a drupal samurai for hire&lt;br /&gt; based in buffalo, new york usa&lt;/p&gt; &lt;/blockquote&gt; &lt;h3 id=&quot;example-2&quot;&gt;Example 2:&lt;/h3&gt; &lt;blockquote&gt; &lt;p&gt;output will be drupal theme, valid html/css, major browser compatibility (IE,FF,Safari). additional sub template add $75&lt;/p&gt; &lt;/blockquote&gt; &lt;h2 id=&quot;add-some-descriptions-to-your-examples&quot;&gt;4. Add some descriptions to your examples&lt;/h2&gt; &lt;p&gt;Including example sites in your response is always a good idea. When providing examples, give some details on each. Example 3 below shows a poor presentation of sites you have worked on. Example 4 shows a much better presentation that includes descriptions of what the web developer did on each.&lt;/p&gt; &lt;h3 id=&quot;example-3&quot;&gt;Example 3:&lt;/h3&gt; &lt;blockquote&gt; &lt;p&gt;http://www.example.com (usa, media)&lt;br /&gt; http://www.foo.com (usa. media)&lt;br /&gt; http://www.bar.co.uk (project services, uk)&lt;br /&gt; http://www.baz.ca/web (infotech, canada)&lt;/p&gt; &lt;/blockquote&gt; &lt;h3 id=&quot;example-4&quot;&gt;Example 4:&lt;/h3&gt; &lt;blockquote&gt; &lt;p&gt;http://www.example.com - I project managed and/or wrote the HTML and CSS for every site in this portfolio with the exception of Foo, Bar, and Baz. Some of the links in the portfolio there are broken, but can be fixed by replacing ‘ex4’ with ‘ex4mediagroup’ in the URL; the company no longer does business under that name so I don’t think they’re maintaining it anymore.&lt;/p&gt; &lt;p&gt;http://www.foo.com and http://www.foo.com/smarty/templates/default/styles.css - This is one of the sites that I wrote the HTML and CSS for. This site and the others in this portfolio were built on an in-house CMS using the Smarty templating system.&lt;/p&gt; &lt;p&gt;http://www.bar.co.uk - I worked in some degree with several of the projects in the portfolio at Foo, however the greatest involvement I had was with specific projects that are still in progress or not in the portfolio.&lt;/p&gt; &lt;p&gt;http://www.baz.ca/web - This was the largest project we worked with while I was at Foo, and I both project managed it through most of it’s duration and did much of the Drupal configuration, including extensive work with views and Ubercart.&lt;/p&gt; &lt;/blockquote&gt; &lt;h2 id=&quot;use-complete-sentences&quot;&gt;5. Use complete sentences&lt;/h2&gt; &lt;p&gt;This is another no brainier, or so I thought. Use complete sentences with proper punctuation. Run on sentences and simple three word phrases don’t look very professional. The following example could have easily been several sentences and looked much more professional.&lt;/p&gt; &lt;h3 id=&quot;example-5&quot;&gt;Example 5:&lt;/h3&gt; &lt;blockquote&gt; &lt;p&gt;I went through your post , i am drupal developer. I am good hand in css. I done following project&lt;/p&gt; &lt;/blockquote&gt; &lt;h2 id=&quot;use-correct-grammar&quot;&gt;6. Use correct grammar&lt;/h2&gt; &lt;p&gt;While I understand English is not everyones first language, you should have a firm understanding of grammar before responding in any language. If I don’t feel that I will be able to communicate with you, I’m not likely to hire you. The following three examples clearly demonstrate a lack of proper grammar.&lt;/p&gt; &lt;blockquote&gt; &lt;p&gt;I am John who have experiences in designing and developing drupal websites for national as well as international clients. I saw your post at drupal form and would like know more about the job.&lt;/p&gt; &lt;/blockquote&gt; &lt;h3 id=&quot;example-7&quot;&gt;Example 7:&lt;/h3&gt; &lt;blockquote&gt; &lt;p&gt;We are Foo Bar, Inc. located in Redwood City, CA. We experience designing and redesigning Drupal based sites&lt;/p&gt; &lt;/blockquote&gt; &lt;h3 id=&quot;example-8&quot;&gt;Example 8:&lt;/h3&gt; &lt;blockquote&gt; &lt;p&gt;I had a chance to look at your requirement about ,Hireing a drupal developer to complete your requirement ,We could be of great help to you.&lt;/p&gt; &lt;/blockquote&gt; &lt;h2 id=&quot;your-turn&quot;&gt;Your turn&lt;/h2&gt; &lt;p&gt;What are your thoughts on some of these tips? Do you have any other advice for those replying to a job post? Please share you thoughts in the comments below.&lt;/p&gt; </description> <pubDate>Sun, 20 Dec 2009 00:00:00 -0500</pubDate> <link>http://jamesarmes.com/blog/2009/12/simple-tips-repsonding-web-developer-job-posting</link> <guid isPermaLink="true">http://jamesarmes.com/blog/2009/12/simple-tips-repsonding-web-developer-job-posting</guid> <category>Drupal</category> <category>Freelance</category> <category>blog</category> </item> <item> <title>Using the WorkXpress API: Display Formats</title> <description>&lt;p&gt;&lt;a href=&quot;http://www.workxpress.com&quot;&gt;&lt;img src=&quot;/assets/images/workxpress-logo.png&quot; alt=&quot;WorkXpress&quot; class=&quot;post-image image-right&quot; /&gt;&lt;/a&gt; You have learned about all of the functions. You understand the data formats. What could possibly be left before mastering the &lt;a href=&quot;http://www.workxpress.com&quot;&gt;WorkXpress&lt;/a&gt; API? Display formats is the answer.&lt;/p&gt; &lt;!--more--&gt; &lt;p&gt;Display formats allow you to pull out data in different formats. For example, instead of pulling a file field as XML (stored value) or just the filename (text value), you could get the download URL. When using display formats, the format type must be set to “text”. Not all Fields have display formats, while others have several. Many of the available formats match the available parts for multi-part fields. For more information on these parts, see my previous post on &lt;a href=&quot;/blog/2009/10/using-workxpress-api-data-formats&quot;&gt;data formats&lt;/a&gt;.&lt;/p&gt; &lt;h2 id=&quot;address&quot;&gt;Address&lt;/h2&gt; &lt;p&gt;The &lt;a href=&quot;http://www.workxpress.com/training/library/address&quot;&gt;Address&lt;/a&gt; Field Type exposes a number of display formats to match the available parts of the field.&lt;/p&gt; &lt;ul&gt; &lt;li&gt;Type&lt;/li&gt; &lt;li&gt;Street&lt;/li&gt; &lt;li&gt;Street2&lt;/li&gt; &lt;li&gt;Street3&lt;/li&gt; &lt;li&gt;City&lt;/li&gt; &lt;li&gt;State&lt;/li&gt; &lt;li&gt;ZipCode&lt;/li&gt; &lt;li&gt;Country&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;These formats can be combined to create you own format. For example, let’s say you want to display only the city, state and zip code of the address. Your format string would look as follows:&lt;/p&gt; &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-php&quot; data-lang=&quot;php&quot;&gt;$format = &#39;City, State ZipCode&#39;;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt; &lt;p&gt;You can even add your own text to the string, just make sure not to use any of the format parts in your custom text (display formats are case sensitive).&lt;/p&gt; &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-php&quot; data-lang=&quot;php&quot;&gt;$format = &#39;You live in City, State Country&#39;; // Since display formats are case sensitive, you could also do something like // the following. $format = &#39;This client hails from the city of City&#39;;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt; &lt;h2 id=&quot;currency&quot;&gt;Currency&lt;/h2&gt; &lt;p&gt;&lt;a href=&quot;http://www.workxpress.com/training/library/currency-us&quot;&gt;Currency&lt;/a&gt; Fields usually return the currency symbol ($) when using the text only version. Using the NumberOnly format allows you to pull the value without the currency symbol (ie. “3.12” instead of “$3.12”). You can get the same result from using the stored format type instead of text.&lt;/p&gt; &lt;h2 id=&quot;phone-number&quot;&gt;Phone Number&lt;/h2&gt; &lt;p&gt;&lt;a href=&quot;http://www.workxpress.com/training/library/phone-number&quot;&gt;Phone Number&lt;/a&gt; Fields are similar to Address Fields. The display formats for Phone Number Fields match the available parts.&lt;/p&gt; &lt;ul&gt; &lt;li&gt;Type&lt;/li&gt; &lt;li&gt;CountryCode&lt;/li&gt; &lt;li&gt;AreaCode&lt;/li&gt; &lt;li&gt;Prefix&lt;/li&gt; &lt;li&gt;LineNumber&lt;/li&gt; &lt;li&gt;Extension&lt;/li&gt; &lt;/ul&gt; &lt;h2 id=&quot;select---select-one&quot;&gt;Select - Select One&lt;/h2&gt; &lt;p&gt;&lt;a href=&quot;http://www.workxpress.com/training/library/select-one&quot;&gt;Select - Select One&lt;/a&gt; Fields provide display formats that allow access to some of their special features. No display format will return the title of the currently selected Select Option.&lt;/p&gt; &lt;ul&gt; &lt;li&gt;AltTitle: Alternate title of the currently selected Select Option.&lt;/li&gt; &lt;li&gt;WithOther: Title of the currently selected Select Option as well as the value of the “Other” Field for the Select Option (if any).&lt;/li&gt; &lt;li&gt;OtherOnly: Returns only the value of the “Other” Field of the currently selected Select Option (if any).&lt;/li&gt; &lt;/ul&gt; &lt;h2 id=&quot;check-box&quot;&gt;Check Box&lt;/h2&gt; &lt;p&gt;&lt;a href=&quot;http://www.workxpress.com/training/library/checkbox&quot;&gt;Check Box&lt;/a&gt; Fields provide a few different formats to handle their unique on/off nature. Most of your requirements for this Field Type can be handled using the stored format type.&lt;/p&gt; &lt;ul&gt; &lt;li&gt;Checked: Returns the values “CHECKED” or “UNCHECKED”.&lt;/li&gt; &lt;li&gt;FieldLabel: Either the Field’s label or empty.&lt;/li&gt; &lt;li&gt;WithOther: Returns the same as the Checked display format followed by a hyphen and the value of the “Other” Field for the current state (if any).&lt;/li&gt; &lt;li&gt;OtherOnly: Returns only the value of the “Other” Field for the current state (if any).&lt;/li&gt; &lt;/ul&gt; &lt;h2 id=&quot;date-and-date-time&quot;&gt;Date and Date Time&lt;/h2&gt; &lt;p&gt;&lt;a href=&quot;http://www.workxpress.com/training/library/date&quot;&gt;Date&lt;/a&gt; and &lt;a href=&quot;http://www.workxpress.com/training/library/date-and-time&quot;&gt;Date Time&lt;/a&gt; Fields provide display formats that can be useful for displaying their values in different formats. Many of these formats correspond to the formats provided by PHP’s &lt;a href=&quot;http://us.php.net/manual/en/function.date.php&quot;&gt;date&lt;/a&gt; function.&lt;/p&gt; &lt;ul&gt; &lt;li&gt;AMPMLowercase: Lowercase ante meridiem or post meridiem value.&lt;/li&gt; &lt;li&gt;AMPMUppercase: Uppercase ante meridiem or port meridiem value.&lt;/li&gt; &lt;li&gt;DayOfMonth: Day of the month without leading zeros.&lt;/li&gt; &lt;li&gt;DayOfMonthSuffix: Two character English ordinal day of the month (ie. st for 1st or th for 13th).&lt;/li&gt; &lt;li&gt;DayOfMonthLeadingZero: Two digit day of the month with leading zeros.&lt;/li&gt; &lt;li&gt;DayOfWeek: Full day of the week title (ie. Monday).&lt;/li&gt; &lt;li&gt;DayOfWeekAbbreviated: Three character day of the week title (ie. Mon).&lt;/li&gt; &lt;li&gt;DayOfWeekNumber: &lt;a href=&quot;http://en.wikipedia.org/wiki/ISO-8601#Week_dates&quot;&gt;ISO-8601&lt;/a&gt; numeric day of the week.&lt;/li&gt; &lt;li&gt;DayOfYear: Day of the year starting with zero.&lt;/li&gt; &lt;li&gt;Hour: 12-hour formatted hour without leading zero.&lt;/li&gt; &lt;li&gt;Hour24: 24-hour formatted hour without leading zero.&lt;/li&gt; &lt;li&gt;Hour24LeadingZero: 24-hour formatted hour with leading zero.&lt;/li&gt; &lt;li&gt;HourLeadingZero: 12-hour formatted hour with leading zero.&lt;/li&gt; &lt;li&gt;Minute: Two digit minutes with leading zeros.&lt;/li&gt; &lt;li&gt;MonthName: Full month title (ie. January).&lt;/li&gt; &lt;li&gt;MonthNameAbbreviated: Three character month title (ie. Jan).&lt;/li&gt; &lt;li&gt;MonthOfYear: Numeric representation of the month without leading zero.&lt;/li&gt; &lt;li&gt;MonthOfYearLeadingZero: Numeric representation of the month with leading zero.&lt;/li&gt; &lt;li&gt;Second: Two digit seconds with leading zero.&lt;/li&gt; &lt;li&gt;Timestamp: Seconds since the Unix epoch (January 1, 1970 00:00:00 GMT).&lt;/li&gt; &lt;li&gt;WeekOfYear: ISO-8601 numeric week number of the year.&lt;/li&gt; &lt;li&gt;Year: Four digit year.&lt;/li&gt; &lt;li&gt;YearShort: Two digit year.&lt;/li&gt; &lt;/ul&gt; &lt;h2 id=&quot;file&quot;&gt;File&lt;/h2&gt; &lt;p&gt;&lt;a href=&quot;&amp;lt;a href=&amp;quot;http://www.workxpress.com/training/library/file-attachment&quot;&gt;File&lt;/a&gt; Fields can be difficult to deal with. Display formats are here to help. Using the display formats below, File Fields can be much easier to deal with.&lt;/p&gt; &lt;ul&gt; &lt;li&gt;DownloadURL: The URL that can be used to download the file. If the Field is configured to be private, this URL will require a user to be logged in.&lt;/li&gt; &lt;li&gt;Filename: Name of the file, including the extension.&lt;/li&gt; &lt;li&gt;FileSize: Size of the file in bytes.&lt;/li&gt; &lt;li&gt;Height: If the file is an image, this will return the height of the image in pixels.&lt;/li&gt; &lt;li&gt;Image: If the file is an image, this will return the image tag that can be used in an HTML document. The image must be public for this to be used outside of the Application.&lt;/li&gt; &lt;li&gt;MimeType: The file’s mime-type (ie.image/png).&lt;/li&gt; &lt;li&gt;Thumbnail: Similar to the Image display format, but the src attribute will be pointed at the thumbnail.&lt;/li&gt; &lt;li&gt;ThumbnailURL: If the file is an image, this will return the same as the DownloadURL display format but for the thumbnail image.&lt;/li&gt; &lt;li&gt;Width: If the file is an image, this will return the width of the image in pixels.&lt;/li&gt; &lt;/ul&gt; &lt;h2 id=&quot;social-security&quot;&gt;Social Security&lt;/h2&gt; &lt;p&gt;&lt;a href=&quot;http://www.workxpress.com/training/library/social-security-number&quot;&gt;Social Security&lt;/a&gt; Fields provide only a single display format part. By using the LastFour format, you can retrieve only the last four digits of a social security number. With no display format, this Field Type will return the value as “***-**-####”.&lt;/p&gt; &lt;h2 id=&quot;now-youre-ready&quot;&gt;Now You’re Ready!&lt;/h2&gt; &lt;p&gt;That’s all folks. You have everything you need to master the WorkXpress API. The API opens up a lot of possibilities for you and your application. Current uses of the API include integrating with FedEx shipping services, data imports with HarrisData and administration of FTP servers. Once you have had a chance to explore the power of the API, come back here and let me know how you used it. As always, if you have any questions, leave a comment below.&lt;/p&gt; </description> <pubDate>Sat, 12 Dec 2009 00:00:00 -0500</pubDate> <link>http://jamesarmes.com/blog/2009/12/using-workxpress-api-display-formats</link> <guid isPermaLink="true">http://jamesarmes.com/blog/2009/12/using-workxpress-api-display-formats</guid> <category>API</category> <category>PHP</category> <category>SOAP</category> <category>Web Services</category> <category>WorkXpress</category> <category>blog</category> </item> </channel> </rss>
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>James Armes</title>
+    <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+</description>
+    <link>http://jamesarmes.com/</link>
+    <atom:link href="http://jamesarmes.com/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Sun, 17 Jul 2016 23:10:36 -0400</pubDate>
+    <lastBuildDate>Sun, 17 Jul 2016 23:10:36 -0400</lastBuildDate>
+    <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>CPLUG Talk: Introduction to Amazon Web Services</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/assets/images/2016/cplug-logo.png&quot; alt=&quot;&quot; class=&quot;image-left post-image&quot; /&gt; This past Tuesday, I gave an introductory
+presentation on &lt;a href=&quot;http://aws.amazon.com&quot;&gt;Amazon Web Services&lt;/a&gt; at the monthly meetup for the
+&lt;a href=&quot;http://www.cplug.net&quot;&gt;Central Pennsylvania Linux User Group&lt;/a&gt;. The talk covered some of the services offered by AWS that
+would be of interest for those launching application in the cloud, as well as a brief discussion on security. A demo was
+given along with the presentation, but I was unable to record. The slides have been uploaded to SlideShare and included
+below.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;iframe src=&quot;//www.slideshare.net/slideshow/embed_code/key/Ixla9bRc0u1q9M&quot; width=&quot;595&quot; height=&quot;485&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; scrolling=&quot;no&quot; style=&quot;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&quot; allowfullscreen=&quot;&quot;&gt; &lt;/iframe&gt;
+&lt;div style=&quot;margin-bottom:5px&quot;&gt; &lt;strong&gt; &lt;a href=&quot;//www.slideshare.net/jamesiarmes/introduction-to-amazon-web-services-63968583&quot; title=&quot;Introduction to Amazon Web Services&quot; target=&quot;_blank&quot;&gt;Introduction to Amazon Web Services&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a href=&quot;//www.slideshare.net/jamesiarmes&quot; target=&quot;_blank&quot;&gt;James Armes&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;
+
+&lt;p&gt;Next month I will be giving a more advanced talk where I will highlight one of the use cases we have for AWS at
+&lt;a href=&quot;http://www.acquia.com&quot;&gt;Acquia&lt;/a&gt;, and how we utilize CloudFormation for deploy it.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 17 Jul 2016 00:00:00 -0400</pubDate>
+        <link>http://jamesarmes.com/blog/2016/07/cplug-talk-introduction-to-amazon-web-services</link>
+        <guid isPermaLink="true">http://jamesarmes.com/blog/2016/07/cplug-talk-introduction-to-amazon-web-services</guid>
+        
+        <category>Linux</category>
+        
+        <category>AWS</category>
+        
+        <category>Presentation</category>
+        
+        <category>CPLUG</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>php-ews 0.1 Released</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/assets/images/2014/12/exchange-logo.png&quot; alt=&quot;&quot; class=&quot;image-left post-image&quot; /&gt; The
+first official
+&lt;a href=&quot;https://github.com/jamesiarmes/php-ews/releases/tag/v0.1&quot;&gt;release&lt;/a&gt; of
+&lt;a href=&quot;https://github.com/jamesiarmes/php-ews&quot;&gt;php-ews&lt;/a&gt; has been created. This release
+includes support for Microsoft Exchange Server versions 2007 through 2010 SP3.
+Support for 2013 will be included in a future release. This release will not be
+continually supported, as resources will be devoted towards moving the library
+in a direction that makes it easier to use and implements standards such as
+&lt;a href=&quot;http://www.php-fig.org/psr/psr-4/&quot;&gt;PSR-4&lt;/a&gt; and features such as composer
+support.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 18 Dec 2014 00:00:00 -0500</pubDate>
+        <link>http://jamesarmes.com/blog/2014/12/php-ews-01-released</link>
+        <guid isPermaLink="true">http://jamesarmes.com/blog/2014/12/php-ews-01-released</guid>
+        
+        <category>PHP</category>
+        
+        <category>php-ews</category>
+        
+        <category>Microsoft Exchange</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>All Good Things...</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/assets/images/2014/09/future-road-sign.jpg&quot; alt=&quot;&quot; class=&quot;image-left post-image&quot; /&gt;
+After three years, I have decided to leave
+&lt;a href=&quot;https://www.allplayers.com&quot;&gt;AllPlayers.com&lt;/a&gt;. Over these last three years, I
+have had the opportunity to work with many talented people and seen my career
+grow in ways that I never expected. This has not been an easy decision but I
+feel that the time has come for me to move on. I want to make it clear that this
+is not a reflection of the current state of the company. AllPlayers.com is
+continuing to do great things and I have the utmost confidence that they will
+continue to succeed.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;Starting September 15, 2014, I will begin my new position as Cloud Software
+Engineer for &lt;a href=&quot;http://www.acquia.com/&quot;&gt;Acquia&lt;/a&gt;. I look forward to all of the
+challenges that await me and all of the wonderful things that I will be able to
+contribute to. Although I will not be working directly with Drupal, I look
+forward to being able to support Drupal in other ways by working for the largest
+provider of Drupal hosting and services. I will be continuing to work remotely
+from my home office in Millersburg, PA while traveling occasionally to Acquia’s
+home office in Burlington, MA.&lt;/p&gt;
+
+&lt;p&gt;To all my friends at AllPlayers.com, it has truly been a pleasure to work with
+each and everyone of one. Keep up the good work, like I know you will. I will
+miss all of you deeply.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 08 Sep 2014 00:00:00 -0400</pubDate>
+        <link>http://jamesarmes.com/blog/2014/09/all-good-things</link>
+        <guid isPermaLink="true">http://jamesarmes.com/blog/2014/09/all-good-things</guid>
+        
+        <category>Drupal</category>
+        
+        <category>AllPlayers</category>
+        
+        <category>Acquia</category>
+        
+        <category>Career</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>AllPlayers.com Eat N&#39; Geek: Regular Expressions and You</title>
+        <description>&lt;iframe src=&quot;http://player.vimeo.com/video/47263145&quot; width=&quot;500&quot; height=&quot;313&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;Above is the presentation I gave for the August 8, 2012 AllPlayers.com Eat N’
+Geek on regular expressions. The presentation gives a general introduction to
+regular expressions and syntax before covering some more advanced concepts such
+as lookarounds and conditions. A full write up by
+&lt;a href=&quot;https://twitter.com/general_redneck&quot;&gt;Allan Chappell&lt;/a&gt; can be found on the
+&lt;a href=&quot;http://allplayers.github.com/blog/2012/08/13/regular-expressions-and-you/&quot;&gt;AllPlayers Dev Blog&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 08 Sep 2012 00:00:00 -0400</pubDate>
+        <link>http://jamesarmes.com/blog/2012/09/allplayerscom-eat-n-geek-regular-expressions-and-you</link>
+        <guid isPermaLink="true">http://jamesarmes.com/blog/2012/09/allplayerscom-eat-n-geek-regular-expressions-and-you</guid>
+        
+        <category>Presentation</category>
+        
+        <category>Regular Expressions</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>Barcamp Harrisburg: Setting up shop with Drupal Commerce</title>
+        <description>&lt;div class=&quot;prezi-player&quot;&gt;
+	&lt;style media=&quot;screen&quot; type=&quot;text/css&quot;&gt;
+.prezi-player { width: 550px; } .prezi-player-links { text-align: center; }	&lt;/style&gt;
+	&lt;object classid=&quot;clsid:D27CDB6E-AE6D-11cf-96B8-444553540000&quot; height=&quot;400&quot; id=&quot;prezi_b0fostu_mlbe&quot; name=&quot;prezi_b0fostu_mlbe&quot; width=&quot;550&quot;&gt;&lt;param name=&quot;movie&quot; value=&quot;http://prezi.com/bin/preziloader.swf&quot; /&gt;&lt;param name=&quot;allowfullscreen&quot; value=&quot;true&quot; /&gt;&lt;param name=&quot;allowscriptaccess&quot; value=&quot;always&quot; /&gt;&lt;param name=&quot;bgcolor&quot; value=&quot;#ffffff&quot; /&gt;&lt;param name=&quot;flashvars&quot; value=&quot;prezi_id=b0fostu_mlbe&amp;amp;lock_to_path=1&amp;amp;color=ffffff&amp;amp;autoplay=no&amp;amp;autohide_ctrls=0&quot; /&gt;&lt;embed allowfullscreen=&quot;true&quot; allowscriptaccess=&quot;always&quot; bgcolor=&quot;#ffffff&quot; flashvars=&quot;prezi_id=b0fostu_mlbe&amp;amp;lock_to_path=1&amp;amp;color=ffffff&amp;amp;autoplay=no&amp;amp;autohide_ctrls=0&quot; height=&quot;400&quot; id=&quot;preziEmbed_b0fostu_mlbe&quot; name=&quot;preziEmbed_b0fostu_mlbe&quot; src=&quot;http://prezi.com/bin/preziloader.swf&quot; type=&quot;application/x-shockwave-flash&quot; width=&quot;550&quot; /&gt;&lt;/object&gt;
+	&lt;div class=&quot;prezi-player-links&quot;&gt;
+		&lt;p&gt;&lt;a href=&quot;http://prezi.com/b0fostu_mlbe/setting-up-shop-with-drupal-commerce/&quot; title=&quot;Setting up shop with Drupal Commerce&quot;&gt;Setting up shop with Drupal Commerce&lt;/a&gt; on &lt;a href=&quot;http://prezi.com&quot;&gt;Prezi&lt;/a&gt;&lt;/p&gt;
+		&lt;p&gt;&lt;!--break--&gt;&lt;/p&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;Above is the presentation I gave at this year’s
+&lt;a href=&quot;http://www.barcamphbg.org/&quot;&gt;BarCamp Harrisburg&lt;/a&gt;. Below you can find links that
+were included in the presentation as well as some additional resources. Also,
+don’t forget to vote for AllPlayers.com in the
+&lt;a href=&quot;http://bluedropawards.org/best-social-website-built-with-drupal-nominees/allplayerscom&quot;&gt;Blue Drop Awards&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h4 id=&quot;resources&quot;&gt;Resources&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;Drupal: &lt;a href=&quot;http://drupal.org/&quot;&gt;http://drupal.org/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Drupal Commerce module: &lt;a href=&quot;http://drupal.org/project/commerce&quot;&gt;http://drupal.org/project/commerce&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Commerce Kickstart distribution: &amp;lt;(http://drupal.org/project/commerce_kickstart&amp;gt;&lt;/li&gt;
+  &lt;li&gt;Drupal Commerce website: &lt;a href=&quot;http://www.drupalcommerce.org/&quot;&gt;http://www.drupalcommerce.org/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Commerce Guys: &lt;a href=&quot;http://www.commerceguys.com/&quot;&gt;http://www.commerceguys.com/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;additional-modules-used-in-demonstration&quot;&gt;Additional modules used in demonstration&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;Commerce Bulk Product Creation: &lt;a href=&quot;http://drupal.org/project/commerce_bpc&quot;&gt;http://drupal.org/project/commerce_bpc&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;other&quot;&gt;Other&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;AllPlayers.com: &lt;a href=&quot;https://www.allplayers.com/&quot;&gt;https://www.allplayers.com/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Sat, 31 Mar 2012 00:00:00 -0400</pubDate>
+        <link>http://jamesarmes.com/blog/2012/03/barcamp-harrisburg-setting-shop-drupal-commerce</link>
+        <guid isPermaLink="true">http://jamesarmes.com/blog/2012/03/barcamp-harrisburg-setting-shop-drupal-commerce</guid>
+        
+        <category>Drupal</category>
+        
+        <category>Presentation</category>
+        
+        <category>Commerce</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>The New Jimmy&#39;s Sandbox</title>
+        <description>&lt;p&gt;As you can see, Jimmy’s Sandbox has seen a bit of a face lift. This represents
+several weeks of planning and implementation. Now that the new design is in
+place, you should start seeing more frequent post regarding Drupal, PHP, Web
+Services and many other topics related to web development.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;h3 id=&quot;your-thoughts&quot;&gt;Your Thoughts&lt;/h3&gt;
+&lt;p&gt;Do you have any thoughts on the new design? Good or bad I want to hear it. How
+about something you would like to see a new post about? Whatever it is, leave
+your thoughts in the comment section below.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 06 Apr 2010 00:00:00 -0400</pubDate>
+        <link>http://jamesarmes.com/blog/2010/04/new-jimmys-sandbox</link>
+        <guid isPermaLink="true">http://jamesarmes.com/blog/2010/04/new-jimmys-sandbox</guid>
+        
+        <category>Jimmy&#39;s Sandbox</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>Jimmy&#39;s Fridge</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/assets/images/2010/02/fridge.jpg&quot; alt=&quot;Jimmy&#39;s Fridge&quot; /&gt;&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;This is in response to &lt;a href=&quot;http://buytaert.net/my-fridge&quot;&gt;My Fridge&lt;/a&gt; by
+&lt;a href=&quot;http://buytaert.net&quot;&gt;Dries Buytaert&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 25 Feb 2010 00:00:00 -0500</pubDate>
+        <link>http://jamesarmes.com/blog/2010/02/jimmys-fridge</link>
+        <guid isPermaLink="true">http://jamesarmes.com/blog/2010/02/jimmys-fridge</guid>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>Drupal 6 Performance on GoDaddy</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/assets/images/2010/01/goingdown.jpg&quot; alt=&quot;Going down&quot; class=&quot;post-image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I have been using Google’s
+&lt;a href=&quot;http://code.google.com/speed/page-speed/&quot;&gt;Page Speed&lt;/a&gt; tool to help improve the
+load times of this site. In doing so, I discovered that I never configured any
+of the performance settings provided by Drupal. I also discovered that GoDaddy
+does not use mod_gzip or mod_deflate to compress the documents being requested.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;h2 id=&quot;drupals-performance-settings&quot;&gt;Drupal’s Performance Settings&lt;/h2&gt;
+&lt;p&gt;Drupal comes prepackaged with performance tuning options. These options include
+caching and CSS/JavaScript optimization. By enabling these features, I saw a
+dramatic decrease in load times for Jimmy’s Sandbox. You can view the
+performance settings for your site at /admin/settings/performance.&lt;/p&gt;
+
+&lt;h3 id=&quot;caches&quot;&gt;Caches&lt;/h3&gt;
+&lt;p&gt;Drupal provides both a page cache and a block cache. The page cache only affects
+anonymous users. While enabled, it will cache pages so that it does not need to
+re-render them for each request. When a page is updated, the cache is cleared.
+There are three levels of page caching:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Disabled:&lt;/strong&gt; No caching will occur and each request will have to wait for the
+page to be rendered.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Normal:&lt;/strong&gt; Recommended for most sites and does not cause any side effects.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Aggressive:&lt;/strong&gt; Skips the loading and unloading of all modules when serving a
+cached page. This can cause side effects with modules that rely on this behavior
+(ie. Statistics). If you visit the performance settings of your site, you will
+be notified of any modules that are incompatible with aggressive caching (see
+below).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2010/01/aggressive-cache-incompat.png&quot; alt=&quot;Aggressive Cache Incompatibilities&amp;quot;&quot; class=&quot;image-center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Drupal also allows you to provide a minimum cache lifetime. This will prevent
+the cache for both pages and blocks from being cleared before that time. The
+available options range from one minute to one day.&lt;/p&gt;
+
+&lt;p&gt;The page compression option will allow Drupal to compress cached pages as they
+are sent to the browser. This saves on bandwidth and can provide quite a
+performance boost for larger pages. Since HTML is text, it compresses quite
+well. Enabling this option helps to mitigate the fact that GoDaddy does not have
+any compression of their own.&lt;/p&gt;
+
+&lt;p&gt;Unlike the page cache, the block cache can provide a performance boost to all
+users. The block cache is similar to the page cache in that it prevents
+individual blocks from having to be rendered on each page load. If you have any
+modules that define content access restrictions, such as Node Privacy By Role,
+this setting cannot be enabled. I have several blocks on that provide dynamic
+content and have not run into any issues by enabling the block cache.&lt;/p&gt;
+
+&lt;h3 id=&quot;cssjavascript-optimizations&quot;&gt;CSS/JavaScript Optimizations&lt;/h3&gt;
+&lt;p&gt;Drupal’s CSS and JavaScript optimizations are really quite simple. When enabled,
+they combine all JavaScript into a single file and all CSS into a single file.
+Both files are then cached and the CSS file is compressed. If you have not
+created your files directory, or have configured your files to be private, these
+options cannot be enabled.&lt;/p&gt;
+
+&lt;h2 id=&quot;google-analytics-optimizations&quot;&gt;Google Analytics Optimizations&lt;/h2&gt;
+&lt;p&gt;If you are using the
+&lt;a href=&quot;http://drupal.org/project/google_analytics&quot;&gt;Google Analytics&lt;/a&gt; module by budda,
+you can cache the JavaScript file that is normally stored on Google’s servers.
+This prevents the browser from having to perform an additional DNS lookup. The
+cache is updated once a day and can be enabled from the “Advanced settings”
+field group at /admin/settings/googleanalytics. It is important that you wait
+until Google has validated your site before enabling this option.&lt;/p&gt;
+
+&lt;h2 id=&quot;javascript-compression&quot;&gt;JavaScript Compression&lt;/h2&gt;
+&lt;p&gt;Unlike the CSS cache, cached JavaScript is not compressed. To get around this, I
+use the &lt;a href=&quot;http://drupal.org/project/smartcache&quot;&gt;SmartCache&lt;/a&gt; module. The module
+requires your Apache server to have mod_rewrite enabled to redirect requests for
+all JavaScript and CSS files to a script provided by the module. When a file is
+requested, the script creates a compressed version of the file and serves that
+up instead of the plain text version. The compressed file is then cached&lt;/p&gt;
+
+&lt;p&gt;This requires some manual setup to get working. There is no .info file so Drupal
+will not recognize it as an actual module, but that’s okay since the module
+doesn’t actually interact with Drupal. There are some configuration options in
+the load.php file that need setup and a line will need to be added to you
+.htaccess file. To clear the cache before the next scheduled cache clear, just
+clear the files out of the cache directory. Basically just read the README.txt
+file that comes packaged with the module and you will be fine.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-performance-tips-do-you-have&quot;&gt;What Performance Tips Do You Have?&lt;/h2&gt;
+&lt;p&gt;That’s just a quick run through of the performance improvements I have used here
+on Jimmy’s Sandbox. The are certainly other options out there, such as minifying
+JavaScript. So what do you use to improve performance on your site?  Let us know
+by leaving a comment below. While you’re at it, while not subscribe to the
+Jimmy’s Sandbox &lt;a href=&quot;/blog/feed&quot;&gt;feed&lt;/a&gt; and be notified of new posts that may include
+other performance improvements.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 06 Jan 2010 00:00:00 -0500</pubDate>
+        <link>http://jamesarmes.com/blog/2010/01/drupal-6-performance-godaddy</link>
+        <guid isPermaLink="true">http://jamesarmes.com/blog/2010/01/drupal-6-performance-godaddy</guid>
+        
+        <category>Drupal</category>
+        
+        <category>GoDaddy</category>
+        
+        <category>Performance</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>Simple Tips For Repsonding To A Web Developer Job Posting</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/assets/images/2009/12/outlook.jpg&quot; alt=&quot;Outlook&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I was recently tasked with hiring a  web developer for a redesign of
+&lt;a href=&quot;workxpress.com&quot;&gt;http://www.workxpress.com&lt;/a&gt;. I was surprised at the number of
+poor quality responses I received. The original post can be found at
+&lt;a href=&quot;http://drupal.org/node/602292&quot;&gt;http://drupal.org/node/602292&lt;/a&gt;. Looking back, I should have included more
+details in my post, but that still doesn’t excuse the poor quality of some of
+these emails.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;I have taken examples from many of the emails that I have received for us to
+analyze. Names and URLs have been changed to protect the identities of the
+individuals. So, without further ado, I present you with some simple tips when
+responding to a web developer job post.&lt;/p&gt;
+
+&lt;h2 id=&quot;use-a-professional-email-address&quot;&gt;1. Use a professional email address&lt;/h2&gt;
+&lt;p&gt;I don’t think a lot of people realize how important their email address can be.
+I’m not going to spend a lot of time on this, but suffice it to say that you
+will not get taken seriously replying to a job post using an email like
+awesomejedi@yahoo.com. Check out the Men With Pens post
+&lt;a href=&quot;http://menwithpens.ca/email-address-losing-clients&quot;&gt;Is Your Email Address Losing You Clients?&lt;/a&gt;
+for more on this subject.&lt;/p&gt;
+
+&lt;h2 id=&quot;use-a-professional-yet-personal-greeting&quot;&gt;2. Use a professional yet personal greeting&lt;/h2&gt;
+&lt;p&gt;The greeting is the first thing in your email to be read. I think everybody
+knows this, but not everybody seems to think about their greeting. So what makes
+a greeting professional yet personal?  Professional is easy, avoid using words
+you wouldn’t use when meeting an interviewer for the first time (such as “Hey”).
+Personal is easy as well, just use the persons name. For example, a greeting
+like “James” or “Dear James” would suffice. The worst offender I received had to
+be “hi and thanks-“.&lt;/p&gt;
+
+&lt;h2 id=&quot;use-proper-capitalization&quot;&gt;3. Use proper capitalization&lt;/h2&gt;
+&lt;p&gt;We all know not to type in all caps, but all lowercase doesn’t send the right
+message either. Make sure you capitalize the first letter in names and the first
+word of each sentence. See below for some examples of poor capitalization. I
+find the second example to be curious, as he capitalized the supported browsers,
+but nothing else.&lt;/p&gt;
+
+&lt;h3 id=&quot;example-1&quot;&gt;Example 1:&lt;/h3&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;saw your post-&lt;br /&gt;
+perhaps i can provide the service you need&lt;/p&gt;
+
+  &lt;p&gt;i am a drupal samurai for hire&lt;br /&gt;
+based in buffalo, new york usa&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;example-2&quot;&gt;Example 2:&lt;/h3&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;output will be drupal theme, valid html/css, major browser compatibility
+(IE,FF,Safari). additional sub template add $75&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;add-some-descriptions-to-your-examples&quot;&gt;4. Add some descriptions to your examples&lt;/h2&gt;
+&lt;p&gt;Including example sites in your response is always a good idea. When providing
+examples, give some details on each. Example 3 below shows a poor presentation
+of sites you have worked on. Example 4 shows a much better presentation that
+includes descriptions of what the web developer did on each.&lt;/p&gt;
+
+&lt;h3 id=&quot;example-3&quot;&gt;Example 3:&lt;/h3&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;http://www.example.com (usa, media)&lt;br /&gt;
+http://www.foo.com (usa. media)&lt;br /&gt;
+http://www.bar.co.uk (project services, uk)&lt;br /&gt;
+http://www.baz.ca/web (infotech, canada)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;example-4&quot;&gt;Example 4:&lt;/h3&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;http://www.example.com - I project managed and/or wrote the HTML and CSS for
+every site in this portfolio with the exception of Foo, Bar, and Baz. Some of
+the links in the portfolio there are broken, but can be fixed by replacing
+‘ex4’ with ‘ex4mediagroup’ in the URL; the company no longer does business
+under that name so I don’t think they’re maintaining it anymore.&lt;/p&gt;
+
+  &lt;p&gt;http://www.foo.com and http://www.foo.com/smarty/templates/default/styles.css
+- This is one of the sites that I wrote the HTML and CSS for. This site and
+the others in this portfolio were built on an in-house CMS using the Smarty
+templating system.&lt;/p&gt;
+
+  &lt;p&gt;http://www.bar.co.uk - I worked in some degree with several of the projects in
+the portfolio at Foo, however the greatest involvement I had was with specific
+projects that are still in progress or not in the portfolio.&lt;/p&gt;
+
+  &lt;p&gt;http://www.baz.ca/web - This was the largest project we worked with while I
+was at Foo, and I both project managed it through most of it’s duration and
+did much of the Drupal configuration, including extensive work with views and
+Ubercart.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;use-complete-sentences&quot;&gt;5. Use complete sentences&lt;/h2&gt;
+&lt;p&gt;This is another no brainier, or so I thought. Use complete sentences with proper
+punctuation. Run on sentences and simple three word phrases don’t look very
+professional. The following example could have easily been several sentences and
+looked much more professional.&lt;/p&gt;
+
+&lt;h3 id=&quot;example-5&quot;&gt;Example 5:&lt;/h3&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;I went through your   post , i am drupal developer. I am good hand in css. I
+done following project&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;use-correct-grammar&quot;&gt;6. Use correct grammar&lt;/h2&gt;
+&lt;p&gt;While I understand English is not everyones first language, you should have a
+firm understanding of grammar before responding in any language. If I don’t feel
+that I will be able to communicate with you, I’m not likely to hire you. The
+following three examples clearly demonstrate a lack of proper grammar.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;I am John who have experiences in designing and developing drupal websites for
+national as well as international clients. I saw your post at drupal form and
+would like know more about the job.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;example-7&quot;&gt;Example 7:&lt;/h3&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;We are Foo Bar, Inc. located in Redwood City, CA. We experience designing and
+redesigning Drupal based sites&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;example-8&quot;&gt;Example 8:&lt;/h3&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;I had a chance to look at your requirement about ,Hireing a drupal developer
+to complete your requirement ,We could be of great help to you.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;your-turn&quot;&gt;Your turn&lt;/h2&gt;
+&lt;p&gt;What are your thoughts on some of these tips?  Do you have any other advice for
+those replying to a job post?  Please share you thoughts in the comments below.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 20 Dec 2009 00:00:00 -0500</pubDate>
+        <link>http://jamesarmes.com/blog/2009/12/simple-tips-repsonding-web-developer-job-posting</link>
+        <guid isPermaLink="true">http://jamesarmes.com/blog/2009/12/simple-tips-repsonding-web-developer-job-posting</guid>
+        
+        <category>Drupal</category>
+        
+        <category>Freelance</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>Using the WorkXpress API: Display Formats</title>
+        <description>&lt;p&gt;&lt;a href=&quot;http://www.workxpress.com&quot;&gt;&lt;img src=&quot;/assets/images/workxpress-logo.png&quot; alt=&quot;WorkXpress&quot; class=&quot;post-image image-right&quot; /&gt;&lt;/a&gt;
+You have learned about all of the functions. You understand the data formats.
+What could possibly be left before mastering the
+&lt;a href=&quot;http://www.workxpress.com&quot;&gt;WorkXpress&lt;/a&gt; API? Display formats is the answer.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;Display formats allow you to pull out data in different formats. For example,
+instead of pulling a file field as XML (stored value) or just the filename (text
+value), you could get the download URL. When using display formats, the format
+type must be set to “text”. Not all Fields have display formats, while others
+have several. Many of the available formats match the available parts for
+multi-part fields. For more information on these parts, see my previous post on
+&lt;a href=&quot;/blog/2009/10/using-workxpress-api-data-formats&quot;&gt;data formats&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;address&quot;&gt;Address&lt;/h2&gt;
+&lt;p&gt;The &lt;a href=&quot;http://www.workxpress.com/training/library/address&quot;&gt;Address&lt;/a&gt; Field Type
+exposes a number of display formats to match the available parts of the field.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Type&lt;/li&gt;
+  &lt;li&gt;Street&lt;/li&gt;
+  &lt;li&gt;Street2&lt;/li&gt;
+  &lt;li&gt;Street3&lt;/li&gt;
+  &lt;li&gt;City&lt;/li&gt;
+  &lt;li&gt;State&lt;/li&gt;
+  &lt;li&gt;ZipCode&lt;/li&gt;
+  &lt;li&gt;Country&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;These formats can be combined to create you own format. For example, let’s say
+you want to display only the city, state and zip code of the address. Your
+format string would look as follows:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-php&quot; data-lang=&quot;php&quot;&gt;$format = &#39;City, State ZipCode&#39;;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;You can even add your own text to the string, just make sure not to use any of
+the format parts in your custom text (display formats are case sensitive).&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-php&quot; data-lang=&quot;php&quot;&gt;$format = &#39;You live in City, State Country&#39;;
+
+// Since display formats are case sensitive, you could also do something like
+// the following.
+$format = &#39;This client hails from the city of City&#39;;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h2 id=&quot;currency&quot;&gt;Currency&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.workxpress.com/training/library/currency-us&quot;&gt;Currency&lt;/a&gt; Fields
+usually return the currency symbol ($) when using the text only version. Using
+the NumberOnly format allows you to pull the value without the currency symbol
+(ie. “3.12” instead of “$3.12”). You can get the same result from using the
+stored format type instead of text.&lt;/p&gt;
+
+&lt;h2 id=&quot;phone-number&quot;&gt;Phone Number&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.workxpress.com/training/library/phone-number&quot;&gt;Phone Number&lt;/a&gt; Fields
+are similar to Address Fields. The display formats for Phone Number Fields match
+the available parts.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Type&lt;/li&gt;
+  &lt;li&gt;CountryCode&lt;/li&gt;
+  &lt;li&gt;AreaCode&lt;/li&gt;
+  &lt;li&gt;Prefix&lt;/li&gt;
+  &lt;li&gt;LineNumber&lt;/li&gt;
+  &lt;li&gt;Extension&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;select---select-one&quot;&gt;Select - Select One&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.workxpress.com/training/library/select-one&quot;&gt;Select - Select One&lt;/a&gt;
+Fields provide display formats that allow access to some of their special
+features. No display format will return the title of the currently selected
+Select Option.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;AltTitle: Alternate title of the currently selected Select Option.&lt;/li&gt;
+  &lt;li&gt;WithOther: Title of the currently selected Select Option as well as the value
+of the “Other” Field for the Select Option (if any).&lt;/li&gt;
+  &lt;li&gt;OtherOnly: Returns only the value of the “Other” Field of the currently
+selected Select Option (if any).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;check-box&quot;&gt;Check Box&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.workxpress.com/training/library/checkbox&quot;&gt;Check Box&lt;/a&gt; Fields provide
+a few different formats to handle their unique on/off nature. Most of your
+requirements for this Field Type can be handled using the stored format type.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Checked: Returns the values “CHECKED” or “UNCHECKED”.&lt;/li&gt;
+  &lt;li&gt;FieldLabel: Either the Field’s label or empty.&lt;/li&gt;
+  &lt;li&gt;WithOther: Returns the same as the Checked display format followed by a hyphen and the value of the “Other” Field for the current state (if any).&lt;/li&gt;
+  &lt;li&gt;OtherOnly: Returns only the value of the “Other” Field for the current state (if any).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;date-and-date-time&quot;&gt;Date and Date Time&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.workxpress.com/training/library/date&quot;&gt;Date&lt;/a&gt; and
+&lt;a href=&quot;http://www.workxpress.com/training/library/date-and-time&quot;&gt;Date Time&lt;/a&gt; Fields
+provide display formats that can be useful for displaying their values in
+different formats. Many of these formats correspond to the formats provided by
+PHP’s &lt;a href=&quot;http://us.php.net/manual/en/function.date.php&quot;&gt;date&lt;/a&gt; function.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;AMPMLowercase: Lowercase ante meridiem or post meridiem value.&lt;/li&gt;
+  &lt;li&gt;AMPMUppercase: Uppercase ante meridiem or port meridiem value.&lt;/li&gt;
+  &lt;li&gt;DayOfMonth: Day of the month without leading zeros.&lt;/li&gt;
+  &lt;li&gt;DayOfMonthSuffix: Two character English ordinal day of the month (ie. st for 1st or th for 13th).&lt;/li&gt;
+  &lt;li&gt;DayOfMonthLeadingZero: Two digit day of the month with leading zeros.&lt;/li&gt;
+  &lt;li&gt;DayOfWeek: Full day of the week title (ie. Monday).&lt;/li&gt;
+  &lt;li&gt;DayOfWeekAbbreviated: Three character day of the week title (ie. Mon).&lt;/li&gt;
+  &lt;li&gt;DayOfWeekNumber: &lt;a href=&quot;http://en.wikipedia.org/wiki/ISO-8601#Week_dates&quot;&gt;ISO-8601&lt;/a&gt; numeric day of the week.&lt;/li&gt;
+  &lt;li&gt;DayOfYear: Day of the year starting with zero.&lt;/li&gt;
+  &lt;li&gt;Hour: 12-hour formatted hour without leading zero.&lt;/li&gt;
+  &lt;li&gt;Hour24: 24-hour formatted hour without leading zero.&lt;/li&gt;
+  &lt;li&gt;Hour24LeadingZero: 24-hour formatted hour with leading zero.&lt;/li&gt;
+  &lt;li&gt;HourLeadingZero: 12-hour formatted hour with leading zero.&lt;/li&gt;
+  &lt;li&gt;Minute: Two digit minutes with leading zeros.&lt;/li&gt;
+  &lt;li&gt;MonthName: Full month title (ie. January).&lt;/li&gt;
+  &lt;li&gt;MonthNameAbbreviated: Three character month title (ie. Jan).&lt;/li&gt;
+  &lt;li&gt;MonthOfYear: Numeric representation of the month without leading zero.&lt;/li&gt;
+  &lt;li&gt;MonthOfYearLeadingZero: Numeric representation of the month with leading zero.&lt;/li&gt;
+  &lt;li&gt;Second: Two digit seconds with leading zero.&lt;/li&gt;
+  &lt;li&gt;Timestamp: Seconds since the Unix epoch (January 1, 1970 00:00:00 GMT).&lt;/li&gt;
+  &lt;li&gt;WeekOfYear: ISO-8601 numeric week number of the year.&lt;/li&gt;
+  &lt;li&gt;Year: Four digit year.&lt;/li&gt;
+  &lt;li&gt;YearShort: Two digit year.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;file&quot;&gt;File&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;&amp;lt;a href=&amp;quot;http://www.workxpress.com/training/library/file-attachment&quot;&gt;File&lt;/a&gt;
+Fields can be difficult to deal with. Display formats are here to help. Using
+the display formats below, File Fields can be much easier to deal with.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;DownloadURL: The URL that can be used to download the file. If the Field is
+configured to be private, this URL will require a user to be logged in.&lt;/li&gt;
+  &lt;li&gt;Filename: Name of the file, including the extension.&lt;/li&gt;
+  &lt;li&gt;FileSize: Size of the file in bytes.&lt;/li&gt;
+  &lt;li&gt;Height: If the file is an image, this will return the height of the image in
+pixels.&lt;/li&gt;
+  &lt;li&gt;Image: If the file is an image, this will return the image tag that can be
+used in an HTML document. The image must be public for this to be used outside
+of the Application.&lt;/li&gt;
+  &lt;li&gt;MimeType: The file’s mime-type (ie.image/png).&lt;/li&gt;
+  &lt;li&gt;Thumbnail: Similar to the Image display format, but the src attribute will be
+pointed at the thumbnail.&lt;/li&gt;
+  &lt;li&gt;ThumbnailURL: If the file is an image, this will return the same as the
+DownloadURL display format but for the thumbnail image.&lt;/li&gt;
+  &lt;li&gt;Width: If the file is an image, this will return the width of the image in
+pixels.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;social-security&quot;&gt;Social Security&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.workxpress.com/training/library/social-security-number&quot;&gt;Social Security&lt;/a&gt;
+Fields provide only a single display format part. By using the LastFour format,
+you can retrieve only the last four digits of a social security number. With no
+display format, this Field Type will return the value as “***-**-####”.&lt;/p&gt;
+
+&lt;h2 id=&quot;now-youre-ready&quot;&gt;Now You’re Ready!&lt;/h2&gt;
+&lt;p&gt;That’s all folks. You have everything you need to master the WorkXpress API. The
+API opens up a lot of possibilities for you and your application. Current uses
+of the API include integrating with FedEx shipping services, data imports with
+HarrisData and administration of FTP servers. Once you have had a chance to
+explore the power of the API, come back here and let me know how you used it. As
+always, if you have any questions, leave a comment below.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 12 Dec 2009 00:00:00 -0500</pubDate>
+        <link>http://jamesarmes.com/blog/2009/12/using-workxpress-api-display-formats</link>
+        <guid isPermaLink="true">http://jamesarmes.com/blog/2009/12/using-workxpress-api-display-formats</guid>
+        
+        <category>API</category>
+        
+        <category>PHP</category>
+        
+        <category>SOAP</category>
+        
+        <category>Web Services</category>
+        
+        <category>WorkXpress</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+  </channel>
+</rss>

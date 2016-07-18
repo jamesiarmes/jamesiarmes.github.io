@@ -1,4 +1,107 @@
-<!DOCTYPE html> <html> <head> <meta charset="utf-8"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <meta name="viewport" content="width=device-width, initial-scale=1"> <link rel="stylesheet" href="/public/stylesheets/bs.css"> <link rel="stylesheet" href="/public/stylesheets/styles.css"> <link rel="stylesheet" href="/public/stylesheets/pygment_trac.css"> <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"> <link rel="canonical" href="http://jamesarmes.com/blog/2009/07/selenium-waiting-ajax"> <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> <link rel="icon" type="image/x-icon" href="/favicon.ico"/> <title>Selenium: Waiting For AJAX | James Armes</title> <!--[if lt IE 9]><script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script> <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]--> <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"> </head> <body> <div class="wrapper"> <section> <div id="title"> <h1> <a id="git-ic" href="https://github.com/jamesiarmes"><i class="fa fa-github"></i></a> <a id="so-ic" href="http://stackoverflow.com/users/62401/jamesarmes"><i class="fa fa-stack-overflow"></i></a> <a id="sitename" href="/">James Armes</a> </h1> <hr/> <span class="credits left"> <a href="/blog">Blog</a> | <a href="/archive">Archive</a> | <a href="/resume">Resume</a> | <a href="/about">About</a> </span> <span class="credits right"> </span> </div> <div class="post-title"> <h1>Selenium: Waiting For AJAX</h1> <p class="text-muted">01 Jul 2009 | <i class="fa fa-tag"></i> <a class="text-muted" href="/tags/#AJAX">AJAX</a>, <a class="text-muted" href="/tags/#PHP">PHP</a>, <a class="text-muted" href="/tags/#Selenium">Selenium</a>, <a class="text-muted" href="/tags/#Testing">Testing</a>, <a class="text-muted" href="/tags/#WorkXpress">WorkXpress</a> </p> </div> <p><img src="/assets/images/2009/07/selenium-rc-logo.png" alt="Selenium RC" class="post-image image-right"/> I was playing around with <a href="http://seleniumhq.org/">Selenium RC</a> a little while ago and ran into a little problem that I thought I would share with everyone. I was writing a test that bounced around <a href="http://www.workxpress.com">WorkXpress</a> to give me some performance benchmarks. My test added a new item that had a list layout of related items on it. I wanted to be able to follow a link to add items to that list.  Seems easy enough right?</p> <p>The difficult part came when I needed to wait for the layout to be reloaded after adding the Items to it.  I knew that when the layout reloaded there was going to be a specific element on the page that was not there before. I tried using <code class="highlighter-rouge">Testing_Selenium::waitForCondition()</code> but that always returned right away and let the processing continue. After a little help from the documentation and <a href="http://stackoverflow.com">Stack Overflow</a>, I decided to give <code class="highlighter-rouge">Testing_Selenium::getAttribute()</code></p> <p>When I tried calling <code class="highlighter-rouge">getAttribute()</code> after <code class="highlighter-rouge">waitForCondition()</code>, I received a string back informing me that the element did not exist. This confirmed my suspicions that <code class="highlighter-rouge">waitForConidtion()</code> was coming back too early. I could have added a call to <code class="highlighter-rouge">sleep()</code> before continuing, but that would have defeated the purpose of my test.  Without a better solution, I resorted to a while loop that exited when the element finally existed. The code I used is included below:</p> <figure class="highlight"><pre><code class="language-php" data-lang="php">$selenium = new Testing_Selenium($browser, $url, $host, $port, $timeout);
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/public/stylesheets/bs.css">
+    <link rel="stylesheet" href="/public/stylesheets/styles.css">
+    <link rel="stylesheet" href="/public/stylesheets/pygment_trac.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"> 
+    <link rel="canonical" href="http://jamesarmes.com/blog/2009/07/selenium-waiting-ajax">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+      <link rel="icon" type="image/x-icon"  href="/favicon.ico" />
+    <title>Selenium: Waiting For AJAX | James Armes</title>
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  </head> 
+  <body>
+    <div class="wrapper">    
+        <section>   
+          <div id="title">
+  <h1>
+    
+		  <a id="git-ic" href="https://github.com/jamesiarmes"><i class="fa fa-github"></i></a>
+    
+
+    
+      <a id="so-ic" href="http://stackoverflow.com/users/62401/jamesarmes"><i class="fa fa-stack-overflow"></i></a>
+    
+
+    <a id="sitename" href="/">James Armes</a>
+  </h1>
+
+  <!-- Add something about you in p tag-->
+  <!-- <p>Write something about you here...</p> -->
+  <hr/>
+
+  <span class="credits left">
+  <a href="/blog">Blog</a> |
+  <a href="/archive">Archive</a> |
+  <a href="/resume">Resume</a> |
+  <a href="/about">About</a>
+</span>
+
+<span class="credits right">
+
+</span>
+
+
+</div>
+
+
+
+      
+          <div class="post-title">
+    <h1>Selenium: Waiting For AJAX</h1>
+    <p class="text-muted">01 Jul 2009 | <i class="fa fa-tag"></i>
+  
+  
+  <a class="text-muted" href="/tags/#AJAX">AJAX</a>,
+  
+  <a class="text-muted" href="/tags/#PHP">PHP</a>,
+  
+  <a class="text-muted" href="/tags/#Selenium">Selenium</a>,
+  
+  <a class="text-muted" href="/tags/#Testing">Testing</a>,
+  
+  <a class="text-muted" href="/tags/#WorkXpress">WorkXpress</a>
+  
+
+
+</p>
+
+</div>
+            
+  <p><img src="/assets/images/2009/07/selenium-rc-logo.png" alt="Selenium RC" class="post-image image-right" />
+I was playing around with <a href="http://seleniumhq.org/">Selenium RC</a> a little while
+ago and ran into a little problem that I thought I would share with everyone.
+I was writing a test that bounced around <a href="http://www.workxpress.com">WorkXpress</a>
+to give me some performance benchmarks. My test added a new item that had a list
+layout of related items on it. I wanted to be able to follow a link to add items
+to that list.  Seems easy enough right?</p>
+
+<!--more-->
+
+<p>The difficult part came when I needed to wait for the layout to be reloaded
+after adding the Items to it.  I knew that when the layout reloaded there
+was going to be a specific element on the page that was not there before. I
+tried using <code class="highlighter-rouge">Testing_Selenium::waitForCondition()</code> but that always returned right
+away and let the processing continue. After a little help from the documentation
+and <a href="http://stackoverflow.com">Stack Overflow</a>, I decided to give
+<code class="highlighter-rouge">Testing_Selenium::getAttribute()</code></p>
+
+<p>When I tried calling <code class="highlighter-rouge">getAttribute()</code> after <code class="highlighter-rouge">waitForCondition()</code>, I received a
+string back informing me that the element did not exist. This confirmed my
+suspicions that <code class="highlighter-rouge">waitForConidtion()</code> was coming back too early. I could have
+added a call to <code class="highlighter-rouge">sleep()</code> before continuing, but that would have defeated the
+purpose of my test.  Without a better solution, I resorted to a while loop
+that exited when the element finally existed. The code I used is included below:</p>
+
+<figure class="highlight"><pre><code class="language-php" data-lang="php">$selenium = new Testing_Selenium($browser, $url, $host, $port, $timeout);
 
 // Body of test.
 
@@ -11,4 +114,164 @@ while (strpos($attr, 'not found') !== false) {
 	$attr = $selenium-&gt;getAttribute('element_id@attribute');
 } // end while
 
-// Remainder of test.</code></pre></figure> <p>Be very careful when attempting to do anything like this. If the element never appears on screen, you will find yourself with an infinite loop. Let me know what you think, or if you have a better solution.</p> <div class="share-btns"> <h4>Share this post:</h4> <a class="btn btn-small btn-sm twitter" href="http://twitter.com/share?text=Selenium: Waiting For AJAX" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;"> <i class="fa fa-twitter fa-lg"></i> Twitter </a> <a class="btn btn-small btn-sm facebook" href="https://www.facebook.com/sharer/sharer.php" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;"> <i class="fa fa-facebook fa-lg"></i> Facebook </a> <a class="btn btn-small btn-sm gplus" onclick="window.open('https://plus.google.com/share?url='+window.location.href, 'google-plus-share', 'width=490,height=530');return false;"> <i class="fa fa-google-plus fa-lg"></i> Google+ </a> </a> </div> <div class="comments"> <div id="disqus_thread"></div> <script type="text/javascript">var disqus_shortname="jamesarmes";!function(){var e=document.createElement("script");e.type="text/javascript",e.async=!0,e.src="//"+disqus_shortname+".disqus.com/embed.js",(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(e)}();</script> <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript> <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a> </div> <div class="post-footer"> </div> <hr/> <div class="post-navs row"> <div class="col-md-6 post-nav"> <h3 class="section-header"> Older <span class="text-muted"> &middot; </span> <a href="/archive">View Archive (33)</a> </h3> <h2 class="post-title-link"><a href="/blog/2009/05/whos-who-whos-who-scams">Who's Who Of Who's Who Scams</a></h2> <p>I received a letter in the mail today from <a href="http://www.cambridgewhoswho.com">Cambridge Who’s Who</a>. The letter stated that I had been “appointed as a biographical candidate to represent Duncannon, PA in the 2009/2010 online <strong><em>Cambridge Who’s Who Registry among Executives and Professionals</em></strong>.” The letter goes on to say that I have been chosen based on my current position and that inclusion in the registry is free. In order to complete my listing, It stated I could fill out a form online or send in an application that was provided with the letter. Needless to say, I was very skeptical from the start.</p> </div> <div class="col-md-6 post-nav"> <h3 class="section-header"> Newer </h3> <h2 class="post-title-link"><a href="/blog/2009/07/introducing-workxpress-api">Introducing the WorkXpress API</a></h2> <p><a href="http://www.workxpress.com"><img src="/assets/images/workxpress-logo.png" alt="WorkXpress" class="post-image image-right"/></a> I recently finished documenting the <a href="http://www.workxpress.com">WorkXpress</a> API and thought I would share some of the details. First of all, the documentation can be downloaded at <a href="http://www.workxpress.com/sites/default/files/WorkXpress%20API_1.pdf">http://www.workxpress.com/sites/default/files/WorkXpress%20API_1.pdf</a> (PDF). For PHP, there is a PEAR package that makes working with the API easier. Look for that in a later post.</p> </div> </div> <footer> <hr/> <div class="left"> &copy;2016 James Armes. </div> <div class="right"> <a href="https://twitter.com/jamesiarmes"><i class="fa fa-twitter fa-lg" style="color:#49B1F7;"></i></a> </a> </div> </footer> </section> </div> </div> <script src="/public/javascripts/jquery.min.js"></script> <script src="/public/javascripts/bootstrap.min.js"></script> <script type="text/javascript">var disqus_shortname="jamesarmes";!function(){var e=document.createElement("script");e.async=!0,e.type="text/javascript",e.src="//"+disqus_shortname+".disqus.com/count.js",(document.getElementsByTagName("HEAD")[0]||document.getElementsByTagName("BODY")[0]).appendChild(e)}();</script> <script>!function(e,a,t,n,c,o,s){e.GoogleAnalyticsObject=c,e[c]=e[c]||function(){(e[c].q=e[c].q||[]).push(arguments)},e[c].l=1*new Date,o=a.createElement(t),s=a.getElementsByTagName(t)[0],o.async=1,o.src=n,s.parentNode.insertBefore(o,s)}(window,document,"script","//www.google-analytics.com/analytics.js","ga"),ga("create","UA-3412924-2","auto"),ga("send","pageview");</script> </body> </html>
+// Remainder of test.</code></pre></figure>
+
+<p>Be very careful when attempting to do anything like this. If the element never
+appears on screen, you will find yourself with an infinite loop. Let me know
+what you think, or if you have a better solution.</p>
+
+    
+<div class="share-btns">
+  
+ <h4>Share this post:</h4>
+
+
+ 
+<a class="btn btn-small btn-sm twitter" href="http://twitter.com/share?text=Selenium: Waiting For AJAX"
+           onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+          <i class="fa fa-twitter fa-lg"></i>
+          Twitter
+        </a>
+
+        <a class="btn btn-small btn-sm facebook" href="https://www.facebook.com/sharer/sharer.php"
+           onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+          <i class="fa fa-facebook fa-lg"></i>
+          Facebook
+        </a>
+
+        <a class="btn btn-small btn-sm gplus"
+           onclick="window.open('https://plus.google.com/share?url='+window.location.href, 'google-plus-share', 'width=490,height=530');return false;">
+          <i class="fa fa-google-plus fa-lg"></i>
+          Google+
+        </a>
+ </a>
+
+</div>   
+
+<div class="comments">
+   <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'jamesarmes';
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+
+</div> 
+
+<div class="post-footer">
+  
+</div>
+<hr/>
+
+
+  
+    <div class="post-navs row">
+      
+        <div class="col-md-6 post-nav">
+            
+          <h3 class="section-header">
+            Older
+            <span class="text-muted"> &middot; </span>
+            <a href="/archive">View Archive (33)</a>
+          </h3>
+            
+          <h2 class="post-title-link"><a href="/blog/2009/05/whos-who-whos-who-scams">Who's Who Of Who's Who Scams</a></h2>
+          <p>I received a letter in the mail today from
+<a href="http://www.cambridgewhoswho.com">Cambridge Who’s Who</a>.
+The letter stated that I had been “appointed as a biographical candidate to
+represent Duncannon, PA in the 2009/2010 online <strong><em>Cambridge Who’s Who Registry
+among Executives and Professionals</em></strong>.” The letter goes on to say that I have
+been chosen based on my current position and that inclusion in the registry is
+free. In order to complete my listing, It stated I could fill out a form online
+or send in an application that was provided with the letter. Needless to say, I
+was very skeptical from the start.</p>
+
+
+        </div>
+      
+      
+        
+        <div class="col-md-6 post-nav">
+          <h3 class="section-header">
+            Newer
+            
+          </h3>
+            
+          <h2 class="post-title-link"><a href="/blog/2009/07/introducing-workxpress-api">Introducing the WorkXpress API</a></h2>
+          <p><a href="http://www.workxpress.com"><img src="/assets/images/workxpress-logo.png" alt="WorkXpress" class="post-image image-right" /></a>
+I recently finished documenting the <a href="http://www.workxpress.com">WorkXpress</a> API
+and thought I would share some of the details. First of all, the documentation
+can be downloaded at
+<a href="http://www.workxpress.com/sites/default/files/WorkXpress%20API_1.pdf">http://www.workxpress.com/sites/default/files/WorkXpress%20API_1.pdf</a> (PDF).
+For PHP, there is a PEAR package that makes working with the API easier. Look
+for that in a later post.</p>
+
+
+        </div>
+      
+    </div>
+  
+
+ 
+
+          <footer>
+<hr/>
+  <div class="left">
+    &copy;2016
+    James Armes.
+  </div>
+
+  <div class="right">
+    
+      <a href="https://twitter.com/jamesiarmes"><i class="fa fa-twitter fa-lg" style="color:#49B1F7;"></i></a>
+    </a>
+    
+  </div>
+</footer>
+
+        </section>
+    </div>   
+    </div>
+    <script src="/public/javascripts/jquery.min.js"></script>
+    <script src="/public/javascripts/bootstrap.min.js"></script>
+    <!-- disqus comment counter -->
+<script type="text/javascript">
+	/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'jamesarmes';
+
+	/* * * DON'T EDIT BELOW THIS LINE * * */
+	(function () {
+	    var s = document.createElement('script'); s.async = true;
+	    s.type = 'text/javascript';
+	    s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+	    (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+	}());
+</script>
+<!-- /disqus comment counter -->
+
+
+
+<!-- google analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-3412924-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<!-- /google analytics -->
+
+  </body>
+</html>

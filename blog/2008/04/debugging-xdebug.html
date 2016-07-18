@@ -1,4 +1,110 @@
-<!DOCTYPE html> <html> <head> <meta charset="utf-8"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <meta name="viewport" content="width=device-width, initial-scale=1"> <link rel="stylesheet" href="/public/stylesheets/bs.css"> <link rel="stylesheet" href="/public/stylesheets/styles.css"> <link rel="stylesheet" href="/public/stylesheets/pygment_trac.css"> <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"> <link rel="canonical" href="http://jamesarmes.com/blog/2008/04/debugging-xdebug"> <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> <link rel="icon" type="image/x-icon" href="/favicon.ico"/> <title>Debugging With Xdebug | James Armes</title> <!--[if lt IE 9]><script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script> <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]--> <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"> </head> <body> <div class="wrapper"> <section> <div id="title"> <h1> <a id="git-ic" href="https://github.com/jamesiarmes"><i class="fa fa-github"></i></a> <a id="so-ic" href="http://stackoverflow.com/users/62401/jamesarmes"><i class="fa fa-stack-overflow"></i></a> <a id="sitename" href="/">James Armes</a> </h1> <hr/> <span class="credits left"> <a href="/blog">Blog</a> | <a href="/archive">Archive</a> | <a href="/resume">Resume</a> | <a href="/about">About</a> </span> <span class="credits right"> </span> </div> <div class="post-title"> <h1>Debugging With Xdebug</h1> <p class="text-muted">23 Apr 2008 | <i class="fa fa-tag"></i> <a class="text-muted" href="/tags/#Debug">Debug</a>, <a class="text-muted" href="/tags/#Linux">Linux</a>, <a class="text-muted" href="/tags/#PHP">PHP</a> </p> </div> <p>Xdebug is an amazing extension for PHP. It makes debugging your websites and web applications much easier. Let’s take a look some debug before install Xdebug.</p> <p>First, let’s use <code class="highlighter-rouge">var_dump()</code> on a variable that happens to be an array:</p> <figure class="highlight"><pre><code class="language-php" data-lang="php">var_dump($response);</code></pre></figure> <p>This produces the following output:</p> <figure class="highlight"><pre><code class="language-php" data-lang="php">array(1) { ["Response"]=&gt;  array(4) { ["TransactionReference"]=&gt;  array(1) { ["XpciVersion"]=&gt;  string(6) "1.0001" } ["ResponseStatusCode"]=&gt;  string(1) "0" ["ResponseStatusDescription"]=&gt;  string(7) "Failure" ["Error"]=&gt;  array(4) { ["ErrorSeverity"]=&gt;  string(4) "Hard" ["ErrorCode"]=&gt;  string(5) "10002" ["ErrorDescription"]=&gt;  string(61) "The XML document is well formed but the document is not valid" ["ErrorLocation"]=&gt;  array(1) { ["ErrorLocationElementName"]=&gt;  string(37) "TimeInTransitRequest/InvoiceLineTotal" } } } }</code></pre></figure> <p>Now, let’s cause a PHP Error (Notice the missing semicolon).</p> <figure class="highlight"><pre><code class="language-php" data-lang="php">var_dump($response)</code></pre></figure> <p>This produces the following output:</p> <figure class="highlight"><pre><code class="language-php" data-lang="php">Parse error: syntax error, unexpected '}' in /usr/dev/workspace/ups_api/tests/time_in_transit_test.php on line 57</code></pre></figure> <p>As you can see, the output of the previous examples can make debugging difficult. In the first example, the output is very difficult to read. If the array contained more elements, this could be nearly impossible to find the data that you require.</p> <p>Now, let’s look at these examples with xdebug installed.</p> <figure class="highlight"><pre><code class="language-php" data-lang="php">var_dump($response);</code></pre></figure> <p>Will now reproduce the following output:</p> <pre dir="ltr">
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/public/stylesheets/bs.css">
+    <link rel="stylesheet" href="/public/stylesheets/styles.css">
+    <link rel="stylesheet" href="/public/stylesheets/pygment_trac.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"> 
+    <link rel="canonical" href="http://jamesarmes.com/blog/2008/04/debugging-xdebug">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+      <link rel="icon" type="image/x-icon"  href="/favicon.ico" />
+    <title>Debugging With Xdebug | James Armes</title>
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  </head> 
+  <body>
+    <div class="wrapper">    
+        <section>   
+          <div id="title">
+  <h1>
+    
+		  <a id="git-ic" href="https://github.com/jamesiarmes"><i class="fa fa-github"></i></a>
+    
+
+    
+      <a id="so-ic" href="http://stackoverflow.com/users/62401/jamesarmes"><i class="fa fa-stack-overflow"></i></a>
+    
+
+    <a id="sitename" href="/">James Armes</a>
+  </h1>
+
+  <!-- Add something about you in p tag-->
+  <!-- <p>Write something about you here...</p> -->
+  <hr/>
+
+  <span class="credits left">
+  <a href="/blog">Blog</a> |
+  <a href="/archive">Archive</a> |
+  <a href="/resume">Resume</a> |
+  <a href="/about">About</a>
+</span>
+
+<span class="credits right">
+
+</span>
+
+
+</div>
+
+
+
+      
+          <div class="post-title">
+    <h1>Debugging With Xdebug</h1>
+    <p class="text-muted">23 Apr 2008 | <i class="fa fa-tag"></i>
+  
+  
+  <a class="text-muted" href="/tags/#Debug">Debug</a>,
+  
+  <a class="text-muted" href="/tags/#Linux">Linux</a>,
+  
+  <a class="text-muted" href="/tags/#PHP">PHP</a>
+  
+
+
+</p>
+
+</div>
+            
+  <p>Xdebug is an amazing extension for PHP. It makes debugging your websites and web
+applications much easier. Let’s take a look some debug before install Xdebug.</p>
+
+<!--more-->
+
+<p>First, let’s use <code class="highlighter-rouge">var_dump()</code> on a variable that happens to be an array:</p>
+
+<figure class="highlight"><pre><code class="language-php" data-lang="php">var_dump($response);</code></pre></figure>
+
+<p>This produces the following output:</p>
+
+<figure class="highlight"><pre><code class="language-php" data-lang="php">array(1) { ["Response"]=&gt;  array(4) { ["TransactionReference"]=&gt;  array(1) { ["XpciVersion"]=&gt;  string(6) "1.0001" } ["ResponseStatusCode"]=&gt;  string(1) "0" ["ResponseStatusDescription"]=&gt;  string(7) "Failure" ["Error"]=&gt;  array(4) { ["ErrorSeverity"]=&gt;  string(4) "Hard" ["ErrorCode"]=&gt;  string(5) "10002" ["ErrorDescription"]=&gt;  string(61) "The XML document is well formed but the document is not valid" ["ErrorLocation"]=&gt;  array(1) { ["ErrorLocationElementName"]=&gt;  string(37) "TimeInTransitRequest/InvoiceLineTotal" } } } }</code></pre></figure>
+
+<p>Now, let’s cause a PHP Error (Notice the missing semicolon).</p>
+
+<figure class="highlight"><pre><code class="language-php" data-lang="php">var_dump($response)</code></pre></figure>
+
+<p>This produces the following output:</p>
+
+<figure class="highlight"><pre><code class="language-php" data-lang="php">Parse error: syntax error, unexpected '}' in /usr/dev/workspace/ups_api/tests/time_in_transit_test.php on line 57</code></pre></figure>
+
+<p>As you can see, the output of the previous examples can make debugging
+difficult. In the first example, the output is very difficult to read. If the
+array contained more elements, this could be nearly impossible to find the data
+that you require.</p>
+
+<p>Now, let’s look at these examples with xdebug installed.</p>
+
+<figure class="highlight"><pre><code class="language-php" data-lang="php">var_dump($response);</code></pre></figure>
+
+<p>Will now reproduce the following output:</p>
+
+<pre dir="ltr">
 <b>array</b>
   'Response' <font color="#888a85">=&gt;</font> 
     <b>array</b>
@@ -15,7 +121,43 @@
           'ErrorLocation' <font color="#888a85">=&gt;</font> 
             <b>array</b>
               'ErrorLocationElementName' <font color="#888a85">=&gt;</font> <small>string</small> <font color="#cc0000">'TimeInTransitRequest/InvoiceLineTotal'</font> <i>(length=37)</i>
-</pre> <p>Now, let’s cause a PHP Error again.</p> <figure class="highlight"><pre><code class="language-php" data-lang="php">var_dump($response)</code></pre></figure> <p>This now produces the following output:</p> <table dir="ltr" border="1" cellspacing="0" cellpadding="1" style="margin-bottom: 20px;"> <tbody> <tr> <th style="background: #f57900; text-align: left;" colspan="5"> <span style="background-color: #cc0000; color: #fce94f; font-size: x-large;">( ! )</span> Parse error: syntax error, unexpected '}' in /usr/dev/workspace/ups_api/tests/time_in_transit_test.php on line <i>57</i> </th> </tr> </tbody> </table> <h3 id="installing-xdebug-on-kubuntu-710">Installing Xdebug On Kubuntu 7.10:</h3> <p>These instructions are specifically written for Kubuntu 7.10 Gutsy Gibbon. However, they should work for any Linux distrobution as long as the php-pear package is installed.</p> <p>First, let’s install the php-pear package, if it is not already.</p> <figure class="highlight"><pre><code class="language-console" data-lang="console"><span class="w">$ </span><span class="nc">sudo</span><span class="kv"> apt-get install php-pear</span></code></pre></figure> <p>Now it’s time to install xdebug.</p> <figure class="highlight"><pre><code class="language-php" data-lang="php">$ sudo pecl install xdebug-beta</code></pre></figure> <p>Now we need to add the extension and some settings in the PHP configuration files. Open php.ini in your favorite text editor as root. I prefer vim, but any editor will do. Just add the lines below, you may have to modify the path to your xdebug extension.</p> <figure class="highlight"><pre><code class="language-php" data-lang="php">$ sudo vim /etc/php5/apache2/php.ini
+</pre>
+
+<p>Now, let’s cause a PHP Error again.</p>
+
+<figure class="highlight"><pre><code class="language-php" data-lang="php">var_dump($response)</code></pre></figure>
+
+<p>This now produces the following output:</p>
+
+<table dir="ltr" border="1" cellspacing="0" cellpadding="1" style="margin-bottom: 20px;">
+  <tbody>
+    <tr>
+      <th style="background: #f57900; text-align: left;" colspan="5">
+        <span style="background-color: #cc0000; color: #fce94f; font-size: x-large;">( ! )</span> Parse error: syntax error, unexpected '}' in /usr/dev/workspace/ups_api/tests/time_in_transit_test.php on line <i>57</i>
+      </th>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="installing-xdebug-on-kubuntu-710">Installing Xdebug On Kubuntu 7.10:</h3>
+<p>These instructions are specifically written for Kubuntu 7.10 Gutsy Gibbon.
+However, they should work for any Linux distrobution as long as the php-pear
+package is installed.</p>
+
+<p>First, let’s install the php-pear package, if it is not already.</p>
+
+<figure class="highlight"><pre><code class="language-console" data-lang="console"><span class="w">$ </span><span class="nc">sudo</span><span class="kv"> apt-get install php-pear</span></code></pre></figure>
+
+<p>Now it’s time to install xdebug.</p>
+
+<figure class="highlight"><pre><code class="language-php" data-lang="php">$ sudo pecl install xdebug-beta</code></pre></figure>
+
+<p>Now we need to add the extension and some settings in the PHP configuration
+files. Open php.ini in your favorite text editor as root. I prefer vim, but any
+editor will do. Just add the lines below, you may have to modify the path to
+your xdebug extension.</p>
+
+<figure class="highlight"><pre><code class="language-php" data-lang="php">$ sudo vim /etc/php5/apache2/php.ini
 
 ; Add the following lines to configure xdebug
 zend_extension=/usr/lib/php5/20060613/xdebug.so
@@ -23,4 +165,155 @@ zend_extension=/usr/lib/php5/20060613/xdebug.so
 ; xdebug settings
 xdebug.var_display_max_children = 128
 xdebug.var_display_max_data = 1024
-xdebug.var_display_max_depth = 16</code></pre></figure> <p>It really that simple. Now you can easily debug your web sites and web applications. For more configuration options, view the xdebug documentation at <a href="http://xdebug.org/docs/">http://xdebug.org/docs/</a>.</p> <div class="share-btns"> <h4>Share this post:</h4> <a class="btn btn-small btn-sm twitter" href="http://twitter.com/share?text=Debugging With Xdebug" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;"> <i class="fa fa-twitter fa-lg"></i> Twitter </a> <a class="btn btn-small btn-sm facebook" href="https://www.facebook.com/sharer/sharer.php" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;"> <i class="fa fa-facebook fa-lg"></i> Facebook </a> <a class="btn btn-small btn-sm gplus" onclick="window.open('https://plus.google.com/share?url='+window.location.href, 'google-plus-share', 'width=490,height=530');return false;"> <i class="fa fa-google-plus fa-lg"></i> Google+ </a> </a> </div> <div class="comments"> <div id="disqus_thread"></div> <script type="text/javascript">var disqus_shortname="jamesarmes";!function(){var e=document.createElement("script");e.type="text/javascript",e.async=!0,e.src="//"+disqus_shortname+".disqus.com/embed.js",(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(e)}();</script> <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript> <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a> </div> <div class="post-footer"> </div> <hr/> <div class="post-navs row"> <div class="col-md-6 post-nav"> <h3 class="section-header"> Older <span class="text-muted"> &middot; </span> <a href="/archive">View Archive (33)</a> </h3> <h2 class="post-title-link"><a href="/blog/2008/04/setting-development-machine">Setting Up A Development Machine</a></h2> <p>So I just finished setting up my PC to be a development machine. I need some more RAM for it to be truly what I need, but it will have to do for now. I thought I would post a quick tutorial to how I set up my machine.</p> </div> <div class="col-md-6 post-nav"> <h3 class="section-header"> Newer </h3> <h2 class="post-title-link"><a href="/blog/2008/04/ups-time-transit">UPS Time In Transit</a></h2> <p>Time In Transit has been committed to the UPS API repository. Time in transit allow you to check the amount of time it would take to ship a package using different UPS Services. From the <a href="http://www.ups.com/onlinetools">UPS OnlineTools Website</a>:</p> </div> </div> <footer> <hr/> <div class="left"> &copy;2016 James Armes. </div> <div class="right"> <a href="https://twitter.com/jamesiarmes"><i class="fa fa-twitter fa-lg" style="color:#49B1F7;"></i></a> </a> </div> </footer> </section> </div> </div> <script src="/public/javascripts/jquery.min.js"></script> <script src="/public/javascripts/bootstrap.min.js"></script> <script type="text/javascript">var disqus_shortname="jamesarmes";!function(){var e=document.createElement("script");e.async=!0,e.type="text/javascript",e.src="//"+disqus_shortname+".disqus.com/count.js",(document.getElementsByTagName("HEAD")[0]||document.getElementsByTagName("BODY")[0]).appendChild(e)}();</script> <script>!function(e,a,t,n,c,o,s){e.GoogleAnalyticsObject=c,e[c]=e[c]||function(){(e[c].q=e[c].q||[]).push(arguments)},e[c].l=1*new Date,o=a.createElement(t),s=a.getElementsByTagName(t)[0],o.async=1,o.src=n,s.parentNode.insertBefore(o,s)}(window,document,"script","//www.google-analytics.com/analytics.js","ga"),ga("create","UA-3412924-2","auto"),ga("send","pageview");</script> </body> </html>
+xdebug.var_display_max_depth = 16</code></pre></figure>
+
+<p>It really that simple. Now you can easily debug your web sites and web
+applications. For more configuration options, view the xdebug documentation at
+<a href="http://xdebug.org/docs/">http://xdebug.org/docs/</a>.</p>
+
+    
+<div class="share-btns">
+  
+ <h4>Share this post:</h4>
+
+
+ 
+<a class="btn btn-small btn-sm twitter" href="http://twitter.com/share?text=Debugging With Xdebug"
+           onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+          <i class="fa fa-twitter fa-lg"></i>
+          Twitter
+        </a>
+
+        <a class="btn btn-small btn-sm facebook" href="https://www.facebook.com/sharer/sharer.php"
+           onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+          <i class="fa fa-facebook fa-lg"></i>
+          Facebook
+        </a>
+
+        <a class="btn btn-small btn-sm gplus"
+           onclick="window.open('https://plus.google.com/share?url='+window.location.href, 'google-plus-share', 'width=490,height=530');return false;">
+          <i class="fa fa-google-plus fa-lg"></i>
+          Google+
+        </a>
+ </a>
+
+</div>   
+
+<div class="comments">
+   <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'jamesarmes';
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+
+</div> 
+
+<div class="post-footer">
+  
+</div>
+<hr/>
+
+
+  
+    <div class="post-navs row">
+      
+        <div class="col-md-6 post-nav">
+            
+          <h3 class="section-header">
+            Older
+            <span class="text-muted"> &middot; </span>
+            <a href="/archive">View Archive (33)</a>
+          </h3>
+            
+          <h2 class="post-title-link"><a href="/blog/2008/04/setting-development-machine">Setting Up A Development Machine</a></h2>
+          <p>So I just finished setting up my PC to be a development machine. I need some
+more RAM for it to be truly what I need, but it will have to do for now. I
+thought I would post a quick tutorial to how I set up my machine.</p>
+
+
+        </div>
+      
+      
+        
+        <div class="col-md-6 post-nav">
+          <h3 class="section-header">
+            Newer
+            
+          </h3>
+            
+          <h2 class="post-title-link"><a href="/blog/2008/04/ups-time-transit">UPS Time In Transit</a></h2>
+          <p>Time In Transit has been committed to the UPS API repository. Time in transit
+allow you to check the amount of time it would take to ship a package using
+different UPS Services. From the
+<a href="http://www.ups.com/onlinetools">UPS OnlineTools Website</a>:</p>
+
+
+        </div>
+      
+    </div>
+  
+
+ 
+
+          <footer>
+<hr/>
+  <div class="left">
+    &copy;2016
+    James Armes.
+  </div>
+
+  <div class="right">
+    
+      <a href="https://twitter.com/jamesiarmes"><i class="fa fa-twitter fa-lg" style="color:#49B1F7;"></i></a>
+    </a>
+    
+  </div>
+</footer>
+
+        </section>
+    </div>   
+    </div>
+    <script src="/public/javascripts/jquery.min.js"></script>
+    <script src="/public/javascripts/bootstrap.min.js"></script>
+    <!-- disqus comment counter -->
+<script type="text/javascript">
+	/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'jamesarmes';
+
+	/* * * DON'T EDIT BELOW THIS LINE * * */
+	(function () {
+	    var s = document.createElement('script'); s.async = true;
+	    s.type = 'text/javascript';
+	    s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+	    (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+	}());
+</script>
+<!-- /disqus comment counter -->
+
+
+
+<!-- google analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-3412924-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<!-- /google analytics -->
+
+  </body>
+</html>
