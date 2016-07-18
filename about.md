@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 ![James](/assets/images/me-about.jpg){: .post-image .image-right }
-James is a part-time Freelance Web Applications Developer and full-time Software Engineer for Boston, MA based Acquia.
+James is a part-time Freelance Software Engineer and full-time Software Engineer for Boston, MA based Acquia.
 He has two open source PHP libraries making use of UPS and Microsoft Exchange web services easier for the average
 developer. He is also a contributor for the Drupal CMS and is known as
 [BassistJimmyJam](https://www.drupal.org/u/BassistJimmyJam) on drupal.org.
