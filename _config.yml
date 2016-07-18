@@ -7,8 +7,8 @@ description: > # this means to ignore newlines until "baseurl:"
   Google search results) and in your feed.xml site description.
 
 
-#paginate: 10 #articles per page
-#paginate_path: /blog/page:num #makes pagination working
+paginate: 10 #articles per page
+paginate_path: /blog/page:num #makes pagination working
 
 
 #contacts
@@ -25,9 +25,9 @@ google:
     tracking-id: "UA-3412924-2" #paste your tracking id here
 gems:
 #  - jekyll-minifier
-#  - jekyll-paginate
-#  - jekyll-redirect-from
-#  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-redirect-from
+  - jekyll-sitemap
 
 exclude:
   - "README.md"
