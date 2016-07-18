@@ -1,7 +1,7 @@
 ---
 title: 'Entry Five'
 created: 1430595900
-date: 1430595900
+date: 2015-05-02
 ---
 As I looked around, I noticed that Charin was carrying the rogue. Apparently, in the heat of battle, he picked her up
 and carried her to the room we had previously cleared in order to retrieve some non-magical weapon. Of course, by the

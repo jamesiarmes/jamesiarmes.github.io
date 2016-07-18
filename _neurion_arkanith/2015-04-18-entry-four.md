@@ -1,7 +1,7 @@
 ---
 title: 'Entry Four'
 created: 1425782820
-date: 1429384260
+date: 2015-04-18
 ---
 ![Earth elementals](/assets/images/neurion-arkanith/ochre-jelly.jpg){: .post-image .image-left }
 After resting, we returned to the second floor of the temple. We passed through a secret door we had encountered

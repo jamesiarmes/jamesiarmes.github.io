@@ -1,7 +1,7 @@
 ---
 title: 'Entry Three'
 created: 1425782820
-date: 1425782820
+date: 2015-03-07
 ---
 ![Earth elementals](/assets/images/neurion-arkanith/elf-grimoire.jpg){: .post-image .image-left }
 After resting, we decided it would be wise to head back to Homlet before moving on to the second floor. We had been in
