@@ -18,7 +18,7 @@ below.
 
 <!--more-->
 
-<iframe src="//www.slideshare.net/slideshow/embed_code/key/Ixla9bRc0u1q9M" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/jamesiarmes/introduction-to-amazon-web-services-63968583" title="Introduction to Amazon Web Services" target="_blank">Introduction to Amazon Web Services</a> </strong> from <strong><a href="//www.slideshare.net/jamesiarmes" target="_blank">James Armes</a></strong> </div>
-
 Next month I will be giving a more advanced talk where I will highlight one of the use cases we have for AWS at
 [Acquia](http://www.acquia.com), and how we utilize CloudFormation for deploy it.
+
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/Ixla9bRc0u1q9M" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/jamesiarmes/introduction-to-amazon-web-services-63968583" title="Introduction to Amazon Web Services" target="_blank">Introduction to Amazon Web Services</a> </strong> from <strong><a href="//www.slideshare.net/jamesiarmes" target="_blank">James Armes</a></strong> </div>
