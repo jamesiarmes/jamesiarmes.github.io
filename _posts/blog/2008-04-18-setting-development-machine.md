@@ -43,7 +43,7 @@ Locate DirectoryIndex in your Apache Config by typing /DirectoryIndex into vim.
 If it does not exist, you can add it. It should look something like this (Note,
 to start editing in vim, press "Insert" or "I":
 
-{% highlight apache %}
+{% highlight conf %}
 DirectoryIndex index.html index.htm index.shtml index.php
 {% endhighlight %}
 
@@ -58,7 +58,7 @@ $ sudo vim /etc/apache2/ports.conf
 Your Apache ports config should contain 443 if you want to enable SSL. It may
 look something like this:
 
-{% highlight apache %}
+{% highlight conf %}
 <ifmodule mod_ssl.c="">
  Listen 443
 </ifmodule>
