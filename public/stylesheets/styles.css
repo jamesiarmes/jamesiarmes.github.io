@@ -82,7 +82,7 @@ body {
   -webkit-font-smoothing: subpixel-antialiased;
 }
 
-::-webkit-scrollbar { 
+::-webkit-scrollbar {
     width: 0 !important
 }
 
@@ -122,13 +122,13 @@ h3 {
 }
 
 a {
-  color: #49B1F7; 
+  color: #49B1F7;
   font-weight: 400;
   text-decoration: none;
 }
 
 a:hover {
-  color: #EC4E3B; 
+  color: #EC4E3B;
 }
 
 a:hover, a:active, a:focus, a:visited  {
@@ -143,7 +143,8 @@ a small {
   display: block;
 }
 
-a#git-ic{
+a#git-ic,
+a#linkedin-ic {
   font-size:37px;
   color:#fff;
 }
@@ -255,7 +256,7 @@ section #title {
   padding: 0 0 5px 0;
 }
 
-section .p-title{ 
+section .p-title{
   color: #49B1F7;
 }
 
@@ -274,7 +275,7 @@ section #title p {
   text-align: center;
 }
 
-section #title .credits { 
+section #title .credits {
   font-size: 13px;
   font-family: 'OpenSansRegular', "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
@@ -291,7 +292,7 @@ section #title .credits.right {
 }
 
 .section-header-archive, .tag_name{
-	margin:  15px 0 0 0;	
+	margin:  15px 0 0 0;
 }
 
 footer .left{
@@ -321,7 +322,7 @@ footer .right{
 
 .tags a {
   display: inline-block;
-  margin: 0 10px 10px 0; 
+  margin: 0 10px 10px 0;
 }
 
 /* just change the class on /index.html pln-img or circular
