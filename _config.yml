@@ -42,6 +42,9 @@ collections:
   neurion_arkanith:
     output: true
     permalink: /neurion-arkanith/:title.html
+  portfolio:
+    output: true
+    permalink: /portfolio/:title.html
 
 defaults:
   -
@@ -61,3 +64,8 @@ defaults:
       type: "neurion_arkanith"
     values:
       layout: "neurion-arkanith"
+  - scope:
+      path: ""
+      type: "portfolio"
+    values:
+      layout: "portfolio"

@@ -1,0 +1,19 @@
+---
+title: "Portfolio"
+permalink: "portfolio/index.html"
+---
+<h1>Portfolio</h1>
+
+<p>
+  This is a small representation of some of the work I have completed under
+  contract and as a full-time employee.
+</p>
+
+<div class="portfolio-content">
+  {% for entry in site.portfolio %}
+    <div class="portfolio-entry">
+      <div class="portfolio-image" style="background-image: url({{ entry.image }});"></div>
+      <a href="{{ entry.url | prepend:site.baseurl }}">{{ entry.title }}</a>
+    </div>
+  {% endfor %}
+</div>

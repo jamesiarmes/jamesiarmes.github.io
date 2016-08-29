@@ -1,0 +1,18 @@
+.portfolio-entry, .portfolio-image-wrapper {
+  display: inline-block;
+  font-size: 16px;
+  margin-right: 3px;
+  text-align: center;
+  width: 300px;
+}
+
+.portfolio-image {
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 280px;
+  cursor: pointer;
+}
+
+.portfolio-content {
+  font-size: 16px;
+}
