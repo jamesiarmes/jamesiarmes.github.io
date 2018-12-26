@@ -12,7 +12,7 @@ permalink: "blog/index.html"
 </div>
 <div class="post-excerpt-home">
   {{ post.excerpt }}
-  <p class="text-left"><a href="{{ post.url | prepend:site.baseurl }}">Continue Reading &rarr;</a></p>
+  <p class="text-left"><a href="{{ post.url | prepend:site.baseurl | replace: '//', '/' }}">Continue Reading &rarr;</a></p>
 </div>
 {% endfor %}
 
@@ -30,7 +30,7 @@ permalink: "blog/index.html"
     {% elsif page == 1 %}
       <a href="{{ '/blog/' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
     {% else %}
-      <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page |}}">{{ page }}</a>
+      <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page}}">{{ page }}</a>
     {% endif %}
   {% endfor %}
 

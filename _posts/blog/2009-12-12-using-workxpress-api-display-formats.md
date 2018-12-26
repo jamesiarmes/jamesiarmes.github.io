@@ -23,7 +23,7 @@ value), you could get the download URL. When using display formats, the format
 type must be set to "text". Not all Fields have display formats, while others
 have several. Many of the available formats match the available parts for
 multi-part fields. For more information on these parts, see my previous post on
-[data formats]({% post_url 2009-10-26-using-workxpress-api-data-formats %}).
+[data formats]({% post_url /blog/2009-10-26-using-workxpress-api-data-formats %}).
 
 ## Address
 The [Address](http://www.workxpress.com/training/library/address) Field Type
