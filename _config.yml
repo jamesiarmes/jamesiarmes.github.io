@@ -39,9 +39,6 @@ permalink: /:categories/:year/:month/:title
 excerpt_separator: <!--more-->
 
 collections:
-  neurion_arkanith:
-    output: true
-    permalink: /neurion-arkanith/:title.html
   portfolio:
     output: true
     permalink: /portfolio/:title.html
@@ -59,11 +56,6 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-  - scope:
-      path: ""
-      type: "neurion_arkanith"
-    values:
-      layout: "neurion-arkanith"
   - scope:
       path: ""
       type: "portfolio"
