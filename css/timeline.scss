@@ -68,6 +68,16 @@
     text-align: center;
     color: #fff;
     background-color: #f1f1f1;
+
+    img {
+        border: none;
+    }
+}
+
+.timeline>li.workxpress .timeline-image {
+    img {
+        margin-top: 35px;
+    }
 }
 
 .img-me {
@@ -76,7 +86,7 @@
     width: 100px;
     height: 100px;
     margin-left: 0;
-    border: 7px solid #f1f1f1;
+    border: none;
     border-radius: 100%;
     text-align: center;
     color: #fff;

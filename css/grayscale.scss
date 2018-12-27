@@ -78,6 +78,24 @@ a {
     }
 }
 
+section#resume {
+    ul {
+        text-align: left;
+    }
+}
+
+.blog-archives {
+    h3 {
+        margin: 20px 0 0 0;
+        text-align: center;
+    }
+
+    article {
+        font-size: 18px;
+        text-align: left;
+    }
+}
+
 .navbar-custom {
     margin-bottom: 0;
     border-bottom: 1px solid rgba($font-color, 0.3);
@@ -246,18 +264,22 @@ a {
         margin: 0 auto;
         border: 1px solid $font-color;
     }
+    img.image-right {
+        float: right;
+        margin: 0 10px 10px 0;
+    }
     /* Added in { Personal } */
     ul,
     ol {
-        text-align: center;
         margin: 0 0 25px;
         font-size: 18px;
         line-height: 1.5;
         list-style-position: inside;
     }
     pre {
-      padding: 0;
-      > code {
+      background-color: #1D1D1F;
+      border-color: #1D1D1F;
+        > code {
         text-align: left;
       }
     }
@@ -272,6 +294,7 @@ a {
     &#post {
         div.author img {
             border: 0px;
+            border-radius: 100%;
             margin-bottom: 20px;
             padding: 4px;
         }
@@ -444,4 +467,36 @@ body {
 
 .fourofour {
   border: 1px solid $primary-color !important;
+}
+
+section#portfolio {
+    text-align: center;
+
+    p {
+        text-align: justify;
+    }
+}
+
+.portfolio-entry, .portfolio-image-wrapper {
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 3px;
+    text-align: center;
+    width: 300px;
+}
+
+.portfolio-image {
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 280px;
+}
+
+.portfolio-tags {
+    border-bottom: 3px double;
+    margin: -35px 0 5px 0;
+    padding-bottom: 35px;
+}
+
+.portfolio-content {
+    font-size: 16px;
 }

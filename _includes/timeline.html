@@ -15,6 +15,9 @@
           {% if loopindex == 0 %}
             timeline-inverted
           {% endif %}
+          {% if event.name %}
+            {{ event.name }}
+          {% endif %}
           {% endcapture %}
 
           <li class="{{ class }}">
@@ -38,6 +41,8 @@
           </div>
         </li>
       </ul>
+
+      More details can be found in <a href="/resume">my resume</a>.
     </div>
   </div>
 </section>
