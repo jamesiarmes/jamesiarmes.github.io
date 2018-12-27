@@ -10,7 +10,7 @@ tags:
   - Web Services
   - WorkXpress
 ---
-[![WorkXpress](/assets/images/workxpress-logo.png){: .post-image .image-right }](http://www.workxpress.com)
+[![WorkXpress](/img/blog/workxpress-logo.png){: .post-image .image-right }](http://www.workxpress.com)
 Now that you know how to use the [WorkXpress](http://www.workxpress.com) API,
 it's time to learn about some more advanced concepts. Data formats define how
 Field values are stored within WorkXpress. These values can be useful for
@@ -73,7 +73,7 @@ Select Fields can also be set by passing in the title or alt title of the Select
 Option(s). For example let's say you the two options below available for a
 Single Select:
 
-{% include image-caption.html url="/assets/images/2009/10/selectoptions.png" description="Select Options" %}
+{% include image-caption.html url="/img/blog/2009/10/selectoptions.png" description="Select Options" %}
 
 You could set this Field to the value "Open" by passing in either "Open" or "O".
 For Multi Selects, you can mix and match the values. If the previous example was

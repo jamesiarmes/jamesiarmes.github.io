@@ -264,10 +264,23 @@ section#resume {
         margin: 0 auto;
         border: 1px solid $font-color;
     }
-    img.image-right {
-        float: right;
+    .image-left {
+        float: left;
         margin: 0 10px 10px 0;
     }
+    .image-right {
+        float: right;
+        margin: 0 0 10px 10px;
+    }
+    .image-center {
+        display: block;
+        margin: 0 auto;
+    }
+
+    h2 {
+        clear: both;
+    }
+
     /* Added in { Personal } */
     ul,
     ol {
@@ -292,6 +305,10 @@ section#resume {
 
     /* Added in { Personal } */
     &#post {
+        img {
+            border: none;
+        }
+
         div.author img {
             border: 0px;
             border-radius: 100%;
@@ -299,6 +316,10 @@ section#resume {
             padding: 4px;
         }
     }
+}
+
+.image-caption > div {
+    text-align: center;
 }
 
 .btn {

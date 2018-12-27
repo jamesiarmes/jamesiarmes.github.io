@@ -10,7 +10,7 @@ tags:
   - Web Services
   - WorkXpress
 ---
-[![WorkXpress](/assets/images/workxpress-logo.png){: .post-image .image-right }](http://www.workxpress.com)
+[![WorkXpress](/img/blog/workxpress-logo.png){: .post-image .image-right }](http://www.workxpress.com)
 You have learned about all of the functions. You understand the data formats.
 What could possibly be left before mastering the
 [WorkXpress](http://www.workxpress.com) API? Display formats is the answer.

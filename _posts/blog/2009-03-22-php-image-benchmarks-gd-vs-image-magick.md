@@ -29,7 +29,7 @@ a working link to each format's resize code in action, but GoDaddy does not
 support Image Magick. The benchmark results were quite interesting, as seen
 below (results are in seconds).
 
-![Resized PNG](/assets/images/2009/03/tugofwar.png)
+![Resized PNG](/img/blog/2009/03/tugofwar.png)
 
 **PNG**<br />
 GD: 0.572078313828<br />

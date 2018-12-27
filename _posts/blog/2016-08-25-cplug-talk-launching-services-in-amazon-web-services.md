@@ -11,7 +11,7 @@ tags:
   - ruby
   - moonshot
 ---
-![](/assets/images/2016/cplug-logo.png){: .image-left .post-image } Earlier this
+![](/img/blog/2016/cplug-logo.png){: .image-left .post-image } Earlier this
 month, I gave a follow-up to
 [last month's talk]({% post_url /blog/2016-07-17-cplug-talk-introduction-to-amazon-web-services %})
 on [Amazon Web Services](http://aws.amazon.com) at the monthly meetup for the

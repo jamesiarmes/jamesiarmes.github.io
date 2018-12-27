@@ -9,7 +9,7 @@ tags:
     - Acquia
     - Career
 ---
-![](/assets/images/2014/09/future-road-sign.jpg){: .image-left .post-image}
+![](/img/blog/2014/09/future-road-sign.jpg){: .image-left .post-image}
 After three years, I have decided to leave
 [AllPlayers.com](https://www.allplayers.com). Over these last three years, I
 have had the opportunity to work with many talented people and seen my career

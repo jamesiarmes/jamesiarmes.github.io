@@ -13,7 +13,7 @@ tags:
   - Web Services
   - WorkXpress
 ---
-[![WorkXpress](/assets/images/workxpress-logo.png){: .post-image .image-right }](http://www.workxpress.com)
+[![WorkXpress](/img/blog/workxpress-logo.png){: .post-image .image-right }](http://www.workxpress.com)
 I recently finished documenting the [WorkXpress](http://www.workxpress.com) API
 and thought I would share some of the details. First of all, the documentation
 can be downloaded at
@@ -44,7 +44,7 @@ on the "Tools" tab of the Block Creator (see below) where you will find the
 "Create Auth Key" Link. On testing and production applications, you can visit
 http://example.workxpress.com/im_tools/create_auth_key.php to create your keys.
 
-{% include image-caption.html url="/assets/images/2009/07/tools_tab.png" description="Tools Tab of the WorkXpress Block Creator" %}
+{% include image-caption.html url="/img/blog/2009/07/tools_tab.png" description="Tools Tab of the WorkXpress Block Creator" %}
 
 Once the page has loaded, you will be presented with two fields used to generate
 the key. The first is the user that the key should be associated with. When
@@ -53,7 +53,7 @@ field is the password for the selected user. This allows the API to log in as
 that user. After hitting the "Save" button, the page will reload and the Auth
 Key field will contain your authentication key.
 
-{% include image-caption.html url="/assets/images/2009/07/create_auth_key.png" description="Creating a WorkXpress Auth Key" %}
+{% include image-caption.html url="/img/blog/2009/07/create_auth_key.png" description="Creating a WorkXpress Auth Key" %}
 
 ### Connecting To Your Application
 To connect to your WorkXpress application, you will need to point your SOAP
@@ -95,7 +95,7 @@ version of the map. The first text area contains the human readable XML. The
 second text area contains the encoded XML, this is the value that will need to
 be placed into the XML for your API call.
 
-{% include image-caption.html url="/assets/images/2009/07/map_builder.png" description="WorkXpress Map Builder" %}
+{% include image-caption.html url="/img/blog/2009/07/map_builder.png" description="WorkXpress Map Builder" %}
 
 ### More To Come
 The WorkXpress API allows for some very complex interactions with WorkXpress.

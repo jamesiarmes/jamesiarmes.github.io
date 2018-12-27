@@ -8,7 +8,7 @@ tags:
   - GoDaddy
   - Performance
 ---
-![Going down](/assets/images/2010/01/goingdown.jpg){: .post-image }
+![Going down](/img/blog/2010/01/goingdown.jpg){: .image-right .post-image }
 
 I have been using Google's
 [Page Speed](http://code.google.com/speed/page-speed/) tool to help improve the
@@ -39,7 +39,7 @@ cached page. This can cause side effects with modules that rely on this behavior
 be notified of any modules that are incompatible with aggressive caching (see
 below).
 
-![Aggressive Cache Incompatibilities"](/assets/images/2010/01/aggressive-cache-incompat.png){: .image-center }
+![Aggressive Cache Incompatibilities"](/img/blog/2010/01/aggressive-cache-incompat.png){: .image-center }
 
 Drupal also allows you to provide a minimum cache lifetime. This will prevent
 the cache for both pages and blocks from being cleared before that time. The

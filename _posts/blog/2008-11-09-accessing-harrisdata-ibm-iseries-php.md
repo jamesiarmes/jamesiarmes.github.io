@@ -11,7 +11,7 @@ tags:
   - PDO
   - PHP
 ---
-![HarrisData](/assets/images/2008/11/harrisdata_logo.png){: .post-image .image-right }
+![HarrisData](/img/blog/2008/11/harrisdata_logo.png){: .post-image .image-right }
 I have recently been working on a project to integrate with a
 [HarrisData](http://www.harrisdata.com) ERP Application. The Application runs on
 an IBM iSeries (AS/400). I used PHP's built in PDO object with the ODBC

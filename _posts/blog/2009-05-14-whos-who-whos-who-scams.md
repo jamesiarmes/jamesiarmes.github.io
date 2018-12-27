@@ -21,9 +21,9 @@ was very skeptical from the start.
 <table cellspacing="0" cellpadding="0" align="center">
     <tbody>
         <tr>
-            <td style="text-align: center; vertical-align: bottom;"><img src="/assets/images/2009/05/document-blur.jpg" alt="Cambridge Letter" /><br />
+            <td style="text-align: center; vertical-align: bottom;"><img src="/img/blog/2009/05/document-blur.jpg" alt="Cambridge Letter" /><br />
             <strong>Cambridge Letter</strong></td>
-            <td style="text-align: center; vertical-align: bottom;"><img src="/assets/images/2009/05/reply.jpg" alt="Cambridge Application" /></a><br />
+            <td style="text-align: center; vertical-align: bottom;"><img src="/img/blog/2009/05/reply.jpg" alt="Cambridge Application" /><br />
             <strong>Cambridge Application</strong></td>
         </tr>
     </tbody>

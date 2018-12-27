@@ -27,7 +27,7 @@ The file upload section contains Fields for Company Name, Full Name, Phone
 Number, Email Address, and five File Upload Fields. The data Fields are used for
 the log file in the Quick Upload Field.
 
-{% include image-caption.html url="/assets/images/2008/05/quick_upload.png" description="FTP Integration Quick Upload" %}
+{% include image-caption.html url="/img/blog/2008/05/quick_upload.png" description="FTP Integration Quick Upload" %}
 
 ### Issues & Solutions
 The Apache issue was quite simple. There are two copies of the integration on

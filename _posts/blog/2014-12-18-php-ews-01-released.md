@@ -8,7 +8,7 @@ tags:
     - php-ews
     - Microsoft Exchange
 ---
-![](/assets/images/2014/12/exchange-logo.png){: .image-left .post-image } The
+![](/img/blog/2014/12/exchange-logo.png){: .image-left .post-image } The
 first official
 [release](https://github.com/jamesiarmes/php-ews/releases/tag/v0.1) of
 [php-ews](https://github.com/jamesiarmes/php-ews) has been created. This release

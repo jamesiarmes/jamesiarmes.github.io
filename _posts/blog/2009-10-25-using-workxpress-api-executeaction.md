@@ -10,7 +10,7 @@ tags:
   - Web Services
   - WorkXpress
 ---
-[![WorkXpress](/assets/images/workxpress-logo.png){: .post-image .image-right }](http://www.workxpress.com)
+[![WorkXpress](/img/blog/workxpress-logo.png){: .post-image .image-right }](http://www.workxpress.com)
 Earlier I introduced you to the
 [WorkXpress API]({% post_url /blog/2009-07-16-introducing-workxpress-api %}). If
 you have not read it already you should do so before reading this post. Once you
@@ -24,7 +24,7 @@ the id of an Action at the end of its description in the Event Manager (see
 below). Like the other functions, you can make many ExecuteAction requests in
 one call using data sets.
 
-{% include image-caption.html url="/assets/images/2009/10/workxpress_action_id.png" description="WorkXpress Event Manager" %}
+{% include image-caption.html url="/img/blog/2009/10/workxpress_action_id.png" description="WorkXpress Event Manager" %}
 
 ### Request XML
 First, let's get an understanding of how the request XML should be formed.

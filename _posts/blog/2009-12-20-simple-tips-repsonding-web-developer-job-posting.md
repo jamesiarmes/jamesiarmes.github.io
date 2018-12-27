@@ -7,7 +7,7 @@ tags:
   - Drupal
   - Freelance
 ---
-![Outlook](/assets/images/2009/12/outlook.jpg)
+![Outlook](/img/blog/2009/12/outlook.jpg){: .image-left .post-image }
 
 I was recently tasked with hiring a  web developer for a redesign of
 [http://www.workxpress.com](workxpress.com). I was surprised at the number of

@@ -10,7 +10,7 @@ tags:
   - Web Services
   - WorkXpress
 ---
-[![WorkXpress](/assets/images/workxpress-logo.png){: .post-image .image-right }](http://www.workxpress.com)
+[![WorkXpress](/img/blog/workxpress-logo.png){: .post-image .image-right }](http://www.workxpress.com)
 Last week I introduced you to the
 [WorkXpress API]({% post_url /blog/2009-07-16-introducing-workxpress-api %}). If
 you have not read it already you should do so before reading this post. Once you

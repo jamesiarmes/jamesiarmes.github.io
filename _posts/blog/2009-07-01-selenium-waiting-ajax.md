@@ -10,7 +10,7 @@ tags:
   - Testing
   - WorkXpress
 ---
-![Selenium RC](/assets/images/2009/07/selenium-rc-logo.png){: .post-image .image-right }
+![Selenium RC](/img/blog/2009/07/selenium-rc-logo.png){: .post-image .image-right }
 I was playing around with [Selenium RC](http://seleniumhq.org/) a little while
 ago and ran into a little problem that I thought I would share with everyone.
 I was writing a test that bounced around [WorkXpress](http://www.workxpress.com)

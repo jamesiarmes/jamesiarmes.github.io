@@ -7,7 +7,7 @@ tags:
   - PEAR
   - PHP
 ---
-![PEAR](/assets/images/2009/04/pearlogo.png){: .post-image .image-right } With
+![PEAR](/img/blog/2009/04/pearlogo.png){: .post-image .image-right } With
 PHP 5.3 just over the horizon, I decided to see how well prepared
 [WorkXpress](http://www.workxpress.com) was. Our coding standard is pretty
 strict and was developed to ensure that our application conforms to E_STRICT

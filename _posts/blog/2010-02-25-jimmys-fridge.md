@@ -4,7 +4,7 @@ title: Jimmy's Fridge
 category: blog
 created: 1267104550
 ---
-![Jimmy's Fridge](/assets/images/2010/02/fridge.jpg)
+![Jimmy's Fridge](/img/blog/2010/02/fridge.jpg)
 
 <!--more-->
 

@@ -9,7 +9,7 @@ tags:
     - Presentation
     - CPLUG
 ---
-![](/assets/images/2016/cplug-logo.png){: .image-left .post-image } This past Tuesday, I gave an introductory
+![](/img/blog/2016/cplug-logo.png){: .image-left .post-image } This past Tuesday, I gave an introductory
 presentation on [Amazon Web Services](http://aws.amazon.com) at the monthly meetup for the
 [Central Pennsylvania Linux User Group](http://www.cplug.net). The talk covered some of the services offered by AWS that
 would be of interest for those launching application in the cloud, as well as a brief discussion on security. A demo was
