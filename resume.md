@@ -5,16 +5,17 @@ layout: page
 James Armes<br />
 <mailto:jamesiarmes@gmail.com><br />
 <http://www.linkedin.com/in/jamesiarmes><br />
-Web applications developer, systems administrator and open source enthusiast interested in web based software
-development.
+Software engineer with a passion for open source software interested in
+opportunities to share knowledge, flex creativity, influence development
+processes and utilize new and upcoming technologies.
 
 ## Skills
-* SOAP and RESTful web services
-* PHP
+* Cloud Computing
 * Ruby
-* Linux Administration
+* web services
+* PHP
+* Linux
 * OOP
-* Amazon Web Services
 * Drupal
 * E-commerce
 * MySQL
