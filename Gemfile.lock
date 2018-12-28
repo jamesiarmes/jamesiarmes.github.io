@@ -258,7 +258,8 @@ DEPENDENCIES
   html-proofer
   jekyll
   jekyll-paginate
-  jekyll-remote-theme
+  jekyll-redirect-from
+  jekyll-sitemap
   jemoji
 
 BUNDLED WITH

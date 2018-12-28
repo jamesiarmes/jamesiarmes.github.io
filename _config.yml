@@ -223,6 +223,8 @@ sass:
 plugins:
   - jekyll-paginate
   - jemoji
+  - jekyll-redirect-from
+  - jekyll-sitemap
 permalink: /:categories/:year/:month/:title
 
 collections:

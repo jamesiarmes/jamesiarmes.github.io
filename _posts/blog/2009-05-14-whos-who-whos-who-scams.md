@@ -4,6 +4,8 @@ title: Who's Who Of Who's Who Scams
 category: blog
 section-type: post
 created: 1242352331
+redirect_from:
+  - /blog/2009/05/whos-who-whos-who-scams/
 tags:
   - Scams
 ---
