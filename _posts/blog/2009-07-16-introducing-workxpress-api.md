@@ -2,6 +2,7 @@
 layout: post
 title: Introducing the WorkXpress API
 category: blog
+section-type: post
 redirect_from:
   - /blog/2009/08/introducing-workxpress-api/
 created: 1247735339

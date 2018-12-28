@@ -2,6 +2,7 @@
 layout: post
 title: All Good Things...
 category: blog
+section-type: post
 created: 1410209928
 tags:
     - Drupal

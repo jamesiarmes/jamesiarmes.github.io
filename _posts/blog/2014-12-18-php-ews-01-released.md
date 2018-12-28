@@ -2,6 +2,7 @@
 layout: post
 title: php-ews 0.1 Released
 category: blog
+section-type: post
 created: 1418956966
 tags:
     - PHP

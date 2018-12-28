@@ -2,6 +2,7 @@
 layout: post
 title: What Does The Future Hold For PEAR?
 category: blog
+section-type: post
 created: 1239755683
 tags:
   - PEAR

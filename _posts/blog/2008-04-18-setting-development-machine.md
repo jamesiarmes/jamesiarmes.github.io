@@ -2,6 +2,7 @@
 layout: post
 title: Setting Up A Development Machine
 category: blog
+section-type: post
 created: 1208563339
 tags:
   - Apache

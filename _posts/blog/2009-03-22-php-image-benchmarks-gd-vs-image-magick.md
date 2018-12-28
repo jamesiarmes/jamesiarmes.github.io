@@ -2,6 +2,7 @@
 layout: post
 title: PHP Image Benchmarks, GD Vs. Image Magick
 category: blog
+section-type: post
 created: 1237776265
 tags:
   - Benchmark

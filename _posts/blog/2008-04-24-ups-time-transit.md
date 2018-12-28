@@ -2,6 +2,7 @@
 layout: post
 title: UPS Time In Transit
 category: blog
+section-type: post
 created: 1209088279
 tags:
   - API

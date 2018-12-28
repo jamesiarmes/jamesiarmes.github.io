@@ -2,6 +2,7 @@
 layout: post
 title: Jimmy's Fridge
 category: blog
+section-type: post
 created: 1267104550
 ---
 ![Jimmy's Fridge](/img/blog/2010/02/fridge.jpg)

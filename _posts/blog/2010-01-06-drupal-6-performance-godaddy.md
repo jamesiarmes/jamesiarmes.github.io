@@ -2,6 +2,7 @@
 layout: post
 title: Drupal 6 Performance on GoDaddy
 category: blog
+section-type: post
 created: 1262820205
 tags:
   - Drupal

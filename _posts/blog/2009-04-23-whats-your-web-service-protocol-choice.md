@@ -2,6 +2,7 @@
 layout: post
 title: What's Your Web Service Protocol Of Choice?
 category: blog
+section-type: post
 created: 1240538172
 tags:
   - PHP

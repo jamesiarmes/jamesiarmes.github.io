@@ -2,6 +2,7 @@
 layout: post
 title: Simple Tips For Repsonding To A Web Developer Job Posting
 category: blog
+section-type: post
 created: 1261363432
 tags:
   - Drupal

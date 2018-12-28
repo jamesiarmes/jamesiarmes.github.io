@@ -2,6 +2,7 @@
 layout: post
 title: The Browser Is Mightier Than The Rich Text Area
 category: blog
+section-type: post
 created: 1211465495
 tags:
   - Browsers

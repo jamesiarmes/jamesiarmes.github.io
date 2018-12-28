@@ -2,6 +2,7 @@
 layout: post
 title: Add Viddler Videos To Your Drupal Site
 category: blog
+section-type: post
 created: 1239502202
 tags:
   - Drupal

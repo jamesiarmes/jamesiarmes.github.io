@@ -2,6 +2,7 @@
 layout: post
 title: 'Why I Can''t Wait For PHP 6: Part 1'
 category: blog
+section-type: post
 created: 1213125511
 tags:
   - charset

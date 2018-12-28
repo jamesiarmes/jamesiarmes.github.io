@@ -2,6 +2,7 @@
 layout: post
 title: 'Using the WorkXpress API: LookupData'
 category: blog
+section-type: post
 created: 1251938664
 tags:
   - API

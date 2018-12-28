@@ -2,6 +2,7 @@
 layout: post
 title: 'AllPlayers.com Eat N'' Geek: Regular Expressions and You'
 category: blog
+section-type: post
 created: 1347131519
 tags:
     - Presentation

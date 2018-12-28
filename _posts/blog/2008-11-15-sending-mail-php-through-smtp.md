@@ -2,6 +2,7 @@
 layout: post
 title: Sending Mail In PHP Through SMTP
 category: blog
+section-type: post
 created: 1226791387
 tags:
   - Mail

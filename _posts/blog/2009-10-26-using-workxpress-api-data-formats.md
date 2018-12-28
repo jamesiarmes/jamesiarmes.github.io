@@ -2,6 +2,7 @@
 layout: post
 title: 'Using the WorkXpress API: Data Formats'
 category: blog
+section-type: post
 created: 1256606610
 tags:
   - API

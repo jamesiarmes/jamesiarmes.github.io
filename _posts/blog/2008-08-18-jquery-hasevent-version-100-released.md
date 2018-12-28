@@ -2,6 +2,7 @@
 layout: post
 title: JQuery hasEvent Version 1.0.0 Released
 category: blog
+section-type: post
 created: 1219104326
 tags:
  - Events

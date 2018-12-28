@@ -2,6 +2,7 @@
 layout: post
 title: Accessing HarrisData (IBM iSeries) In PHP
 category: blog
+section-type: post
 created: 1226281673
 tags:
   - AS/400

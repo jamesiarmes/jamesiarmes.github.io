@@ -2,6 +2,7 @@
 layout: post
 title: 'Using the WorkXpress API: ExecuteAction'
 category: blog
+section-type: post
 created: 1256602701
 tags:
   - API

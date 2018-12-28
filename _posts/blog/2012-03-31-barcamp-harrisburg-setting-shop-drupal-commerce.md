@@ -2,6 +2,7 @@
 layout: post
 title: 'Barcamp Harrisburg: Setting up shop with Drupal Commerce'
 category: blog
+section-type: post
 created: 1333236198
 tags:
   - Drupal

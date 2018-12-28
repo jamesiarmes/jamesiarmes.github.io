@@ -2,6 +2,7 @@
 layout: post
 title: "CPLUG Talk: Launching Services in Amazon Web Services"
 category: blog
+section-type: post
 created: 1472180338
 tags:
   - Linux

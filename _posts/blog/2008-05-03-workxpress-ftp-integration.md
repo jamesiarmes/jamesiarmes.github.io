@@ -2,6 +2,7 @@
 layout: post
 title: WorkXpress FTP Integration
 category: blog
+section-type: post
 created: 1209832441
 tags:
   - FTP

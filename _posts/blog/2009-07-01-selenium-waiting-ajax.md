@@ -2,6 +2,7 @@
 layout: post
 title: 'Selenium: Waiting For AJAX'
 category: blog
+section-type: post
 created: 1246491064
 tags:
   - AJAX

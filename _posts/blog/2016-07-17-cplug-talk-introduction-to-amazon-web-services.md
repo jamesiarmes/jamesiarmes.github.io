@@ -2,6 +2,7 @@
 layout: post
 title: "CPLUG Talk: Introduction to Amazon Web Services"
 category: blog
+section-type: post
 created: 1468805499
 tags:
     - Linux

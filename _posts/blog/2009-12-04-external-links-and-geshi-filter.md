@@ -2,6 +2,7 @@
 layout: post
 title: External Links and GeSHi Filter
 category: blog
+section-type: post
 created: 1259980929
 tags:
   - CSS

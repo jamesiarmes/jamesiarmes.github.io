@@ -2,6 +2,7 @@
 layout: post
 title: The New Jimmy's Sandbox
 category: blog
+section-type: post
 created: 1270599372
 tags:
   - Jimmy's Sandbox

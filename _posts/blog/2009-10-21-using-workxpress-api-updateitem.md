@@ -2,6 +2,7 @@
 layout: post
 title: 'Using the WorkXpress API: UpdateItem'
 category: blog
+section-type: post
 created: 1256170671
 tags:
   - API

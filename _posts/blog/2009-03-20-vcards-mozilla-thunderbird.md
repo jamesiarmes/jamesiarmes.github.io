@@ -2,6 +2,7 @@
 layout: post
 title: vcards In Mozilla Thunderbird
 category: blog
+section-type: post
 created: 1237599771
 tags:
   - Kontact

@@ -2,6 +2,7 @@
 layout: post
 title: Debugging With Xdebug
 category: blog
+section-type: post
 created: 1208933667
 tags:
   - Debug
