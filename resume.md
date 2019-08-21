@@ -87,6 +87,10 @@ June 2009 - present
 > communicate with Microsoft Exchange 2007 servers.
 
 ## Certifications
+**Professional Scrum Master I (PSMI)**<br />
+<https://www.scrum.org/user/469740><br />
+June 2019 - present
+
 **Certified ScrumMaster**<br />
 <https://www.scrumalliance.org/community/profile/jarmes><br />
 September 2016 - present
