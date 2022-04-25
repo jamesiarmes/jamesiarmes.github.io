@@ -2,7 +2,7 @@
 title: Resume
 layout: page
 ---
-James Armes<br />
+James Armes (they/them)<br />
 <mailto:jamesiarmes@gmail.com><br />
 <http://www.linkedin.com/in/jamesiarmes><br />
 Software engineer with a passion for open source software interested in
@@ -22,17 +22,42 @@ processes and utilize new and upcoming technologies.
 * GlusterFS
 
 ## Work Experience
-**Senior Cloud Software Engineer**<br />
-Acquia
-September 2014 - present
+**Senior Infrastructure Engineer / Technical Lead**<br />
+Nava PBC<br />
+March 2020 - Present
 
-> Designed and drove development for distributed file system and database
-> hosting systems and provisioning services to support cloud hosting customers.
-> Mentored fellow engineers and facilitated scrum processes.
+> Lead a team of engineers and professional services consultants to manage and
+> deploy logging solutions on AWS for the Centers for Medicare & Medicaid
+> Services.
+>
+> • Work directly with government stakeholders to identify problems and develop
+> solutions.
+> • Reduced infrastructure cost over 70% by employing modern architectures and
+> best practices for Splunk on AWS.
+> • Developed and deployed automated processes to reduce toil and support
+> tickets allowing the team to focus on solving new problems.
+> • Mentored other engineers in order to improve their skills and increase team
+> velocity over time.
+> • Interviewed potential candidates for positions on the engineering team.
+
+**Senior Cloud Software Engineer**<br />
+Acquia<br />
+September 2014 - March 2020
+
+> Design and drive development and maintenance for distributed file system and
+> database systems and provisioning services to support cloud hosting customers.
+>
+> * Architected software and infrastructure for new distributed data services to
+> improve customer experience and reduce related support tickets.
+> * Mentor other engineers in order to improve their skills and increase team
+> velocity over time.
+> * Developed and facilitated scrum process and organized regular cross-team
+> scrum collaboration.
+> * Interviewed potential candidates for positions on the engineering team.
 
 **Web Developer**<br />
 Self-employed<br />
-December 2009 - present
+December 2009 - December 2018
 
 > Spearheaded the development of various web based projects including
 > proprietary e-commerce solutions, Drupal websites, e-commerce websites using
@@ -40,25 +65,28 @@ December 2009 - present
 > Maps, Exchange Web Services and various social networks.
 
 **Lead Developer**<br />
-AllPlayers.com, Inc.
+AllPlayers.com, Inc.<br />
 September 2011 - September 2014
 
 > Lead developer of web applications. Responsible for leading a team of
 > developers for the AllPlayers.com web application and store using an agile
-> scrum process. Assisted in making decisions that drove the development of 
-> group management services offered by the application and the e-commerce
-> solutions provided by the store. Contributed code back to the open source
-> community where possible, mostly involving Drupal and Drupal Commerce.
+> scrum process.
+>
+> * Managed and supervised a team of eight developers.
+> * Provided strategic insight that drove product decisions.
+> * Contributed to various open source projects and identified clear
+> delineations between custom solutions and community viable code.
 
 **Software Engineer**<br />
 WorkXpress<br />
 May 2007 - August 2011
 
-> Engineer for the WorkXpress PaaS. Created integrations between WorkXpress and
-> FedEx, HarrisData, Microsoft Exchange and various other services. Developed
-> libraries to handle systems monitoring and maintenance for private and cloud
-> based infrastructure. Assisted in systems administration of internal and
-> external systems.
+> Engineer for the WorkXpress PaaS and its underlying cloud infrastructure.
+>
+> * Developed custom integrations between customer applications and various
+> services such as FedEx, HarrisData, and Microsoft Exchange.
+> * Architected on-demand cloud infrastructure for the platform that reduced
+> cost for the both the company and its clients.
 
 ## Open Source Contributions
 The following are highlights of various open source contributions. See
