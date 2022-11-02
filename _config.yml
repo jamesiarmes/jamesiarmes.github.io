@@ -172,7 +172,10 @@ author_blurb_image: /img/me-front.jpg
 # Social Buttons #
 ##################
 
+rss-in-social: true
 social:
+  - title: mastodon
+    url: https://tech.lgbt/@jamesiarmes
   - title: twitter
     url: https://twitter.com/jamesiarmes
   - title: github
@@ -181,8 +184,6 @@ social:
     url: https://www.drupal.org/u/bassistjimmyjam
   - title: linkedin
     url: https://www.linkedin.com/in/jamesiarmes
-  - title: rss
-    url: /feed.xml
 
 ############
 # 404 page #
@@ -194,8 +195,8 @@ err-404-img: /img/labtocat.png
 # GPG on Keybase #
 ##################
 
-#keybase-username: johnsmith
-#keybase-in-social: True
+keybase-username: jamesiarmes
+keybase-in-social: true
 #keybase-in-footer: True
 
 ################################################################################
@@ -242,4 +243,3 @@ collections:
   portfolio:
     output: true
     permalink: /portfolio/:title
-
