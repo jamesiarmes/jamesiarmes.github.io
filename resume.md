@@ -22,23 +22,28 @@ processes and utilize new and upcoming technologies.
 * GlusterFS
 
 ## Work Experience
+**Principal Solutions Engineer**<br />
+Code for America<br />
+May 2022 - Present
+
 **Senior Infrastructure Engineer / Technical Lead**<br />
 Nava PBC<br />
-March 2020 - Present
+March 2020 - May 2022
+
 
 > Lead a team of engineers and professional services consultants to manage and
 > deploy logging solutions on AWS for the Centers for Medicare & Medicaid
 > Services.
 >
-> • Work directly with government stakeholders to identify problems and develop
+> * Work directly with government stakeholders to identify problems and develop
 > solutions.
-> • Reduced infrastructure cost over 70% by employing modern architectures and
+> * Reduced infrastructure cost over 70% by employing modern architectures and
 > best practices for Splunk on AWS.
-> • Developed and deployed automated processes to reduce toil and support
+> * Developed and deployed automated processes to reduce toil and support
 > tickets allowing the team to focus on solving new problems.
-> • Mentored other engineers in order to improve their skills and increase team
+> * Mentored other engineers in order to improve their skills and increase team
 > velocity over time.
-> • Interviewed potential candidates for positions on the engineering team.
+> * Interviewed potential candidates for positions on the engineering team.
 
 **Senior Cloud Software Engineer**<br />
 Acquia<br />

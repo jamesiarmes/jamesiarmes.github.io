@@ -130,8 +130,11 @@ syntax-highlight: True
 ############
 
 events:
+  - image: /img/timeline/cfa-logo.png
+    date: May 2022 - Present
+    description: Principal Solutions Engineer, Code for America
   - image: /img/timeline/nava.png
-    date: March 2020 - Present
+    date: March 2020 - May 2022
     description: Sr. Infrastrucutre Engineer, Nava PBC
   - image: /img/timeline/acquia.png
     date: September 2014 - March 2020
