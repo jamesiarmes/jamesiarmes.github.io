@@ -82,6 +82,26 @@ ul.platforms {
   li { font-size: 16px; }
 }
 
+.link-wrapper-mobile {
+  .navigation {
+    ul {
+      display: flex;
+      align-items: stretch; /* Default */
+      justify-content: space-between;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+
+      li {
+        display: block;
+        flex: 0 1 auto; /* Default */
+        list-style-type: none;
+        margin-top: 0 !important;
+      }
+    }
+  }
+}
+
 ul.pager {
   li {
     display: inline-block;
