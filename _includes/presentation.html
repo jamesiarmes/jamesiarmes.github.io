@@ -1,0 +1,7 @@
+<div class="card presentation">
+    <h3>{{ presentation.title }}</h3>
+    <p><b>{{ presentation.event }}</b>, {{ presentation.date | date_to_string }}</p>
+    <img src="{{ presentation.image }}" />
+    <p>{{ presentation.description }}</p>
+    <a href="{{ presentation.url }}"><span class="card-link-spanner"></span></a>
+</div>

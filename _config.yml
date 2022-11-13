@@ -1,248 +1,99 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-
-# NB! Set your site's url, otherwise stuff will break :)
-
-url: https://www.jamesarmes.com
-
-# If you're hosting your site at a Project repository on GitHub pages
-# (https://yourusername.github.io/repository-name)
-# and NOT your user repository (https://yourusername.github.io)
-# then add in the baseurl here, like this: "/repository-name"
-#
-# NB! Without this *nothing* will work, because it's used in every path :)
-
-baseurl: ""
-
-# Google tracking id
-
-google-tracking-id: UA-3412924-2
-
-# Forces https everywhere in your website, except when you serve it locally
-# If you are not hosted on Github Pages, and your host doesn't support https
-# then you should disable it
-
-force-https: True
-
-#############
-# HTML Head #
-#############
-
-lang: en
-author: James Armes
-title: '{ James Armes (they/them) }'
-description: "Blog and website of James Armes, blogging mainly for tech. Opinions expressed are mine."
-keywords: "armes, james, personal, software, engineering, development, programming"
-favicon: /img/favicon.ico
-
-################
-# Header layout #
-################
-
-black-favicon: /img/black-icon.ico
-background-img: ../img/intro-bg.jpg
-
-##############################
-# Dynamic Text on the Header #
-##############################
-
-dynamic-typing: True
-shuffle: True # Shuffle the lines.
-loop: True
-loop-count: False # Set False for infinite loop, or set any number for finite loop.
-type-speed: 10
-start-delay: 200
-delete-delay: 5000
-lines: # You can add HTML Tags in the Text
-  - text: "Software is a great combination between artistry and engineering."
-  - text: "Perfecting oneself is as much unlearning as it is learning."
-
-me-img: /img/me-front.jpg
-
-# To use facebook profile pic comment the previous line and uncomment the following
-# line, and replace 'user_id' with your facebook user id.
-# Facebook user id can be found by clicking on your profile pic and the large number
-# in the end of the url just before '&type' is your user id.
-# Note: fbid is not the same as user id and user id only contains numbers
-
-# me-img: "https://graph.facebook.com/user_id/picture?type=large&width=500&height=500"
-
-# To use github profile pic uncomment the following line and replace 'user_name'
-# with your github user name.
-
-# me-img: "https://github.com/user_name.png?size=500"
-
-# To use gravatar profile pic uncomment the following line and replace 'email_hash'
-# with your gravatar profile email hash.
-# You can create the email hash by using an online tool like 'http://www.md5hashgenerator.com/'
-# just enter your email and it will generate the hash.
-
-# me-img: "https://www.gravatar.com/avatar/email_hash?s=500"
-
-##############################
-# Color the browser elements #
-##############################
-color-browser: '#000000'
-apple-status-bar-style: black
-
-################
-# Web app mode #
-################
-
-web-app-mode: True
-
-# Icons for Web App mode
-
-icon-36p: /img/web-app/icon-36p.png
-icon-48p: /img/web-app/icon-48p.png
-icon-72p: /img/web-app/icon-72p.png
-icon-96p: /img/web-app/icon-96p.png
-icon-144p: /img/web-app/icon-144p.png
-icon-192p: /img/web-app/icon-192p.png
-
-########
-# Blog #
-########
-
-enable-gesture-navigation: True
-
-post-preview-words: 96
-
-paginate: 5
-
-#email-share: True
-#fb-share: True
-#twitter-share: True
-#linkedin-share: True
-#reddit-share: True
-#google-plus-share: True
-#tumblr-share: True
-#pinterest-share: True
-#pocket-share: True
-#vkontakte-share: True
-
-disqus-shortname: jamesarmes
-
-syntax-highlight: True
-
-############
-# Timeline #
-############
-
-events:
-  - image: /img/timeline/cfa-logo.png
-    date: May 2022 - Present
-    description: Principal Solutions Engineer, Code for America
-  - image: /img/timeline/nava.png
-    date: March 2020 - May 2022
-    description: Sr. Infrastrucutre Engineer, Nava PBC
-  - image: /img/timeline/acquia.png
-    date: September 2014 - March 2020
-    description: Sr. Software Engineer, Acquia
-  - image: /img/timeline/allplayers.png
-    date: September 2011 - September 2014
-    description: Lead Developer, AllPlayers.com
-  - image: /img/timeline/workxpress.png
-    date: May 2007 - August 2011
-    description: Software Engineer, WorkXpress
-    name: workxpress
-  - image: /img/timeline/centralpenn.jpg
-    date: June 2007
-    description: Graduated from Central Penn College
-
-# First image of the Timeline
-
-timeline-img: /img/timeline/coding.jpg
-
-###########
-# Contact #
-###########
-
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: James Armes
+pronouns: they/them
+author: James Armes (they/them)
 email: jamesiarmes@gmail.com
+description: >-
+  Solutions Engineer @ Code for America.
+  Developing technical solutions to problems that affect real people.
+logo: /assets/img/me-round.png
+baseurl: "" # the subpath of your site, e.g. /blog
+url: https://www.jamesarmes.com
+google_analytics: G-0BTVLDC8EC
 
-################
-# Author Blurb #
-################
+platforms:
+  - name: GitHub
+    icon: <i class="fa-brands fa-github" title="GitHub"></i>
+    link: https://github.com/jamesiarmes
+  - name: Keybase
+    icon: <i class="fa-brands fa-keybase" title="Keybase"></i>
+    link: https://keybase.io/jamesiarmes
+  - name: LinkedIn
+    icon: <i class="fa-brands fa-linkedin" title="LinkedIn"></i>
+    link: https://www.linkedin.com/in/jamesiarmes
+  - name: Mastodon
+    icon: <i class="fa-brands fa-mastodon" title="Mastodon"></i>
+    link: https://tech.lgbt/@jamesiarmes
+  - name: Drupal
+    icon: <i class="fa-brands fa-drupal" title="Drupal"></i>
+    link: https://www.drupal.org/u/bassistjimmyjam
+  - name: Twitter
+    icon: <i class="fa-brands fa-twitter" title="Twitter"></i>
+    link: https://twitter.com/jamesiarmes
+  - name: RSS
+    icon: <i class="fa-solid fa-rss" title="RSS feed"></i>
+    link: /feed.xml
 
-# The author blurb goes underneath blog posts.
-# This works best when your author blurb image has a transparent background, or matches your site background color.
-
-# if the author_blurb is not set, then this feature is skipped
-author_blurb: "James is a cloud engineer and architect and open source enthusiast from central Pennsylvania."
-author_blurb_image: /img/me-front.jpg
-
-##################
-# Social Buttons #
-##################
-
-rss-in-social: true
-social:
-  - title: mastodon
-    url: https://tech.lgbt/@jamesiarmes
-  - title: twitter
-    url: https://twitter.com/jamesiarmes
-  - title: github
-    url: https://github.com/jamesiarmes
-  - title: drupal
-    url: https://www.drupal.org/u/bassistjimmyjam
-  - title: linkedin
-    url: https://www.linkedin.com/in/jamesiarmes
-
-############
-# 404 page #
-############
-
-err-404-img: /img/labtocat.png
-
-##################
-# GPG on Keybase #
-##################
-
-keybase-username: jamesiarmes
-keybase-in-social: true
-#keybase-in-footer: True
-
-################################################################################
-
-# NB! Tread carefully if you want to change the variables below this point!
-
-# Sections shown in the index page
-
-pages_list:
-  About: about
-  Blog: latest-post
-  Timeline: timeline
-  Portfolio: portfolio
-  # Disable contact for now. Replace with a webform.
-#  Contact: contact
-
-# Exclusion list from the generated _site
-
-exclude:
-  - LICENSE
-  - README.md
-  - CONTRIBUTING
-  - CONTRIBUTORS
-  - scripts
-  - vendor
-
-# Pagination path
-
-paginate_path: blog/page:num/
-
-# Enable minification SASS
-
-sass:
-  style: compressed
-
+# Build settings
+markdown: kramdown
+#theme: jekyll-text-theme
+theme: jekyll-theme-minimalistic
+permalink: /:year/:month/:title.html
+#theme: nuboard-theme
 plugins:
-  - jekyll-paginate
-  - jemoji
-  - jekyll-redirect-from
-  - jekyll-sitemap
-permalink: /:categories/:year/:month/:title
+  - jekyll-feed
+  - jekyll-paginate-v2
+#  - jekyll_picture_tag
+#  - jekyll-remote-theme
 
-collections:
-  portfolio:
-    output: true
-    permalink: /portfolio/:title
+# Exclude from processing.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - oldsite
+
+navigation:
+  - name: Home
+    link: /
+    icon: <i class="fa-solid fa-house"></i>
+  - name: About
+    link: /about.html
+    icon: <i class="fa-solid fa-person-half-dress"></i>
+  - name: Posts
+    link: /posts
+    icon: <i class="fa-solid fa-signs-post"></i>
+  - name: Presentations
+    link: /presentations.html
+    icon: <i class="fa-solid fa-person-chalkboard"></i>
+
+pagination:
+  enabled: true
+  collection: posts
+  sort_reverse: true
+  per_page: 2
+  permalink: '/page/:num/'
+  title: 'page :num'
+  category: blog
+  limit: 0
+  trail:
+    before: 2
+    after: 2

@@ -1,0 +1,12 @@
+{% if site.logo %}
+<img class="logo" src="{{ site.logo | relative_url }}" alt="Logo">
+{% endif %}
+
+<div class="site-title link-container">
+    <h1>{{ site.title | default: site.github.repository_name }}</h1>
+    {% if site.pronouns %}
+    <p class="pronouns">{{ site.pronouns }}</p>
+    {% endif %}
+    <a href="/"><span class="link-spanner"></span></a>
+</div>
+

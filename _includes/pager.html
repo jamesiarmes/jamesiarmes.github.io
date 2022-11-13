@@ -1,0 +1,57 @@
+{% if paginator.total_pages > 1 %}
+<div class="pager">
+    <ul class="link pager">
+        <li class="previous">
+            {% if paginator.first_page != paginator.page %}
+            <a href="{{ paginator.first_page_path | prepend: site.baseurl | replace: '//', '/' }}">
+                <i class="fa-solid fa-backward-fast" title="First page"></i>
+            </a>
+            {% else %}
+            <i class="fa-solid fa-backward-fast fa-disabled" title="This is the first page"></i>
+            {% endif %}
+        </li>
+
+        <li class="previous">
+            {% if paginator.previous_page %}
+            <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">
+                <i class="fa-solid fa-backward-step" title="Previous page"></i>
+            </a>
+            {% else %}
+            <i class="fa-solid fa-backward-step fa-disabled" title="This is the first page"></i>
+            {% endif %}
+        </li>
+
+        {% if paginator.page_trail %}
+        {% for trail in paginator.page_trail %}
+        <li>
+            {% if page.url != trail.path %}
+            <a href="{{ trail.path | prepend: site.baseurl | replace: '//', '/' }}" title="{{trail.title}}">{{ trail.num }}</a>
+            {% else %}
+            <span title="This is the current page fa-disabled">{{ trail.num }}</span>
+            {% endif %}
+        </li>
+        {% endfor %}
+        {% endif %}
+
+        <li class="next">
+            {% if paginator.next_page %}
+            <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">
+                <i class="fa-solid fa-forward-step" title="Next page"></i>
+            </a>
+            {% else %}
+            <i class="fa-solid fa-forward-step fa-disabled" title="This is the last page"></i>
+            {% endif %}
+        </li>
+
+        <li class="previous">
+            {% if paginator.last_page != paginator.page %}
+            <a href="{{ paginator.last_page_path | prepend: site.baseurl | replace: '//', '/' }}">
+                <i class="fa-sharp fa-solid fa-forward-fast" title="Last page"></i>
+            </a>
+            {% else %}
+            <i class="fa-solid fa-forward-fast fa-disabled" title="This is the last page"></i>
+            {% endif %}
+        </li>
+    </ul>
+</div>
+{% endif %}

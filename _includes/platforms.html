@@ -1,0 +1,9 @@
+{% if site.platforms %}
+<div class="platforms">
+    <ul class="link platforms">
+        {%- for platform in site.platforms %}
+        <li><a rel="me" target="_blank" href="{{ platform.link }}">{{ platform.icon }}</a></li>
+        {%- endfor %}
+    </ul>
+</div>
+{% endif %}

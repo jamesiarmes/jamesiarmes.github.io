@@ -1,0 +1,14 @@
+---
+layout: default
+pagination:
+  enabled: true
+  permalink: '/:num/'
+---
+{% for post in paginator.posts %}
+  {% include post-excerpt.html %}
+{% endfor %}
+
+{% include pager.html %}
+
+
+

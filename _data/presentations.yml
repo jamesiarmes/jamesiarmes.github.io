@@ -1,0 +1,32 @@
+- title: Launching services in Amazon Web Services
+  event: CPLUG
+  date: 2016-08-09
+  image: /assets/img/aws-logo.svg
+  url: https://www.slideshare.net/jamesiarmes/launching-services-in-amazon-web-services
+  description: >-
+    Advanced AWS talk given to the Central Pennsylvania Linux Users Group in
+    August 2016.
+- title: Introduction to Amazon Web Services
+  event: CPLUG
+  date: 2016-07-12
+  image: /assets/img/aws-logo.svg
+  url: https://www.slideshare.net/jamesiarmes/introduction-to-amazon-web-services-63968583
+  description: >-
+    Introductory session to Amazon Web Services given to the Central
+    Pennsylvania Linux Users Group in July 2016.
+- title: Regular expressions and you
+  event: Barcamp Harrisburg
+  date: 2012-09-08
+  image: /assets/img/regex.jpeg
+  url: http://player.vimeo.com/video/47263145
+  description: >-
+    An introduction to regular expressions presented during an AllPlayers.com
+    Eat n' Geek.
+- title: Setting up shop with Drupal Commerce
+  event: Barcamp Harrisburg
+  date: 2012-03-30
+  image: /assets/img/drupal-commerce-logo.svg
+  url: https://prezi.com/b0fostu_mlbe/setting-up-shop-with-drupal-commerce/
+  description: >-
+    An overview of Drupal Commerce and how you can utilize it to start your
+    e-store.

@@ -1,9 +1,7 @@
 ---
-layout: index
-section-type: index
-sitemap:
-  priority: 1.0
+# TODO: Add pagination.
+layout: default
 ---
-<!--
-If you want to have a static message in your intro layout, disable the dynamic-typing in the _config.yml and write here your text
--->
+{% for post in site.posts %}
+  {% include post-full.html %}
+{% endfor %}

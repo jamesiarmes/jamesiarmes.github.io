@@ -1,0 +1,138 @@
+---
+---
+
+@import
+  //"minima",
+  "jekyll-theme-minimalistic"
+  //"posts"
+;
+
+.presentation {
+  img {
+    height: 100px;
+    padding: 5px;
+  }
+}
+
+article.post {
+  &:last-of-type { margin-bottom: 0; }
+  p { margin: 0 0 20px 0; }
+}
+
+.excerpt {
+  .readmore { margin: 10px 0; }
+}
+
+.full {
+  h1 {
+    a { color: inherit; text-decoration: inherit; }
+  }
+}
+
+h1 { margin: 0; }
+
+.site-title { display: inline-block; }
+
+.pronouns {
+  ::before { content: '(' }
+  ::after { content: ')' }
+
+  margin-bottom: 5px;
+  text-align: right;
+}
+
+.link-container {
+  cursor: pointer;
+  position: relative;
+}
+
+.link-spanner {
+  position:absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+// TODO: See if we can make this match the text width automatically.
+div.platforms {
+  padding-right: 30px;
+}
+
+ul.platforms {
+  display: flex;
+  align-items: stretch; /* Default */
+  justify-content: space-between;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  li {
+    display: block;
+    flex: 0 1 auto; /* Default */
+    list-style-type: none;
+    font-size: 20px;
+    margin-top: 0 !important;
+  }
+}
+
+.navigation {
+  i { margin-right: 4px; }
+  li { font-size: 16px; }
+}
+
+ul.pager {
+  li {
+    display: inline-block;
+    font-size: 16px;
+    margin: 0 2px !important;
+  }
+}
+
+.fa-disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.lost {
+  position: relative;
+
+  .lost-container {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, 50%);
+    transform: translate(-50%, 50%);
+  }
+
+  .lost-header {
+    font-size: 150px;
+    text-align: center;
+
+    i {
+      width: 200px;
+      height: 200px;
+      line-height: 200px;
+      border-radius: 50%;
+      background: var(--clr-card-bg);
+    }
+  }
+
+  p {
+    font-size: 20px;
+    text-align: center;
+  }
+}
+
+.about-image {
+  float: right;
+  padding: 0 0 20px 20px;
+  max-width: 250px;
+}
+.post-image {
+  float: left;
+  padding: 0 20px 20px 0;
+}
+
