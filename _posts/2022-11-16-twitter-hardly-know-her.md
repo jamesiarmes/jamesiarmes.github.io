@@ -2,6 +2,7 @@
 layout: post
 title:  Twitter? I hardly know her!
 date:   2022-11-16 13:05:00 -0500
+image: /assets/img/twitter-logo.svg
 category: blog
 tags: twitter social
 ---

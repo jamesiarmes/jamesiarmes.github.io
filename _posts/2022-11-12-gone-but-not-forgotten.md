@@ -2,6 +2,7 @@
 layout: post
 title:  Gone but not forgotten
 date:   2022-11-12 23:56:00 -0500
+image: /assets/img/nuke-orbit.gif
 category: blog
 tags: personal site
 ---
