@@ -4,9 +4,11 @@
 
     <p class="view">by {{ post.author | default: site.author }}</p>
 
-    {{ post.content }}
+    <div class="clearfix">
+        {{ post.content }}
 
-    {% if post.tags %}
-    <small>tags: <em>{{ post.tags | join: "</em> - <em>" }}</em></small>
-    {% endif %}
+        {% if post.tags %}
+        <small>tags: <em>{{ post.tags | join: "</em> - <em>" }}</em></small>
+        {% endif %}
+    </div>
 </article>

@@ -3,11 +3,13 @@
     <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
     <p class="view">by {{ post.author | default: site.author }}</p>
 
-    {{ post.excerpt }}
+    <div class="clearfix">
+        {{ post.excerpt }}
 
-    <p class="readmore"><a href="{{ post.url }}">Read more...</a></p>
+        <p class="readmore"><a href="{{ post.url }}">Read more...</a></p>
 
-    {% if post.tags %}
-    <small>tags: <em>{{ post.tags | join: "</em> - <em>" }}</em></small>
-    {% endif %}
+        {% if post.tags %}
+        <small>tags: <em>{{ post.tags | join: "</em> - <em>" }}</em></small>
+        {% endif %}
+    </div>
 </article>
