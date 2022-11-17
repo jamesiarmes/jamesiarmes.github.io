@@ -24,6 +24,7 @@ logo: /assets/img/me-round.png
 baseurl: "" # the subpath of your site, e.g. /blog
 url: https://www.jamesarmes.com
 google_analytics: G-0BTVLDC8EC
+favicon: /assets/favicon.png
 
 platforms:
   - name: GitHub
