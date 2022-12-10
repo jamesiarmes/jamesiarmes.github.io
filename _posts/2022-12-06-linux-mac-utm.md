@@ -203,7 +203,7 @@ tell if this could be a path to Linux as my daily driver once again.
 [title-image]: /assets/img/linux-mac-utm.png
 [idea-screenshot]: /assets/img/utm-vm-with-idea.png
 [kubuntu]: https://kubuntu.org/
-[feora-kde]: https://spins.fedoraproject.org/kde/
+[fedora-kde]: https://spins.fedoraproject.org/kde/
 [utm]: https://mac.getutm.app/
 [homebrew]: https://brew.sh/
 [qemu]: https://www.qemu.org/
