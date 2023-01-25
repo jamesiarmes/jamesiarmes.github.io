@@ -166,3 +166,29 @@ ul.pager {
   clear: both;
   content: "";
 }
+
+figure {
+  > figcaption {
+    background-color: #757575;
+    border-radius: 5px 5px 0 0;
+    color: #E6E6E6;
+    font-weight: bold;
+    padding: 0 15px;
+  }
+
+  margin: 0;
+}
+
+div.footnotes {
+  ol {
+    padding-left: 15px;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+
+  border-top: 1px solid var(--clr-h1-and-bold);
+  font-size: 12px;
+  padding-top: 5px;
+}
