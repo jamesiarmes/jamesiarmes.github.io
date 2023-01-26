@@ -42,9 +42,9 @@ platforms:
   - name: Drupal
     icon: <i class="fa-brands fa-drupal" title="Drupal"></i>
     link: https://www.drupal.org/u/bassistjimmyjam
-  - name: Twitter
-    icon: <i class="fa-brands fa-twitter" title="Twitter"></i>
-    link: https://twitter.com/jamesiarmes
+  - name: Dev.to
+    icon: <i class="fa-brands fa-dev" title="Dev.to"></i>
+    link: https://dev.to/jamesiarmes
   - name: RSS
     icon: <i class="fa-solid fa-rss" title="RSS feed"></i>
     link: /feed.xml
