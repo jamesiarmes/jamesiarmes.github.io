@@ -4,7 +4,10 @@ title:  Linux on Mac using UTM
 date:   2022-12-06 10:55:00 -0400
 image: /assets/img/linux-mac-utm.png
 category: blog
-tags: macos linux virtualization
+tags:
+- linux
+- macos
+- virtualization
 ---
 ![Image of a Macbook running Linux with the UTM logo][title-image]{: .post-image }
 I know that Macs are very popular in the engineering community, but I have

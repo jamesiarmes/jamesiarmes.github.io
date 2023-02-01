@@ -4,7 +4,9 @@ title:  Twitter? I hardly know her!
 date:   2022-11-16 13:05:00 -0500
 image: /assets/img/twitter-logo.png
 category: blog
-tags: twitter social
+tags:
+- social media
+- twitter
 ---
 ![Twitter logo][twitter-logo]{: .post-image }
 I created my Twitter account in September 2008, about two years after it was

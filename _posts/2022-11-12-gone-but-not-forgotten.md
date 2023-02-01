@@ -4,7 +4,9 @@ title:  Gone but not forgotten
 date:   2022-11-12 23:56:00 -0500
 image: /assets/img/nuke-orbit.gif
 category: blog
-tags: personal site
+tags:
+- personal
+- website
 ---
 ![I say we take off and nuke the entire site from orbit.][nuke-site]{: .post-image }
 It's been some time since I've written a post (August 25, 2016, to be exact). So
