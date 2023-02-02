@@ -1,0 +1,8 @@
+---
+layout: default
+---
+{% for post in paginator.posts %}
+  {% include post-full.html %}
+{% endfor %}
+
+{% include pager.html %}

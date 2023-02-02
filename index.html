@@ -1,7 +1,7 @@
 ---
-# TODO: Add pagination.
-layout: default
+layout: paginate-full
+pagination:
+  enabled: true
+  per_page: 5
+  permalink: '/:num/'
 ---
-{% for post in site.posts %}
-  {% include post-full.html %}
-{% endfor %}
