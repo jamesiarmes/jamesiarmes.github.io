@@ -48,10 +48,9 @@ details.
 ## Deploying Jekyll 4 on GitHub Pages
 
 To deploy Jekyll 4 on GitHub Pages, you'll need to use
-[GitHub Actions][actions]. GitHub Actions is a CI/CD (continuous integration
-and continuous delivery) service that allows you to automate tasks in your
-workflow. You can use it to build, test, and deploy your code similar to other
-systems like Jenkins or CircleCI.
+[GitHub Actions][actions]. GitHub Actions is a {% glossary CI/CD %} service that
+allows you to automate tasks in your workflow. You can use it to build, test,
+and deploy your code similar to other systems like Jenkins or CircleCI.
 
 Workflows are configured in YAML files in the `.github/workflows` directory of
 your repository. You can have multiple workflows, each of which can have one or
@@ -71,7 +70,7 @@ For example, the workflow file for this site looks like this:
 Now, anytime I push a change to my `main` branch, the site is built and deployed
 automatically!
 
-![][workflow-run]
+![Screenshot of a successful run of the workflow][workflow-run]
 
 [4.3.0]: https://jekyllrb.com/news/2022/10/20/jekyll-4-3-0-released/
 [actions]: https://docs.github.com/actions

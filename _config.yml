@@ -55,6 +55,7 @@ theme: jekyll-theme-minimalistic
 permalink: /:year/:month/:title.html
 plugins:
   - jekyll-feed
+  - jekyll-glossary_tooltip
   - jekyll-paginate-v2
 #  - jekyll_picture_tag
 
