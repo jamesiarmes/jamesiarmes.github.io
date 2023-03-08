@@ -1,0 +1,19 @@
+div.thought {
+  .thought-title {
+    font-size: larger;
+    font-weight: bold;
+  }
+
+  .thought-content {
+    p:last-of-type {
+      margin-bottom: 0px;
+    }
+  }
+
+  background-color: #F2E7FD;
+  border: 1px solid #DCB2FF;
+  border-radius: 4px;
+  color: black;
+  padding: 15px;
+  margin: 20px 0;
+}

@@ -2,10 +2,9 @@
 ---
 
 @import
-  //"minima",
   "jekyll-theme-minimalistic",
-  "glossary"
-  //"posts"
+  "glossary",
+  "thought"
 ;
 
 .presentation {
@@ -15,14 +14,22 @@
   }
 }
 
-article.post {
+section, article.post {
   &:last-of-type { margin-bottom: 0; }
   &.card h2 {
     color: var(--clr-h2);
     margin: 0 0 20px 0;
   }
+  &.card h3 {
+    color: var(--clr-h3);
+    margin: 0 0 20px 0;
+  }
 
   p { margin: 0 0 20px 0; }
+
+  table {
+    td, th { border: 1px solid var(--clr-h1-and-bold); }
+  }
 }
 
 .excerpt {

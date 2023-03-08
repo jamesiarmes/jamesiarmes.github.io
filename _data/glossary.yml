@@ -1,2 +1,10 @@
+- term: AWS
+  definition: Amazon Web Services
+  url: https://aws.amazon.com/
 - term: CI/CD
   definition: Continuous integration and continous delivery
+- term: DBaaS
+  definition: Database-as-a-Service
+- term: FISMA
+  definition: Federal Information Security Management Act
+  url: https://www.cisa.gov/topics/cyber-threats-and-advisories/federal-information-security-modernization-act
