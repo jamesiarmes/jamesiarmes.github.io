@@ -44,7 +44,7 @@ There are different types of database replication, including:
   replicated to the secondaries immediately. The transaction on the primary is
   not committed until it has been successfully replicated to all secondaries.
   This is useful to eliminate race conditions caused by replication lag, but can
-  have significant performance impact.
+  have a significant performance impact.
 * **Snapshot replication:** A snapshot of the primary database is taken and
   replicated to the secondary database at a regular interval. This type of
   replication is useful for maintaining a point-in-time copy of a database.
@@ -57,40 +57,40 @@ distribute database load, or one of them could be promoted if the primary goes
 down or requires maintenance. Unidirectional replication is the most common
 replication configuration.
 
-![Diagram show three nodes in unidirectional replication][unidirectional-diagram]
+![Diagram showing three nodes in unidirectional replication][unidirectional-diagram]
 
 Bidirectional replication creates copies in each direction. Each database is
 replicated to the others and vice-versa. This can create conflicts, especially
 if one or more nodes fall behind. Bidirectional replication is useful for
 geo-distribution, improved write performance by distributing queries, and
-migrations where you need to the ability to quickly roll back without data loss.
+migrations where you need the ability to quickly roll back without data loss.
 
-![Diagram show three nodes in bidirectional replication][bidirectional-diagram]
+![Diagram showing three nodes in bidirectional replication][bidirectional-diagram]
 
 {% include thought.html
            title="A note about language"
            content="
 You may sometimes see unidirectional replication referred to as master-slave or
 single-master, and bidirectional replication as master-master or multi-master.
-As we've grown as a community we've come to recognise the harm caused by this
-terminology and evolved our language. As such, these terms are considered
+As we've grown as a community, we've come to recognize the harm caused by this
+terminology and have evolved our language. As such, these terms are considered
 outdated."
 %}
 
 ### How many nodes?
 
 The total number of nodes that you'll need in your database cluster depends on
-your needs, and this is further complication by {% glossary DBaaS %} providers
-that often have their own replicas. In fact if you're using a DBaaS provider,
+your needs, and this is further complicated by {% glossary DBaaS %} providers
+that often have their own replicas. In fact, if you're using a DBaaS provider,
 you may not need to configure replication unless you're looking to migrate your
 database.
 
 In general, the recommended number of nodes for ongoing replication is an odd
 number of three or more. The importance of an odd number is that clusters can
-perform in elections, where each node gets a vote. An odd number of nodes helps
-to avoid a tie that could result in data loss. These elections can be initiated
-in the case of a conflict during replication, when determining if a node is
-down, and promoting a node to primary.
+participate in elections, where each node gets a vote. An odd number of nodes
+helps to avoid a tie that could result in data loss. These elections can be
+initiated in the case of a conflict during replication, when determining if a
+node is down, and promoting a node to primary.
 
 ## How does pglogical support bidirectional replication?
 
@@ -168,8 +168,7 @@ available on AWS without being able to use IAM roles.
 Connect to the source database and load the extension:
 
 ```sql
-CREATE
-EXTENSION pglogical;
+CREATE EXTENSION pglogical;
 ```
 
 Now add this node to pglogical. This will need to match the settings we use when
@@ -348,8 +347,8 @@ we get something similar to:
 | 1001 | Naimothy |
 
 You can see that the record we added to the primary was replicated over and we
-This gives us some breathing room before we would have to deal with a sequence
-collision.
+have a new record with the id 1001. This gives us some breathing room before we
+would have to deal with a sequence collision.
 
 A sequence is a database object in PostgreSQL that's used to generate unique
 numeric identifiers. Sequences are often used to generate primary key values for
