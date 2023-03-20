@@ -1,17 +1,21 @@
-aside.thought {
-  .thought-title {
+aside.aside {
+  .aside-title {
     font-size: larger;
     font-weight: bold;
   }
 
-  .thought-content {
+  .aside-content {
     p:last-of-type {
       margin-bottom: 0px;
     }
   }
 
-  background-color: #F2E7FD;
-  border: 1px solid #DCB2FF;
+  &[data-type="social"] {
+    background-color: #F2E7FD;
+    border-color: #DCB2FF;
+  }
+
+  border: 1px solid;
   border-radius: 4px;
   color: black;
   padding: 15px;

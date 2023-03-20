@@ -67,15 +67,13 @@ migrations where you need the ability to quickly roll back without data loss.
 
 ![Diagram showing three nodes in bidirectional replication][bidirectional-diagram]
 
-{% include thought.html
-           title="A note about language"
-           content="
+{% aside {"title":"A note about language", "type":"social"} %}
 You may sometimes see unidirectional replication referred to as master-slave or
 single-master, and bidirectional replication as master-master or multi-master.
 As we've grown as a community, we've come to recognize the harm caused by this
 terminology and have evolved our language. As such, these terms are considered
-outdated."
-%}
+outdated.
+{% endaside %}
 
 ### How many nodes?
 
