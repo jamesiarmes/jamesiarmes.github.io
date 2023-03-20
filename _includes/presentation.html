@@ -1,6 +1,11 @@
 <div class="card presentation">
     <h3>{{ presentation.title }}</h3>
-    <p><b>{{ presentation.event }}</b>, {{ presentation.date | date_to_string }}</p>
+    <div>
+      <small>
+        <b>{{ presentation.event }}</b>,
+        <time datetime="{{ presentation.date }}">{{ presentation.date | date_to_string }}</time>
+      </small>
+    </div>
     <img src="{{ presentation.image }}" />
     <p>{{ presentation.description }}</p>
     <a href="{{ presentation.url }}"><span class="card-link-spanner"></span></a>
