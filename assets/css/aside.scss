@@ -2,12 +2,26 @@ aside.aside {
   .aside-title {
     font-size: larger;
     font-weight: bold;
+
+    i {
+      margin-right: 5px;
+    }
   }
 
   .aside-content {
-    p:last-of-type {
+    *:last-child {
       margin-bottom: 0px;
     }
+  }
+
+  &[data-type="caution"] {
+    background-color: #FAF7BE;
+    border-color: #EFBA00;
+  }
+
+  &[data-type="note"] {
+    background-color: #BBE0FF;
+    border-color: #0C66DC;
   }
 
   &[data-type="social"] {

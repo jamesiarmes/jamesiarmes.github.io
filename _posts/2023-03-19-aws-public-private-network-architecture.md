@@ -46,9 +46,11 @@ resources you need to be available directly from the Internet; this will
 determine the size of your public subnet. Your public subnet will likely be much
 smaller than your private one in terms of address space.
 
-_Note: You don't need to use the entirety of your address space. You can create
+{% aside {"type":"note", "icon":"<i class=\"fa-solid fa-sticky-note\"></i>"} %}
+You don't need to use the entirety of your address space. You can create
 subnets that are sufficient for your expected needs are reserve the rest for
-future use._
+future use.
+{% endaside %}
 
 ### Public subnets
 
@@ -85,8 +87,10 @@ availability zone goes down, your resources in the over availability zone(s)
 will still operate. Multiple gateways will require one route table for each
 private subnet.
 
-_Note: If your NAT Gateway is in a different availability zone than your
-resources, you will be charged higher data transfer fees._
+{% aside {"type":"note", "icon":"<i class=\"fa-solid fa-sticky-note\"></i>"} %}
+If your NAT Gateway is in a different availability zone than your
+resources, you will be charged higher data transfer fees.
+{% endaside %}
 
 Regardless of the number of route tables you end up with, they will each need
 the following routes:
@@ -98,9 +102,11 @@ the following routes:
 
 Make sure to associate each route table with the appropriate subnet(s).
 
-_Note: NAT Gateways use an EIP (Elastic IP address), essentially a static public
+{% aside {"type":"note", "icon":"<i class=\"fa-solid fa-sticky-note\"></i>"} %}
+NAT Gateways use an EIP (Elastic IP address), essentially a static public
 IP address. You can use this to allow traffic from your resources to connect to
-resources you manage elsewhere._
+resources you manage elsewhere.
+{% endaside %}
 
 ## VPC Endpoints
 
@@ -133,8 +139,10 @@ However, Amazon has published a number of [modules][modules] to help create
 common sets of resources. This includes vpc anc vpc_endpoints. We can use these
 in our `main.tf` to setup everything we need.
 
-_Note: This is a relatively simple example and doesn't configure a backend for
-state storage. It should therefore not be considered production ready._
+{% aside {"type":"caution", "icon":"<i class=\"fa-solid fa-circle-exclamation\"></i>"} %}
+This is a relatively simple example and doesn't configure a backend for
+state storage. It should therefore not be considered production ready.
+{% endaside %}
 
 ```terraform
 module "vpc" {

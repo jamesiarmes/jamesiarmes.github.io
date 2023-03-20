@@ -67,7 +67,7 @@ migrations where you need the ability to quickly roll back without data loss.
 
 ![Diagram showing three nodes in bidirectional replication][bidirectional-diagram]
 
-{% aside {"title":"A note about language", "type":"social"} %}
+{% aside {"title":"A note about language", "type":"social", "icon":"<i class=\"fa-solid fa-comment-dots\"></i>"} %}
 You may sometimes see unidirectional replication referred to as master-slave or
 single-master, and bidirectional replication as master-master or multi-master.
 As we've grown as a community, we've come to recognize the harm caused by this
@@ -124,13 +124,15 @@ wal_level = logical
 shared_preload_libraries = 'pglogical'
 ```
 
-_Note: shared_preload_libraries may have multiple comma-separated values. If you
+{% aside {"type":"note", "icon":"<i class=\"fa-solid fa-sticky-note\"></i>"} %}
+shared_preload_libraries may have multiple comma-separated values. If you
 are loading other libraries already, simply add pglogical to the list. For
-example:_
+example:
 
 ```text
 shared_preload_libraries = 'pg_transport,pglogical'
 ```
+{% endaside %}
 
 You'll also need to allow scram-sha-256 authentication. Add the following to
 your pg_hba.conf:
@@ -139,8 +141,12 @@ your pg_hba.conf:
 host all all all scram-sha-256
 ```
 
-_Note: This is overly open. You may want to review the documentation for
-host-based authentication to make it more restrictive._
+{% aside {"type":"caution", "icon":"<i class=\"fa-solid fa-circle-exclamation\"></i>"} %}
+This is overly open. You may want to review the documentation for 
+[host-based authentication][hba] to make it more restrictive.
+
+[hba]: https://www.postgresql.org/docs/14/auth-pg-hba-conf.html
+{% endaside %}
 
 After making these changes, you'll need to restart PostgreSQL before they'll be
 applied.
@@ -159,7 +165,7 @@ replication setup. Since we're trying to migrate a database, we'll setup this up
 on two nodes called "source" and "destination."
 
 You will need to create a replication user on each node and that user will
-require the superuser priveldges. For this example, we'll connect to each node
+require the superuser privileges. For this example, we'll connect to each node
 using basic authentication (username and password) as this is the only option
 available on AWS without being able to use IAM roles.
 
@@ -172,8 +178,10 @@ CREATE EXTENSION pglogical;
 Now add this node to pglogical. This will need to match the settings we use when
 subscribing from the destination.
 
-_Note: We place this statement in a BEGIN/COMMIT block so that we can disable
-logging. This will prevent the password from being logged in plain text._
+{% aside {"type":"note", "icon":"<i class=\"fa-solid fa-sticky-note\"></i>"} %}
+We place this statement in a BEGIN/COMMIT block so that we can disable
+logging. This will prevent the password from being logged in plain text.
+{% endaside %}
 
 ```sql
 BEGIN;
@@ -206,8 +214,10 @@ command, adding any schemas that you want to replicate to the array:
 SELECT pglogical.replication_set_add_all_tables('default', ARRAY['public']);
 ```
 
-_Note: If you're using sequences (aka autoincrement columns), check the section
-on sequences below before moving on._
+{% aside {"type":"note", "icon":"<i class=\"fa-solid fa-sticky-note\"></i>"} %}
+If you're using sequences (aka autoincrement columns), check the section
+on [sequences](#lets-talk-sequences) below before moving on.
+{% endaside %}
 
 Our source node is now ready to replicate data to any subscribers! Before we're
 done with the source, you'll need the database schema to exist on the
@@ -278,8 +288,10 @@ to the array.
 SELECT pglogical.replication_set_add_all_tables('default', ARRAY['public']);
 ```
 
-_Note: If you're using sequences (aka autoincrement columns), check the section
-on sequences below before moving on._
+{% aside {"type":"note", "icon":"<i class=\"fa-solid fa-sticky-note\"></i>"} %}
+If you're using sequences (aka autoincrement columns), check the section
+on [sequences](#lets-talk-sequences) below before moving on.
+{% endaside %}
 
 Now let's hop over to the source database and subscribe to the destination:
 
@@ -398,7 +410,6 @@ details.
 [bidirectional-diagram]: /assets/img/postgres-replication/bidirectional-replication.svg
 [compose]: https://docs.docker.com/compose/
 [cover-image]: /assets/img/postgres-replication/cover.png
-[hba]: https://www.postgresql.org/docs/14/auth-pg-hba-conf.html
 [pgadmin]: https://www.pgadmin.org/
 [pglogical]: https://www.2ndquadrant.com/en/resources-old/pglogical/pglogical-docs/
 [repo]: https://github.com/jamesiarmes/postgres-pglogical-bdr-docker

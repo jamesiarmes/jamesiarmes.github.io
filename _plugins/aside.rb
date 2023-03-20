@@ -11,7 +11,7 @@ module Jekyll
 
       <<-HTML
 <aside class="aside" data-type="#{params[:type]}">
-  <div class="aside-title">#{params[:title] || params[:type].capitalize}</div>
+  <div class="aside-title">#{params[:icon]}#{params[:title] || params[:type].capitalize}</div>
   <div class="aside-content">#{converter.convert(contents)}</div>
 </aside>
       HTML
