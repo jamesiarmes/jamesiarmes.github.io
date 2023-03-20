@@ -8,3 +8,6 @@
 - term: FISMA
   definition: Federal Information Security Management Act
   url: https://www.cisa.gov/topics/cyber-threats-and-advisories/federal-information-security-modernization-act
+- term: IaC
+  defintion: Infrastructure as code
+  url: https://en.wikipedia.org/wiki/Infrastructure_as_code
