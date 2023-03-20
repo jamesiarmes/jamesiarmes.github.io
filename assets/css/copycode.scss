@@ -1,0 +1,68 @@
+pre.highlight {
+  padding: 8px 12px;
+  position: relative;
+
+  // override skeleton styles
+  > code {
+    border: 0;
+    overflow-x: auto;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  &.highlight {
+    border-left: 15px solid #35383c;
+    color: #c1c2c3;
+    overflow: auto;
+    white-space: pre;
+    word-wrap: normal;
+
+    &,
+    code {
+      background-color: #222;
+      font-size: 14px;
+    }
+  }
+
+  // code to clipboard
+  .copy  {
+    //opacity: 0;
+    //position: absolute;
+    //right: var(--code-block-padding);
+    //top: min(var(--code-block-padding)*1.5,50%);
+    //transform: translateY(-50%);
+    //display: none;
+    color: var(--clr-text);
+    cursor: pointer;
+    border: 2px solid var(--clr-text);
+    border-radius: 8%;
+    height: 2em;
+    width: 2em;
+    //background-color: var(--color-code-overlay-1);
+    //padding: var(--sp--2) var(--sp-0);
+    //border-radius: var(--sp--3);
+    //font-family: var(--ff-body);
+    //font-weight: var(--fw-body-regular);
+
+
+    //color: #4AF626;
+    position: absolute;
+    right: 12px;
+    top: 8px;
+    opacity: 0;
+
+    &:active,
+    &:focus,
+    &:hover {
+      background: rgba(0, 0, 0, 0.7);
+      opacity: 1;
+    }
+  }
+
+  &:active .copy,
+  &:focus .copy,
+  &:hover .copy{
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 1;
+  }
+}
