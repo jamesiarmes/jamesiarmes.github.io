@@ -2,6 +2,7 @@
 layout: post
 title:  AWS public/private network architecture
 date:   2023-03-19 22:50:00 -0400
+image:  /assets/img/covers/aws-networking.preview.png
 category: blog
 tags:
 - aws
@@ -210,7 +211,7 @@ be a good starting point.
 
 [cdk]: https://aws.amazon.com/cdk/
 [cloudformation]: https://aws.amazon.com/cloudformation/
-[cover-image]: /assets/img/aws-networking/aws-networking.svg
+[cover-image]: /assets/img/covers/aws-networking.svg
 [diagram]: /assets/img/aws-networking/aws-public-private-networking-diagram.svg
 [endpoints]: https://docs.aws.amazon.com/whitepapers/latest/aws-privatelink/what-are-vpc-endpoints.html
 [modules]: https://registry.terraform.io/browse/modules?provider=aws
