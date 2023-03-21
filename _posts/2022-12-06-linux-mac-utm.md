@@ -2,7 +2,7 @@
 layout: post
 title:  Linux on Mac using UTM
 date:   2022-12-06 10:55:00 -0400
-image: /assets/img/linux-mac-utm.png
+image:  /assets/img/covers/linux-mac-utm.png
 category: blog
 tags:
 - linux
@@ -203,7 +203,7 @@ support is important.
 That's for another time though. UTM seems to have potential, but only time will
 tell if this could be a path to Linux as my daily driver once again.
 
-[title-image]: /assets/img/linux-mac-utm.png
+[title-image]: /assets/img/covers/linux-mac-utm.png
 [idea-screenshot]: /assets/img/utm-vm-with-idea.png
 [kubuntu]: https://kubuntu.org/
 [fedora-kde]: https://spins.fedoraproject.org/kde/

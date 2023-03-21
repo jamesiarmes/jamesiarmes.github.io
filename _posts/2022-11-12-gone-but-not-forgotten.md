@@ -2,7 +2,7 @@
 layout: post
 title:  Gone but not forgotten
 date:   2022-11-12 23:56:00 -0500
-image: /assets/img/nuke-orbit.gif
+image:  /assets/img/covers/nuke-orbit.gif
 category: blog
 tags:
 - personal
@@ -22,7 +22,7 @@ that I would love to share, I'm not going to but an undue pressure on myself.
 If you're looking for something from the previous iteration of this site, all
 pages have been [archived][archive] and the code has been [tagged].
 
-[nuke-site]: /assets/img/nuke-orbit.gif
+[nuke-site]: /assets/img/covers/nuke-orbit.gif
 [archive]: https://web.archive.org/web/20221112054404/https://www.jamesarmes.com/
 [cfa]: https://codeforamerica.org/
 [tagged]: https://github.com/jamesiarmes/jamesiarmes.github.io/releases/tag/1.0.0

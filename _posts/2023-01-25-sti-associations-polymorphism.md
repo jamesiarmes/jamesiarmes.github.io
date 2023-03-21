@@ -2,7 +2,7 @@
 layout: post
 title:  STI, Associations, and Polymorphism‽ Oh my!
 date:   2023-01-25 01:06:00 -0400
-image: /assets/img/linux-mac-utm.png
+image:  /assets/img/covers/rails.preview.png
 category: blog
 tags:
   - programming
@@ -180,7 +180,7 @@ field, you should consider a different implementation.
 [er-diag-before]: /assets/img/sti-associations-polymorphism/er-before.svg
 [er-diag-after]: /assets/img/sti-associations-polymorphism/er-after.svg
 [polymorphic]: https://guides.rubyonrails.org/association_basics.html#polymorphic-associations
-[rails-logo]: /assets/img/rails-logo.svg
+[rails-logo]: /assets/img/covers/rails.svg
 [socrata]: https://dev.socrata.com/
 [sti]: https://api.rubyonrails.org/classes/ActiveRecord/Inheritance.html
 

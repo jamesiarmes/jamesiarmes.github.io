@@ -2,6 +2,7 @@
 layout: post
 title:  Bidirectional replication in PostgreSQL using pglogical
 date:   2023-03-08 01:14:00 -0500
+image:  /assets/img/covers/postgres-replication.preview.png
 category: blog
 tags:
 - databases
@@ -409,7 +410,7 @@ details.
 
 [bidirectional-diagram]: /assets/img/postgres-replication/bidirectional-replication.svg
 [compose]: https://docs.docker.com/compose/
-[cover-image]: /assets/img/postgres-replication/cover.png
+[cover-image]: /assets/img/covers/postgres-replication.svg
 [pgadmin]: https://www.pgadmin.org/
 [pglogical]: https://www.2ndquadrant.com/en/resources-old/pglogical/pglogical-docs/
 [repo]: https://github.com/jamesiarmes/postgres-pglogical-bdr-docker
