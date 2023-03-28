@@ -2,6 +2,7 @@
 layout: post
 title:  Bidirectional replication in PostgreSQL using pglogical
 date:   2023-03-08 01:14:00 -0500
+updated: 2023-03-28 00:26:00 -0400
 image:  /assets/img/covers/postgres-replication.preview.png
 category: blog
 tags:
@@ -11,6 +12,16 @@ tags:
 - replication
 ---
 ![Cover image][cover-image]{: .post-image.full-width }
+
+<div class="clearfix"></div>
+{% aside {"title":"Updates", "type":"updates", "icon":"<i class=\"fa-solid fa-angles-up\"></i>"} %}
+**{{ "2023-03-28 00:26:00 -0400" | date: "%-d %B %Y" }}**
+
+* Added mention of `synchronize_structure`
+* Added `forward_origins`
+* Fixed missing `synchronize_data` when subscribing to the destination
+{% endaside %}
+
 I was recently working on a database migration from {% glossary AWS %} GovCloud
 to AWS Commercial. We had a production database that was initially launched in
 GovCloud despite not being a {% glossary FISMA %} High workload. Other pieces of
@@ -230,6 +241,11 @@ pg_dump (make sure to add any necessary connection flags):
 pg_dump --schema-only databasename > schema.sql
 ```
 
+Alternatively, you could add `synchronize_structure := true` to the
+`create_subscription` call below. However, while `pg_dump` has additional
+options that allow you to dump specific schemas and tables,
+`synchronize_structure` will always synchronize all schemas and tables.
+
 Okay, now we're done with the source (for now). On the destination, start by
 adding the schema. If you used the pg_dump command above, you can feed that file
 to the psql client:
@@ -242,8 +258,7 @@ Now, let's repeat the first few steps from source. We're going to load the
 extension and add the node:
 
 ```sql
-CREATE
-EXTENSION pglogical;
+CREATE EXTENSION pglogical;
 BEGIN;
 SET LOCAL log_statement = 'none';
 SET LOCAL log_min_duration_statement = -1;
@@ -268,10 +283,19 @@ SELECT pglogical.create_subscription(
          subscription_name := 'source',
          provider_dsn := 'host=source.example.com port=5432
                           sslmode=require dbname=databasename
-                          user=replication password=********'
+                          user=replication password=********',
+         forward_origins := '{}',
+         synchronize_data := true
          );
 COMMIT;
 ```
+
+We set `forward_origins` to "{}" which means we only want to data replicated
+from the node in which it originated. The default is "{all}", which means we
+don't care which node the data originated from we just want it. This can be
+useful in unidirectional replication with multiple nodes, but it can cause
+issues with bidireactional replication. This setting is especially important
+when replicating [sequences][sqquences].
 
 Data should now begin replicating from the source to the destination. You can
 monitor progress using the [`pg_stat_replication` view][view].
@@ -304,7 +328,9 @@ SELECT pglogical.create_subscription(
          subscription_name := 'destination',
          provider_dsn := 'host=destination.example.com port=5432
                           sslmode=require dbname=databasename
-                          user=replication password=********'
+                          user=replication password=********',
+         forward_origins := '{}',
+         synchronize_data := false
          );
 COMMIT;
 ```
@@ -414,5 +440,6 @@ details.
 [pgadmin]: https://www.pgadmin.org/
 [pglogical]: https://www.2ndquadrant.com/en/resources-old/pglogical/pglogical-docs/
 [repo]: https://github.com/jamesiarmes/postgres-pglogical-bdr-docker
+[sequences]: #lets-talk-sequences
 [unidirectional-diagram]: /assets/img/postgres-replication/unidirectional-replication.svg
 [view]: https://www.postgresql.org/docs/current/monitoring-stats.html#MONITORING-PG-STAT-REPLICATION-VIEW

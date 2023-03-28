@@ -29,6 +29,14 @@ aside.aside {
     border-color: #DCB2FF;
   }
 
+  &[data-type="updates"] {
+    background-color: #C6FBC6;
+    border-color: #00D713;
+
+    code { color: #9767F9; }
+    strong { color: #7C41F7; }
+  }
+
   border: 1px solid;
   border-radius: 4px;
   color: black;
