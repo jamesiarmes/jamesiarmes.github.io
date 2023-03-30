@@ -1,13 +1,27 @@
 ---
 layout: default
 ---
-<small><time datetime="{{ page.date }}}">{{ page.date | date: "%-d %B %Y" }}</time></small>
-<h1>{{ page.title }}</h1>
+<article class="post full">
+  <small><time datetime="{{ page.date }}}">{{ page.date | date: "%-d %B %Y" }}</time></small>
+  <h1>{{ page.title }}</h1>
 
-<p class="view">by {{ page.author | default: site.author }}</p>
+  <p class="view">by {{ page.author | default: site.author }}</p>
 
-{{ content }}
+  {% if page.cover.image or page.image  %}
+  <section class="cover {{ page.cover.type | default: 'full' }}">
+    <img alt="{{ page.cover.title | default: page.title }}"
+         class="cover-image"
+         src="{{ page.cover.image | default: page.image }}" />
+  </section>
+  {% endif %}
 
-{% if page.tags %}
-<small>tags: <em>{{ page.tags | join: "</em> - <em>" }}</em></small>
-{% endif %}
+  <section class="content">
+    {{ content }}
+  </section>
+
+  {% if page.tags %}
+  <section class="tags">
+    <small>tags: <em>{{ page.tags | join: "</em> - <em>" }}</em></small>
+  </section>
+  {% endif %}
+</article>

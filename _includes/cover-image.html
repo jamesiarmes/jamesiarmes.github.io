@@ -1,0 +1,7 @@
+{% if post.cover.image or post.image  %}
+<section class="cover {{ post.cover.type | default: 'full' }}">
+  <img alt="{{ post.cover.title | default: post.title }}"
+       class="cover-image"
+       src="{{ post.cover.image | default: post.image }}" />
+</section>
+{% endif %}

@@ -4,13 +4,14 @@ title:  AWS public/private network architecture
 date:   2023-03-19 22:50:00 -0400
 image:  /assets/img/covers/aws-networking.preview.png
 category: blog
+cover:
+  image: /assets/img/covers/aws-networking.svg
 tags:
 - aws
 - cloud
 - networking
 - terraform
 ---
-![Cover image][cover-image]{: .post-image.full-width }
 So you've got your shiny new AWS account and now you want to start launching
 some resources. Your account comes with a default VPC so you can just launch
 your resources in there and you're good to go right? *Right‽*
@@ -211,7 +212,6 @@ be a good starting point.
 
 [cdk]: https://aws.amazon.com/cdk/
 [cloudformation]: https://aws.amazon.com/cloudformation/
-[cover-image]: /assets/img/covers/aws-networking.svg
 [diagram]: /assets/img/aws-networking/aws-public-private-networking-diagram.svg
 [endpoints]: https://docs.aws.amazon.com/whitepapers/latest/aws-privatelink/what-are-vpc-endpoints.html
 [modules]: https://registry.terraform.io/browse/modules?provider=aws

@@ -1,15 +1,21 @@
 <article class="card post excerpt">
-    <small><time datetime="{{ post.date }}">{{ post.date | date: "%-d %B %Y" }}</time></small>
-    <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-    <p class="view">by {{ post.author | default: site.author }}</p>
+  <small><time datetime="{{ post.date }}">{{ post.date | date: "%-d %B %Y" }}</time></small>
+  <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+  <p class="view">by {{ post.author | default: site.author }}</p>
 
-    <div class="clearfix">
-        {{ post.excerpt }}
+  {% include cover-image.html %}
 
-        <p class="readmore"><a href="{{ post.url }}">Read more...</a></p>
+  <div class="clearfix">
+    <section class="excerpt">
+      {{ post.excerpt }}
+    </section>
 
-        {% if post.tags %}
-        <small>tags: <em>{{ post.tags | join: "</em> - <em>" }}</em></small>
-        {% endif %}
-    </div>
+    <p class="readmore"><a href="{{ post.url }}">Read more...</a></p>
+
+    {% if post.tags %}
+    <section class="tags">
+      <small>tags: <em>{{ post.tags | join: "</em> - <em>" }}</em></small>
+    </section>
+    {% endif %}
+  </div>
 </article>

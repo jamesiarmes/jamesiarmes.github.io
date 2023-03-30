@@ -4,11 +4,13 @@ title:  Twitter? I hardly know her!
 date:   2022-11-16 13:05:00 -0500
 image: /assets/img/covers/twitter.preview.png
 category: blog
+cover:
+  image: /assets/img/covers/twitter.svg
+  type: left
 tags:
 - social media
 - twitter
 ---
-![Twitter logo][twitter-logo]{: .post-image }
 I created my Twitter account in September 2008, about two years after it was
 launched. I was early in my career and thought it sounded like a useful tool to
 connect with other engineers. And it was, for a time.
@@ -58,7 +60,6 @@ You can fine me on [Mastodon][mastodon] instead. I'll leave my account up for
 now; who knows, maybe after Musk has had his fun, someone new will come along
 to rebuild.
 
-[twitter-logo]: /assets/img/covers/twitter.svg
 [npr]: https://www.npr.org/2022/10/27/1131378869/twitter-elon-musk-timeline
 [pedo]: https://time.com/5339219/elon-musk-diver-thai-soccer-team-pedo/
 [violations]: https://www.washingtonpost.com/technology/2021/03/25/tesla-nlrb-ruling/

@@ -5,16 +5,15 @@ date:   2023-03-08 01:14:00 -0500
 updated: 2023-03-28 00:26:00 -0400
 image:  /assets/img/covers/postgres-replication.preview.png
 category: blog
+cover:
+  image: /assets/img/covers/postgres-replication.svg
 tags:
 - databases
 - docker
 - postgresql
 - replication
 ---
-![Cover image][cover-image]{: .post-image.full-width }
-
-<div class="clearfix"></div>
-{% aside {"title":"Updates", "type":"updates", "icon":"<i class=\"fa-solid fa-angles-up\"></i>"} %}
+{% aside {"type":"updates", "icon":"<i class=\"fa-solid fa-angles-up\"></i>"} %}
 **{{ "2023-03-28 00:26:00 -0400" | date: "%-d %B %Y" }}**
 
 * Added mention of `synchronize_structure`
@@ -290,12 +289,12 @@ SELECT pglogical.create_subscription(
 COMMIT;
 ```
 
-We set `forward_origins` to "{}" which means we only want to data replicated
-from the node in which it originated. The default is "{all}", which means we
-don't care which node the data originated from we just want it. This can be
-useful in unidirectional replication with multiple nodes, but it can cause
-issues with bidireactional replication. This setting is especially important
-when replicating [sequences][sqquences].
+We set `forward_origins` to "{}" which means we only want data replicated from
+the node in which it originated. The default is "{all}", which means we don't
+care which node the data originated from, we just want it. This can be useful in
+unidirectional replication with multiple nodes, but it can cause issues with
+bidirectional replication. This setting is especially important when replicating
+[sequences][sqquences].
 
 Data should now begin replicating from the source to the destination. You can
 monitor progress using the [`pg_stat_replication` view][view].
@@ -436,7 +435,6 @@ details.
 
 [bidirectional-diagram]: /assets/img/postgres-replication/bidirectional-replication.svg
 [compose]: https://docs.docker.com/compose/
-[cover-image]: /assets/img/covers/postgres-replication.svg
 [pgadmin]: https://www.pgadmin.org/
 [pglogical]: https://www.2ndquadrant.com/en/resources-old/pglogical/pglogical-docs/
 [repo]: https://github.com/jamesiarmes/postgres-pglogical-bdr-docker

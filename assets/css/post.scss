@@ -1,0 +1,25 @@
+.post {
+  .cover {
+    padding: 0;
+
+    &.full img {
+      width: 100%;
+    }
+
+    &.left {
+      float: left;
+      padding: 0 20px 20px 0;
+      min-height: 140px;
+      min-width: 140px;
+    }
+  }
+
+  section {
+    float: unset;
+    padding: unset;
+    width: unset;
+  }
+
+  float: unset;
+  width: unset;
+}

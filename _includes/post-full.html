@@ -1,14 +1,20 @@
 <article class="card post full">
-    <small><time datetime="{{ post.date }}">{{ post.date | date: "%-d %B %Y" }}</time></small>
-    <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+  <small><time datetime="{{ post.date }}">{{ post.date | date: "%-d %B %Y" }}</time></small>
+  <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
 
-    <p class="view">by {{ post.author | default: site.author }}</p>
+  <p class="view">by {{ post.author | default: site.author }}</p>
 
-    <div class="clearfix">
-        {{ post.content }}
+  {% include cover-image.html %}
 
-        {% if post.tags %}
-        <small>tags: <em>{{ post.tags | join: "</em> - <em>" }}</em></small>
-        {% endif %}
-    </div>
+  <div class="clearfix">
+    <section class="content">
+      {{ post.content }}
+    </section>
+
+    {% if post.tags %}
+    <section class="tags">
+      <small>tags: <em>{{ post.tags | join: "</em> - <em>" }}</em></small>
+    </section>
+    {% endif %}
+  </div>
 </article>

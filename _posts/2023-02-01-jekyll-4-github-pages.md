@@ -4,12 +4,14 @@ title:  Using Jekyll 4 with GitHub Pages
 date:   2023-02-01 00:50:00 -0500
 image:  /assets/img/covers/jekyll.preview.png
 category: blog
+cover:
+  image: /assets/img/covers/jekyll.svg
+  title: Jekyll logo
 tags:
 - github
 - jekyll
 - website
 ---
-![Jekyll logo][jekyll-logo]{: .post-image.full-width }
 This site is built using [Jekyll][jekyll] and hosted on [GitHub Pages][pages].
 I've been using this setup for some time, since switching from a Drupal site
 (which was overkill for this small blog and the little traffic it receives) and
@@ -76,7 +78,6 @@ automatically!
 [4.3.0]: https://jekyllrb.com/news/2022/10/20/jekyll-4-3-0-released/
 [actions]: https://docs.github.com/actions
 [jekyll]: https://jekyllrb.com/
-[jekyll-logo]: /assets/img/covers/jekyll.svg
 [pages]: https://pages.github.com/
 [releases]: https://jekyllrb.com/news/releases/
 [reset]: {% post_url 2022-11-12-gone-but-not-forgotten %}
