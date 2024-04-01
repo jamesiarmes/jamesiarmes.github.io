@@ -1,4 +1,4 @@
-.post {
+article.post {
   .cover {
     padding: 0;
 
@@ -12,6 +12,18 @@
       min-height: 140px;
       min-width: 140px;
     }
+  }
+
+  figure {
+    p { margin: 0; }
+    figcaption {
+      background: none;
+      font-weight: lighter;
+      opacity: 0.5;
+      text-align: center;
+    }
+
+    margin-bottom: 5px;
   }
 
   section {

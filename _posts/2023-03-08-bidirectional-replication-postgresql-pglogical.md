@@ -155,8 +155,6 @@ host all all all scram-sha-256
 {% aside {"type":"caution", "icon":"<i class=\"fa-solid fa-circle-exclamation\"></i>"} %}
 This is overly open. You may want to review the documentation for 
 [host-based authentication][hba] to make it more restrictive.
-
-[hba]: https://www.postgresql.org/docs/14/auth-pg-hba-conf.html
 {% endaside %}
 
 After making these changes, you'll need to restart PostgreSQL before they'll be
@@ -227,7 +225,7 @@ SELECT pglogical.replication_set_add_all_tables('default', ARRAY['public']);
 
 {% aside {"type":"note", "icon":"<i class=\"fa-solid fa-sticky-note\"></i>"} %}
 If you're using sequences (aka autoincrement columns), check the section
-on [sequences](#lets-talk-sequences) below before moving on.
+on [sequences] below before moving on.
 {% endaside %}
 
 Our source node is now ready to replicate data to any subscribers! Before we're
@@ -314,7 +312,7 @@ SELECT pglogical.replication_set_add_all_tables('default', ARRAY['public']);
 
 {% aside {"type":"note", "icon":"<i class=\"fa-solid fa-sticky-note\"></i>"} %}
 If you're using sequences (aka autoincrement columns), check the section
-on [sequences](#lets-talk-sequences) below before moving on.
+on [sequences] below before moving on.
 {% endaside %}
 
 Now let's hop over to the source database and subscribe to the destination:
@@ -435,6 +433,7 @@ details.
 
 [bidirectional-diagram]: /assets/img/postgres-replication/bidirectional-replication.svg
 [compose]: https://docs.docker.com/compose/
+[hba]: https://www.postgresql.org/docs/14/auth-pg-hba-conf.html
 [pgadmin]: https://www.pgadmin.org/
 [pglogical]: https://www.2ndquadrant.com/en/resources-old/pglogical/pglogical-docs/
 [repo]: https://github.com/jamesiarmes/postgres-pglogical-bdr-docker

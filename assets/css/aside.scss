@@ -19,6 +19,11 @@ aside.aside {
     border-color: #EFBA00;
   }
 
+  &[data-type="disclaimer"] {
+    background-color: #F75D59;
+    border-color: #C52B27;
+  }
+
   &[data-type="note"] {
     background-color: #BBE0FF;
     border-color: #0C66DC;

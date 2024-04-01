@@ -61,6 +61,7 @@ plugins:
 
 # Exclude from processing.
 exclude:
+  - .github/
   - Gemfile
   - Gemfile.lock
   - node_modules
