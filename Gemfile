@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 gem 'html-proofer', '~> 5.0'
 gem 'jekyll', '~> 4.3'
 gem 'kramdown-parser-gfm', '~> 1.1'
-gem 'webrick', '~> 1.7'
+gem 'webrick', '~> 1.8'
 
 group :jekyll_plugins do
   gem 'jemoji', '~> 0.12'
