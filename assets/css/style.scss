@@ -1,13 +1,11 @@
 ---
 ---
 
-@import
-  "jekyll-theme-minimalistic",
-  "aside",
-  "copycode",
-  "glossary",
-  "post"
-;
+@use "jekyll-theme-minimalistic";
+@use "aside";
+@use "copycode";
+@use "glossary";
+@use "post";
 
 .presentation {
   img {
