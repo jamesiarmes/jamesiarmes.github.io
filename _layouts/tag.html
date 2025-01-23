@@ -1,0 +1,12 @@
+---
+layout: default
+---
+<h1>{% if site.data.tags[page.tag] %} <i class="{{ site.data.tags[page.tag] }}"></i> {% endif %}{{ page.tag }}</h1>
+
+<div id="tag-cloud">
+  {% tagcloud %}
+</div>
+
+{% for post in page.posts %}
+  {% include post-excerpt.html %}
+{% endfor %}

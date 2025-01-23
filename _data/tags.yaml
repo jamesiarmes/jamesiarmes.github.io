@@ -1,0 +1,20 @@
+aws: fa-brands fa-aws
+cloud: fa-solid fa-cloud
+databases: fa-solid fa-database
+docker: fa-brands fa-docker
+github: fa-brands fa-github
+jekyll: fa-solid fa-vial
+linux: fa-brands fa-linux
+macos: fa-brands fa-apple
+networking: fa-solid fa-network-wired
+personal: fa-solid fa-user-pen
+postgresql: fa-solid fa-database
+programming: fa-solid fa-code
+replication: fa-solid fa-arrows-rotate
+ruby: fa-solid fa-gem
+shell: fa-solid fa-terminal
+social media: fa-solid fa-hashtag
+software: fa-regular fa-window-maximize
+twitter: fa-brands fa-twitter
+virtualization: fa-solid fa-laptop-medical
+website: fa-solid fa-file-invoice

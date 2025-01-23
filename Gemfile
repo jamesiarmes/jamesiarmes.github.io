@@ -12,6 +12,7 @@ group :jekyll_plugins do
   gem 'jekyll-glossary_tooltip', '~> 1.5'
   gem 'jekyll-paginate-v2', '~> 3.0'
   gem 'jekyll-sitemap', '~> 1.4'
+  gem 'jekyll-tagging-lite', '~> 1.2'
 end
 
 group :jekyll_themes do

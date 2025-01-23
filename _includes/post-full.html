@@ -12,9 +12,7 @@
     </section>
 
     {% if post.tags %}
-    <section class="tags">
-      <small>tags: <em>{{ post.tags | join: "</em> - <em>" }}</em></small>
-    </section>
+      {% include post-tags.html %}
     {% endif %}
   </div>
 </article>

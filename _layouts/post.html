@@ -20,8 +20,7 @@ layout: default
   </section>
 
   {% if page.tags %}
-  <section class="tags">
-    <small>tags: <em>{{ page.tags | join: "</em> - <em>" }}</em></small>
-  </section>
+    {% assign post = page %}
+    {% include post-tags.html %}
   {% endif %}
 </article>

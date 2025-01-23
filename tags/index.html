@@ -1,0 +1,16 @@
+---
+layout: default
+---
+<h1>Tags</h1>
+
+<div id="tag-cloud">
+  {% tagcloud %}
+</div>
+
+<ul class="tags">
+  {% assign tags = site.tags | sort %}
+  {% for tag in tags  %}
+    {% assign tag_name = tag[0] %}
+    <li><a href="/tags/{{ tag_name | slugify }}">{% if site.data.tags[tag_name] %} <i class="{{ site.data.tags[tag_name] }}"></i> {% endif %} {{ tag_name }}</a> ({{ tag[1] | size }})</li>
+  {% endfor %}
+</ul>

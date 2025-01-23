@@ -58,6 +58,12 @@ plugins:
   - jekyll-glossary_tooltip
   - jekyll-paginate-v2
 #  - jekyll_picture_tag
+  - jekyll-tagging-lite
+
+tag_page_layout: tag
+tag_page_dir: tags
+tag_page_data:
+  sitemap: false
 
 # Exclude from processing.
 exclude:
